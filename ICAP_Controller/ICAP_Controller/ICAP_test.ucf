@@ -1,0 +1,9 @@
+
+#Created by Constraints Editor (xc5vlx50-ff676-1) - 2017/10/12
+NET "CLK" TNM_NET = CLK;
+TIMESPEC TS_CLK = PERIOD "CLK" 20 ns HIGH 50% INPUT_JITTER 5 ps;
+#Created by Constraints Editor (xc5vlx50-ff676-1) - 2017/10/12
+INST "CFG" TNM = inputs;
+INST "SRC_SEL" TNM = inputs;
+TIMEGRP "inputs" OFFSET = IN 20 ns VALID 20 ns BEFORE "CLK" RISING;
+NET "DONE" OFFSET = OUT 20 ns AFTER "CLK";

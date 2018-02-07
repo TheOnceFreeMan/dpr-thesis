@@ -1,0 +1,550 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: ICAP_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ICAP_test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ICAP_test"
+Output Format                      : NGC
+Target Device                      : xc5vlx50-1-ff676
+
+---- Source Options
+Top Module Name                    : ICAP_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/rom_pak_2.vhd" in Library work.
+Architecture rom_pak_2 of Entity rom_pak_2 is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/rom_pak.vhd" in Library work.
+Architecture rom_pak of Entity rom_pak is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ROM.vhd" in Library work.
+Architecture rtl of Entity rom_1 is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ROM_2.vhd" in Library work.
+Architecture rtl of Entity rom_2 is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/gen_mux.vhd" in Library work.
+Architecture behavioral of Entity gen_mux is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ICAP_test.vhd" in Library work.
+Architecture behavioral of Entity icap_test is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ICAP_test> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rom_1> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <rom_2> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <gen_mux> in library <work> (architecture <behavioral>) with generics.
+	size = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ICAP_test> in library <work> (Architecture <behavioral>).
+    Set user-defined property "ICAP_WIDTH =  X32" for instance <ICAP_VIRTEX5_inst> in unit <ICAP_test>.
+Entity <ICAP_test> analyzed. Unit <ICAP_test> generated.
+
+Analyzing Entity <rom_1> in library <work> (Architecture <rtl>).
+Entity <rom_1> analyzed. Unit <rom_1> generated.
+
+Analyzing Entity <rom_2> in library <work> (Architecture <rtl>).
+Entity <rom_2> analyzed. Unit <rom_2> generated.
+
+Analyzing generic Entity <gen_mux> in library <work> (Architecture <behavioral>).
+	size = 32
+Entity <gen_mux> analyzed. Unit <gen_mux> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <rom_1>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ROM.vhd".
+    Found 32768x32-bit ROM for signal <d_out$rom0000> created at line 17.
+    Found 32-bit register for signal <d_out>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <rom_1> synthesized.
+
+
+Synthesizing Unit <rom_2>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ROM_2.vhd".
+    Found 32768x32-bit ROM for signal <d_out$rom0000> created at line 17.
+    Found 32-bit register for signal <d_out>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <rom_2> synthesized.
+
+
+Synthesizing Unit <gen_mux>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/gen_mux.vhd".
+Unit <gen_mux> synthesized.
+
+
+Synthesizing Unit <ICAP_test>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ICAP_test.vhd".
+WARNING:Xst:646 - Signal <O> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <BUSY> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <DONE>.
+    Found 15-bit up counter for signal <ADDRESS>.
+    Found 1-bit register for signal <CE>.
+    Found 1-bit register for signal <IS_CFG>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <ICAP_test> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 32768x32-bit ROM                                      : 2
+# Counters                                             : 1
+ 15-bit up counter                                     : 1
+# Registers                                            : 5
+ 1-bit register                                        : 3
+ 32-bit register                                       : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <rom_1>.
+INFO:Xst:3044 - The ROM <Mrom_d_out_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <d_out>.
+INFO:Xst:3225 - The RAM <Mrom_d_out_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32768-word x 32-bit                 |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <d_out>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <rom_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rom_2>.
+INFO:Xst:3045 - The ROM description <Mrom_d_out_rom0000> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+Unit <rom_2> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32768x32-bit single-port block RAM                    : 1
+# ROMs                                                 : 1
+ 32768x32-bit ROM                                      : 1
+# Counters                                             : 1
+ 15-bit up counter                                     : 1
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <d_out_31> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_30> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_29> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_28> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_27> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_26> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_25> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_24> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_23> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_22> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_21> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_20> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_19> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_18> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_17> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_16> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_15> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_14> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_13> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_12> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_11> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_10> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_9> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_8> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_7> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_6> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_5> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_4> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_1> (without init value) has a constant value of 0 in block <rom_2>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <ICAP_test> ...
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00001>, <ROM1/Mrom_d_out_rom00003> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00001>, <ROM1/Mrom_d_out_rom00004> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom00005> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom00008> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom00006> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom00007> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom00009> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000010> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000011> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000012> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000013> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000014> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000017> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000015> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000016> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000018> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000019> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000020> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000021> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000022> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000023> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000026> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000024> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000025> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000027> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000028> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000029> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000030> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000031> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <ROM1/Mrom_d_out_rom00002>, <ROM1/Mrom_d_out_rom000032> are equivalent, second RAM is removed
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ICAP_test, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ICAP_test.ngr
+Top Level Output File Name         : ICAP_test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 4
+
+Cell Usage :
+# BELS                             : 58
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 14
+#      LUT2                        : 2
+#      LUT3                        : 4
+#      LUT5                        : 1
+#      LUT6                        : 5
+#      MUXCY                       : 14
+#      VCC                         : 1
+#      XORCY                       : 15
+# FlipFlops/Latches                : 21
+#      FD                          : 6
+#      FDR                         : 15
+# RAMS                             : 2
+#      RAMB36_EXP                  : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+# Others                           : 1
+#      ICAP_VIRTEX5                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50ff676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              21  out of  28800     0%  
+ Number of Slice LUTs:                   27  out of  28800     0%  
+    Number used as Logic:                27  out of  28800     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     27
+   Number with an unused Flip Flop:       6  out of     27    22%  
+   Number with an unused LUT:             0  out of     27     0%  
+   Number of fully used LUT-FF pairs:    21  out of     27    77%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    440     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     48     4%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)         | Load  |
+-----------------------------------+-------------------------------+-------+
+CLK                                | BUFGP                         | 23    |
+N0                                 | NONE(ROM1/Mrom_d_out_rom00001)| 2     |
+-----------------------------------+-------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.876ns (Maximum Frequency: 347.705MHz)
+   Minimum input arrival time before clock: 2.490ns
+   Maximum output required time after clock: 3.259ns
+   Maximum combinational path delay: 1.655ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.876ns (frequency: 347.705MHz)
+  Total number of paths / destination ports: 258 / 96
+-------------------------------------------------------------------------
+Delay:               2.876ns (Levels of Logic = 1)
+  Source:            ROM1/Mrom_d_out_rom00002 (RAM)
+  Destination:       DONE (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: ROM1/Mrom_d_out_rom00002 to DONE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB36_EXP:REGCLKAL->DOA0    4   2.190   0.592  ROM1/Mrom_d_out_rom00002 (I0<1>)
+     LUT6:I4->O            1   0.094   0.000  CE_or00001 (CE_or0000)
+     FD:D                     -0.018          CE
+    ----------------------------------------
+    Total                      2.876ns (2.284ns logic, 0.592ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 21 / 18
+-------------------------------------------------------------------------
+Offset:              2.490ns (Levels of Logic = 2)
+  Source:            CFG (PAD)
+  Destination:       ADDRESS_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: CFG to ADDRESS_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.818   0.592  CFG_IBUF (CFG_IBUF)
+     LUT2:I0->O           15   0.094   0.413  ADDRESS_or0000_inv1 (ADDRESS_or0000_inv)
+     FDR:R                     0.573          ADDRESS_0
+    ----------------------------------------
+    Total                      2.490ns (1.485ns logic, 1.005ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 37 / 34
+-------------------------------------------------------------------------
+Offset:              3.259ns (Levels of Logic = 1)
+  Source:            DONE (FF)
+  Destination:       DONE (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: DONE to DONE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   0.336  DONE (DONE_OBUF)
+     OBUF:I->O                 2.452          DONE_OBUF (DONE)
+    ----------------------------------------
+    Total                      3.259ns (2.923ns logic, 0.336ns route)
+                                       (89.7% logic, 10.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Delay:               1.655ns (Levels of Logic = 2)
+  Source:            SRC_SEL (PAD)
+  Destination:       ICAP_VIRTEX5_inst:I3 (PAD)
+
+  Data Path: SRC_SEL to ICAP_VIRTEX5_inst:I3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.818   0.743  SRC_SEL_IBUF (SRC_SEL_IBUF)
+     LUT3:I0->O            0   0.094   0.000  MUX/D_OUT<0>1 (I<0>)
+    ICAP_VIRTEX5:I0            0.000          ICAP_VIRTEX5_inst
+    ----------------------------------------
+    Total                      1.655ns (0.912ns logic, 0.743ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.40 secs
+ 
+--> 
+
+Total memory usage is 449796 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
+

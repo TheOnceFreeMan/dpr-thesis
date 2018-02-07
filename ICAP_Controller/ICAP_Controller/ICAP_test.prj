@@ -1,0 +1,6 @@
+vhdl work "rom_pak_2.vhd"
+vhdl work "rom_pak.vhd"
+vhdl work "ROM_2.vhd"
+vhdl work "ROM.vhd"
+vhdl work "gen_mux.vhd"
+vhdl work "ICAP_test.vhd"

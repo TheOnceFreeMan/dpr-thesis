@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ICAP_test.xst" -ofn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ICAP_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 ICAP_test.ngc ICAP_test.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o ICAP_test_map.ncd ICAP_test.ngd ICAP_test.pcf 
+par -w -intstyle ise -ol high -mt off ICAP_test_map.ncd ICAP_test.ncd ICAP_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml ICAP_test.twx ICAP_test.ncd -o ICAP_test.twr ICAP_test.pcf 
+xst -intstyle ise -ifn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ICAP_test.xst" -ofn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/ICAP_Controller/ICAP_Controller/ICAP_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 ICAP_test.ngc ICAP_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ICAP_test.ucf -p xc5vlx50-ff676-1 ICAP_test.ngc ICAP_test.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o ICAP_test_map.ncd ICAP_test.ngd ICAP_test.pcf 
+par -w -intstyle ise -ol high -mt off ICAP_test_map.ncd ICAP_test.ncd ICAP_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml ICAP_test.twx ICAP_test.ncd -o ICAP_test.twr ICAP_test.pcf -ucf ICAP_test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ICAP_test.ucf -p xc5vlx50-ff676-1 ICAP_test.ngc ICAP_test.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o ICAP_test_map.ncd ICAP_test.ngd ICAP_test.pcf 
+par -w -intstyle ise -ol high -mt off ICAP_test_map.ncd ICAP_test.ncd ICAP_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml ICAP_test.twx ICAP_test.ncd -o ICAP_test.twr ICAP_test.pcf -ucf ICAP_test.ucf 

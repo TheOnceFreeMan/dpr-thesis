@@ -1,0 +1,32 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Oct 12 11:08:41 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+PIN ROM1/Mrom_d_out_rom00001_pins<32> = BEL "ROM1/Mrom_d_out_rom00001" PINNAME
+        CLKAL;
+PIN ROM1/Mrom_d_out_rom00001_pins<33> = BEL "ROM1/Mrom_d_out_rom00001" PINNAME
+        CLKAU;
+PIN ROM1/Mrom_d_out_rom00002_pins<32> = BEL "ROM1/Mrom_d_out_rom00002" PINNAME
+        CLKAL;
+PIN ROM1/Mrom_d_out_rom00002_pins<33> = BEL "ROM1/Mrom_d_out_rom00002" PINNAME
+        CLKAU;
+TIMEGRP CLK = BEL "ADDRESS_0" BEL "ADDRESS_1" BEL "ADDRESS_2" BEL "ADDRESS_3"
+        BEL "ADDRESS_4" BEL "ADDRESS_5" BEL "ADDRESS_6" BEL "ADDRESS_7" BEL
+        "ADDRESS_8" BEL "ADDRESS_9" BEL "ADDRESS_10" BEL "ADDRESS_11" BEL
+        "ADDRESS_12" BEL "ADDRESS_13" BEL "ADDRESS_14" BEL "ROM2/d_out_3" BEL
+        "ROM2/d_out_2" BEL "ROM2/d_out_0" BEL "DONE" BEL "CE" BEL "IS_CFG" BEL
+        "CLK_BUFGP/BUFG" PIN "ROM1/Mrom_d_out_rom00001_pins<32>" PIN
+        "ROM1/Mrom_d_out_rom00001_pins<33>" PIN
+        "ROM1/Mrom_d_out_rom00001_pins<32>" PIN
+        "ROM1/Mrom_d_out_rom00001_pins<33>" PIN
+        "ROM1/Mrom_d_out_rom00002_pins<32>" PIN
+        "ROM1/Mrom_d_out_rom00002_pins<33>" PIN
+        "ROM1/Mrom_d_out_rom00002_pins<32>" PIN
+        "ROM1/Mrom_d_out_rom00002_pins<33>";
+TIMEGRP inputs = BEL "CFG" BEL "SRC_SEL";
+TS_CLK = PERIOD TIMEGRP "CLK" 20 ns HIGH 50% INPUT_JITTER 0.005 ns;
+COMP "DONE" OFFSET = OUT 20 ns AFTER COMP "CLK";
+TIMEGRP "inputs" OFFSET = IN 20 ns VALID 20 ns BEFORE COMP "CLK" "RISING";
+SCHEMATIC END;
+
