@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/D_FF.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/XOR_gen.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/conv_encoder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/counter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/quad_dec.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/PWMGenerator_v3.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/clock_div_200.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/config_state_machine.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/current_sensor/register.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/current_sensor/sense_test.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/decoupler.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/decoupler_in.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/ext_mem_icap/ICAP_EEPROM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/ext_mem_icap/eeprom_interface.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/gen_register.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/gen_triangle_generator.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/ipcore_dir/icap_clk.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/top.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

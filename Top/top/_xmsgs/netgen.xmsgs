@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">d_out_rom0000</arg><arg fmt="%s" index="2">( 2 downto 0 )</arg> on block <arg fmt="%s" index="3">rom_2</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Bias2_const_val_1</arg><arg fmt="%s" index="2">( 65 downto 0 )</arg> on block <arg fmt="%s" index="3">PWMGenerator_v3</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_Bias1_out1_lut</arg><arg fmt="%s" index="2">( 83 downto 65 )</arg> on block <arg fmt="%s" index="3">PWMGenerator_v3</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_Bias2_out1_lut</arg><arg fmt="%s" index="2">( 83 downto 65 )</arg> on block <arg fmt="%s" index="3">PWMGenerator_v3</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_Bias3_out1_lut</arg><arg fmt="%s" index="2">( 67 downto 65 )</arg> on block <arg fmt="%s" index="3">PWMGenerator_v3</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_Bias4_out1_lut</arg><arg fmt="%s" index="2">( 67 downto 65 )</arg> on block <arg fmt="%s" index="3">PWMGenerator_v3</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_Bias5_out1_lut</arg><arg fmt="%s" index="2">( 67 downto 65 )</arg> on block <arg fmt="%s" index="3">PWMGenerator_v3</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_Bias_out1_lut</arg><arg fmt="%s" index="2">( 83 downto 65 )</arg> on block <arg fmt="%s" index="3">PWMGenerator_v3</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="info" file="NetListWriters" num="635" delta="new" >The generated VHDL netlist contains Xilinx <arg fmt="%s" index="1">UNISIM</arg> simulation primitives and has to be used with <arg fmt="%s" index="2">UNISIM</arg> library for correct compilation and simulation. 
+</msg>
+
+</messages>
+
