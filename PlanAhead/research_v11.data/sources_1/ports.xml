@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="mem_addr">
+			<Port Id="18" Dir="OUT"/>
+			<Port Id="17" Dir="OUT"/>
+			<Port Id="16" Dir="OUT"/>
+			<Port Id="15" Dir="OUT"/>
+			<Port Id="14" Dir="OUT"/>
+			<Port Id="13" Dir="OUT"/>
+			<Port Id="12" Dir="OUT"/>
+			<Port Id="11" Dir="OUT"/>
+			<Port Id="10" Dir="OUT"/>
+			<Port Id="9" Dir="OUT"/>
+			<Port Id="8" Dir="OUT"/>
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="eeprom_sel">
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="freq">
+			<Port Id="15" Dir="IN"/>
+			<Port Id="14" Dir="IN"/>
+			<Port Id="13" Dir="IN"/>
+			<Port Id="12" Dir="IN"/>
+			<Port Id="11" Dir="IN"/>
+			<Port Id="10" Dir="IN"/>
+			<Port Id="9" Dir="IN"/>
+			<Port Id="8" Dir="IN"/>
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="data_i_A">
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="data_i_B">
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="mem_dat">
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Port Id="EOC_A" Dir="IN"/>
+		<Port Id="EOC_B" Dir="IN"/>
+		<Port Id="rst" Dir="IN"/>
+		<Port Id="VcLow" Dir="OUT"/>
+		<Port Id="VaHigh" Dir="OUT"/>
+		<Port Id="VbHigh" Dir="OUT"/>
+		<Port Id="VbLow" Dir="OUT"/>
+		<Port Id="controller_sel" Dir="IN"/>
+		<Port Id="convst_A" Dir="OUT"/>
+		<Port Id="convst_B" Dir="OUT"/>
+		<Port Id="clk_i" Dir="IN"/>
+		<Port Id="VcHigh" Dir="OUT"/>
+		<Port Id="Current_Command" Dir="IN"/>
+		<Port Id="quadA" Dir="IN"/>
+		<Port Id="quadB" Dir="IN"/>
+		<Port Id="VaLow" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

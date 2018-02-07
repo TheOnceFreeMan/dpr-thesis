@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="RECONFIG_PART#controllerFOC" Type="Reconfig" RelSrcDir="$PSRCDIR/RECONFIG_PART#controllerFOC">
+    <Filter Type=""/>
+    <File Path="$PSRCDIR/RECONFIG_PART#controllerFOC/imports/FOC_v3/controller.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/FOC/FOC_v3/controller.ngc"/>
+        <Attr Name="ImportTime" Val="1511919553"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="GateLvl"/>
+      <Option Name="GateLvlMode" Val="EDIF"/>
+      <Option Name="TopFile" Val="$PSRCDIR/RECONFIG_PART#controllerFOC/imports/FOC_v3/controller.ngc"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="Partition" Val="RECONFIG_PART"/>
+      <Option Name="ReconfigModule" Val="controllerFOC"/>
+    </Config>
+  </FileSet>
+</DARoots>

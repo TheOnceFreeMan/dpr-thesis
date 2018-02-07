@@ -1,0 +1,87 @@
+   Build: PlanAhead v14.7 by xbuild
+          on Fri Sep 27 19:29:51 MDT 2013
+  Report: by paul.rogers on host ECE207196434, pid 3996
+          on Wed Jan 31 16:08:39 2018
+
+Report for pblock: ROOT
+
+
+Physical Resource Estimates
+===========================
+
+Site Type   Available  Required  % Util  
+---------------------------------------
+LUT         28800      821       3       
+FD_LD       28800      997       4       
+SLICEL      5280       223       5       
+SLICEM      1920       82        5       
+BSCAN       4          0         0       
+BUFGCTRL    32         5         16      
+BUFIO       56         0         0       
+BUFR        24         0         0       
+CAPTURE     1          0         0       
+DCI         16         0         0       
+DCIRESET    1          0         0       
+DCM_ADV     12         1         9       
+DSP48E      48         21        44      
+EFUSE_USR   1          0         0       
+FRAME_ECC   1          0         0       
+ICAP        2          1         50      
+IDELAYCTRL  16         0         0       
+ILOGIC      440        0         0       
+IODELAY     560        0         0       
+JTAGPPC     1          0         0       
+KEY_CLEAR   1          0         0       
+OLOGIC      440        0         0       
+PLL_ADV     6          0         0       
+PMV         1          0         0       
+PMVBRAM     12         0         0       
+RAMBFIFO36  48         18        38      
+STARTUP     1          0         0       
+SYSMON      1          0         0       
+USR_ACCESS  1          0         0       
+
+
+Clock Report
+============
+
+Domain (Module)                          Resource  Instances  
+------------------------------------------------------------
+CLK0_BUF( icap_clk )                     Local     1          
+CLK0_OUT( icap_clk )                     Global    74         
+CLK2X_BUF( icap_clk )                    Local     1          
+CLK2X_OUT( icap_clk )                    Global    13         
+EOC_A_BUFGP( top )                       Global    9          
+EOC_B_BUFGP( top )                       Global    9          
+cfg_not0001( config_state_machine )      Local     1          
+clk_s( clock_div_200 )                   Global    950        
+oup( XOR_gen )                           Local     16         
+src_sel_not0001( config_state_machine )  Local     2          
+t_clk( clock_div_200 )                   Local     1          
+
+
+IO Statistics
+=============
+
+IO Ports  Bonded IOs  Utilization  
+---------------------------------
+77        440          17.5 %      
+
+
+Primitive Statistics
+====================
+
+Primitive type  Count  
+---------------------
+FLOP_LATCH      997    
+LUT             1149   
+MUXFX           32     
+CARRY           1441   
+IO              74     
+BMEM            18     
+MULT            21     
+CLK             7      
+DMEM            2      
+OTHERS          24     
+
+

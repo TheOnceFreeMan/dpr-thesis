@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="RECONFIG_PART#controllerVf" Type="Reconfig" RelSrcDir="$PSRCDIR/RECONFIG_PART#controllerVf">
+    <Filter Type=""/>
+    <File Path="$PSRCDIR/RECONFIG_PART#controllerVf/imports/Vf_controller/controller.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Vf/Vf_controller/controller.ngc"/>
+        <Attr Name="ImportTime" Val="1508189318"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="GateLvl"/>
+      <Option Name="GateLvlMode" Val="EDIF"/>
+      <Option Name="TopFile" Val="$PSRCDIR/RECONFIG_PART#controllerVf/imports/Vf_controller/controller.ngc"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="Partition" Val="RECONFIG_PART"/>
+      <Option Name="ReconfigModule" Val="controllerVf"/>
+    </Config>
+  </FileSet>
+</DARoots>

@@ -1,0 +1,75 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -p xc5vlx50ff676-1 -dd _ngo -uc config_1.ucf config_1.edf
+
+Executing edif2ngd -quiet "config_1.edf" "_ngo\config_1.ngo"
+Release 14.7 - edif2ngd P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading NGO file
+"C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11
+/research_v11.runs/config_1/_ngo/config_1.ngo" ...
+WARNING:NgdBuild:1023 - Could not resolve reconfigurable Partition block
+   'RECONFIG_PART'.  This may be legal if you are implementing the Partition as
+   a blackbox.   If it is not a blackbox, you should check that the Partition's
+   module file, 'controller.ngc'  or 'controller.edf' (or another valid EDIF
+   extension), exists and is properly set up in a search path (see the -sd
+   option).
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "config_1.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into DCM_ADV instance DCM_ADV_INST. The following new
+   TNM groups and period specifications were generated at the DCM_ADV output(s):
+    
+   CLK2X: <TIMESPEC TS_ICAP_CLK_COMP_CLK2X_BUF = PERIOD
+   "ICAP_CLK_COMP_CLK2X_BUF" TS_clk_i HIGH 50% INPUT_JITTER 5 ps>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into DCM_ADV instance DCM_ADV_INST. The following new
+   TNM groups and period specifications were generated at the DCM_ADV output(s):
+    
+   CLK0: <TIMESPEC TS_ICAP_CLK_COMP_CLK0_BUF = PERIOD "ICAP_CLK_COMP_CLK0_BUF"
+   TS_clk_i / 2 HIGH 50% INPUT_JITTER 5 ps>
+
+Done...
+Checking Partitions ...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (20.000000)
+   was detected for the CLKIN_PERIOD attribute on DCM "DCM_ADV_INST".  This does
+   not match the PERIOD constraint value (100 MHz.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  Preserved Partitions:
+
+
+  Implemented Partitions:
+
+    Partition "/top":
+Attribute STATE set to IMPLEMENT.
+
+    Partition "/top/RECONFIG_PART" (Reconfigurable Module "empty"):
+Attribute STATE set to IMPLEMENT.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   2
+
+Total memory usage is 203356 kilobytes
+
+Writing NGD file "config_1.ngd" ...
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "config_1.bld"...

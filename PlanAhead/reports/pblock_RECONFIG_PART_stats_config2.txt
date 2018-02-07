@@ -1,0 +1,60 @@
+   Build: PlanAhead v14.7 by xbuild
+          on Fri Sep 27 19:29:51 MDT 2013
+  Report: by paul.rogers on host ECE207196434, pid 3996
+          on Wed Jan 31 16:10:42 2018
+
+Report for pblock: pblock_RECONFIG_PART
+
+
+Physical Resource Estimates
+===========================
+
+Site Type   Available  Required  % Util  
+---------------------------------------
+LUT         2880       1352      47      
+FD_LD       2880       279       10      
+SLICEL      450        210       47      
+SLICEM      270        129       48      
+DSP48E      36         28        78      
+RAMBFIFO36  18         0         0       
+
+
+Clock Report
+============
+
+Domain (Module)         Resource  Instances  
+-------------------------------------------
+clk_s( clock_div_200 )  Global    313        
+
+
+PR Module Statistics
+====================
+
+Type                                  
+------------------------------------
+BitStream Size          270600 Bytes  
+No of Frames            35            
+Number of Frame Region  5             
+
+
+Primitive Statistics
+====================
+
+Primitive type  Count  
+---------------------
+FLOP_LATCH      279    
+LUT             1494   
+CARRY           1348   
+MULT            28     
+DMEM            16     
+OTHERS          2      
+
+
+Net Boundary Statistics
+=======================
+
+Boundary-crossing Nets  
+----------------------
+121                     
+
+

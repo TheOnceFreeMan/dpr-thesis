@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Project Name="config_1" FileVersion="1.2" ProjectVersion="2.0">
+	<Partition Name="/top" State="implement" ImportLocation="NONE">
+		<Partition Name="/top/RECONFIG_PART" State="implement" ImportLocation="NONE" Reconfigurable="true" ReconfigModuleName="empty">
+		</Partition>
+	</Partition>
+</Project>
+

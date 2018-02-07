@@ -1,0 +1,47 @@
+   Build: PlanAhead v14.7 by xbuild
+          on Fri Sep 27 19:29:51 MDT 2013
+  Report: by paul.rogers on host ECE207196434, pid 3996
+          on Wed Jan 31 16:09:50 2018
+
+Report for pblock: pblock_RECONFIG_PART
+
+
+Physical Resource Estimates
+===========================
+
+Site Type   Available  Required  % Util  
+---------------------------------------
+LUT         2880       0         0       
+FD_LD       2880       0         0       
+SLICEL      450        0         0       
+SLICEM      270        0         0       
+DSP48E      36         0         0       
+RAMBFIFO36  18         0         0       
+
+
+PR Module Statistics
+====================
+
+Type                                  
+------------------------------------
+BitStream Size          270600 Bytes  
+No of Frames            35            
+Number of Frame Region  5             
+
+
+Primitive Statistics
+====================
+
+Primitive type  Count  
+---------------------
+OTHERS          1      
+
+
+Net Boundary Statistics
+=======================
+
+Boundary-crossing Nets  
+----------------------
+322                     
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<PartialReconfig Version="1" Minor="8">
+	<Partitions>
+		<Partition Name="top" Reconfigurable="FALSE" PromotedLocation="$PROMOTEDIR/Xconfig_1">
+			<Partition Name="RECONFIG_PART" CurrPRModule="controllerVf" Reconfigurable="TRUE">
+				<PRModule Name="empty" Blackbox="TRUE" PromotedLocation="$PROMOTEDIR/Xconfig_1">
+				</PRModule>
+				<PRModule Name="controllerFOC">
+				</PRModule>
+				<PRModule Name="controllerVf">
+				</PRModule>
+			</Partition>
+		</Partition>
+	</Partitions>
+	<Configs>
+		<Config Name="config_1" State="IMPLEMENTED" PromotedLocation="$PROMOTEDIR/Xconfig_1" RunType="Implementation">
+			<PRConfigInst PRInst="top" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="RECONFIG_PART" PRModule="empty" State="IMPLEMENT">
+			</PRConfigInst>
+		</Config>
+		<Config Name="config_2" State="IMPLEMENTED" RunType="Implementation">
+			<PRConfigInst PRInst="top" State="IMPORT" ImportLocation="$PROMOTEDIR/Xconfig_1">
+			</PRConfigInst>
+			<PRConfigInst PRInst="RECONFIG_PART" PRModule="controllerFOC" State="IMPLEMENT">
+			</PRConfigInst>
+		</Config>
+		<Config Name="config_3" State="IMPLEMENTED" RunType="Implementation">
+			<PRConfigInst PRInst="top" State="IMPORT" ImportLocation="$PROMOTEDIR/Xconfig_1">
+			</PRConfigInst>
+			<PRConfigInst PRInst="RECONFIG_PART" PRModule="controllerVf" State="IMPLEMENT">
+			</PRConfigInst>
+		</Config>
+	</Configs>
+</PartialReconfig>
+
