@@ -1,0 +1,114 @@
+V3 53
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Clarke_Transform.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Clarke_Transform 1511919525 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Clarke_Transform.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Clarke_Transform/rtl 1511919526 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Clarke_Transform.vhd \
+      EN work/Clarke_Transform 1511919525
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.vhd 2017/11/28.19:38:28 P.20131013
+EN work/controller 1511919539 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/controller/rtl 1511919540 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.vhd \
+      EN work/controller 1511919539 AR work/Clarke_Transform/rtl 1511919526 \
+      AR work/Sine_Cosine/rtl 1511919528 AR work/Park_Transform/rtl 1511919530 \
+      AR work/DQ_Current_Control/rtl 1511919532 AR work/Inv_Park_Transform/rtl 1511919534 \
+      AR work/Inv_Clarke_Transform/rtl 1511919536 \
+      AR work/Space_Vector_Modulation/rtl 1511919538 CP Clarke_Transform \
+      CP Sine_Cosine CP Park_Transform CP DQ_Current_Control CP Inv_Park_Transform \
+      CP Inv_Clarke_Transform CP Space_Vector_Modulation
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/DQ_Current_Control.vhd 2017/11/28.19:11:02 P.20131013
+EN work/DQ_Current_Control 1511919531 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/DQ_Current_Control.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/DQ_Current_Control/rtl 1511919532 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/DQ_Current_Control.vhd \
+      EN work/DQ_Current_Control 1511919531 AR work/D_Current_Control/rtl 1511919520 \
+      AR work/Q_Current_Control/rtl 1511919522 CP D_Current_Control \
+      CP Q_Current_Control
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/D_Current_Control.vhd 2017/11/28.19:11:02 P.20131013
+EN work/D_Current_Control 1511919519 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/D_Current_Control.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PH work/FOC_Modified_v3_pkg 1511919514
+AR work/D_Current_Control/rtl 1511919520 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/D_Current_Control.vhd \
+      EN work/D_Current_Control 1511919519 AR work/Saturate_Output/rtl 1511919518 \
+      CP Saturate_Output
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/FOC_Modified_v3_pkg.vhd 2017/11/28.19:11:02 P.20131013
+PH work/FOC_Modified_v3_pkg 1511919514 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/FOC_Modified_v3_pkg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Clarke_Transform.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Inv_Clarke_Transform 1511919535 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Clarke_Transform.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PH work/FOC_Modified_v3_pkg 1511919514
+AR work/Inv_Clarke_Transform/rtl 1511919536 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Clarke_Transform.vhd \
+      EN work/Inv_Clarke_Transform 1511919535
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Park_Transform.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Inv_Park_Transform 1511919533 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Park_Transform.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PH work/FOC_Modified_v3_pkg 1511919514
+AR work/Inv_Park_Transform/rtl 1511919534 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Park_Transform.vhd \
+      EN work/Inv_Park_Transform 1511919533
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Park_Transform.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Park_Transform 1511919529 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Park_Transform.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PH work/FOC_Modified_v3_pkg 1511919514
+AR work/Park_Transform/rtl 1511919530 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Park_Transform.vhd \
+      EN work/Park_Transform 1511919529
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Q_Current_Control.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Q_Current_Control 1511919521 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Q_Current_Control.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PH work/FOC_Modified_v3_pkg 1511919514
+AR work/Q_Current_Control/rtl 1511919522 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Q_Current_Control.vhd \
+      EN work/Q_Current_Control 1511919521 AR work/Saturate_Output_block/rtl 1511919516 \
+      CP Saturate_Output_block
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Saturate_Output 1511919517 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Saturate_Output/rtl 1511919518 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output.vhd \
+      EN work/Saturate_Output 1511919517
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output_block.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Saturate_Output_block 1511919515 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output_block.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Saturate_Output_block/rtl 1511919516 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output_block.vhd \
+      EN work/Saturate_Output_block 1511919515
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Sine_Cosine 1511919527 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Sine_Cosine/rtl 1511919528 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine.vhd \
+      EN work/Sine_Cosine 1511919527 AR work/Sine_Cosine_LUT/rtl 1511919524 \
+      CP Sine_Cosine_LUT
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Sine_Cosine_LUT 1511919523 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PH work/FOC_Modified_v3_pkg 1511919514
+AR work/Sine_Cosine_LUT/rtl 1511919524 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd \
+      EN work/Sine_Cosine_LUT 1511919523
+FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Space_Vector_Modulation.vhd 2017/11/28.19:11:02 P.20131013
+EN work/Space_Vector_Modulation 1511919537 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Space_Vector_Modulation.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PH work/FOC_Modified_v3_pkg 1511919514
+AR work/Space_Vector_Modulation/rtl 1511919538 \
+      FL C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Space_Vector_Modulation.vhd \
+      EN work/Space_Vector_Modulation 1511919537

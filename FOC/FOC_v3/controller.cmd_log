@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.xst" -ofn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.xst" -ofn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.xst" -ofn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.syr" 

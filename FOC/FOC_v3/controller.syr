@@ -1,0 +1,1477 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "controller.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "controller"
+Output Format                      : NGC
+Target Device                      : xc5vlx50-1-ff676
+
+---- Source Options
+Top Module Name                    : controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Off
+Reduce Control Sets                : Off
+Add IO Buffers                     : NO
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/FOC_Modified_v3_pkg.vhd" in Library work.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output_block.vhd" in Library work.
+Architecture rtl of Entity saturate_output_block is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output.vhd" in Library work.
+Architecture rtl of Entity saturate_output is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/D_Current_Control.vhd" in Library work.
+Architecture rtl of Entity d_current_control is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Q_Current_Control.vhd" in Library work.
+Architecture rtl of Entity q_current_control is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd" in Library work.
+Architecture rtl of Entity sine_cosine_lut is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Clarke_Transform.vhd" in Library work.
+Architecture rtl of Entity clarke_transform is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine.vhd" in Library work.
+Architecture rtl of Entity sine_cosine is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Park_Transform.vhd" in Library work.
+Architecture rtl of Entity park_transform is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/DQ_Current_Control.vhd" in Library work.
+Architecture rtl of Entity dq_current_control is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Park_Transform.vhd" in Library work.
+Architecture rtl of Entity inv_park_transform is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Clarke_Transform.vhd" in Library work.
+Architecture rtl of Entity inv_clarke_transform is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Space_Vector_Modulation.vhd" in Library work.
+Architecture rtl of Entity space_vector_modulation is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.vhd" in Library work.
+Entity <controller> compiled.
+Entity <controller> (Architecture <rtl>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <controller> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Clarke_Transform> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Sine_Cosine> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Park_Transform> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <DQ_Current_Control> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Inv_Park_Transform> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Inv_Clarke_Transform> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Space_Vector_Modulation> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Sine_Cosine_LUT> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <D_Current_Control> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Q_Current_Control> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Saturate_Output> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Saturate_Output_block> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <controller> in library <work> (Architecture <rtl>).
+Entity <controller> analyzed. Unit <controller> generated.
+
+Analyzing Entity <Clarke_Transform> in library <work> (Architecture <rtl>).
+Entity <Clarke_Transform> analyzed. Unit <Clarke_Transform> generated.
+
+Analyzing Entity <Sine_Cosine> in library <work> (Architecture <rtl>).
+Entity <Sine_Cosine> analyzed. Unit <Sine_Cosine> generated.
+
+Analyzing Entity <Sine_Cosine_LUT> in library <work> (Architecture <rtl>).
+WARNING:Xst:790 - "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd" line 199: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd" line 207: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd" line 339: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd" line 347: Index value(s) does not match array range, simulation mismatch.
+Entity <Sine_Cosine_LUT> analyzed. Unit <Sine_Cosine_LUT> generated.
+
+Analyzing Entity <Park_Transform> in library <work> (Architecture <rtl>).
+Entity <Park_Transform> analyzed. Unit <Park_Transform> generated.
+
+Analyzing Entity <DQ_Current_Control> in library <work> (Architecture <rtl>).
+Entity <DQ_Current_Control> analyzed. Unit <DQ_Current_Control> generated.
+
+Analyzing Entity <D_Current_Control> in library <work> (Architecture <rtl>).
+Entity <D_Current_Control> analyzed. Unit <D_Current_Control> generated.
+
+Analyzing Entity <Saturate_Output> in library <work> (Architecture <rtl>).
+Entity <Saturate_Output> analyzed. Unit <Saturate_Output> generated.
+
+Analyzing Entity <Q_Current_Control> in library <work> (Architecture <rtl>).
+Entity <Q_Current_Control> analyzed. Unit <Q_Current_Control> generated.
+
+Analyzing Entity <Saturate_Output_block> in library <work> (Architecture <rtl>).
+Entity <Saturate_Output_block> analyzed. Unit <Saturate_Output_block> generated.
+
+Analyzing Entity <Inv_Park_Transform> in library <work> (Architecture <rtl>).
+Entity <Inv_Park_Transform> analyzed. Unit <Inv_Park_Transform> generated.
+
+Analyzing Entity <Inv_Clarke_Transform> in library <work> (Architecture <rtl>).
+Entity <Inv_Clarke_Transform> analyzed. Unit <Inv_Clarke_Transform> generated.
+
+Analyzing Entity <Space_Vector_Modulation> in library <work> (Architecture <rtl>).
+Entity <Space_Vector_Modulation> analyzed. Unit <Space_Vector_Modulation> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Clarke_Transform>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Clarke_Transform.vhd".
+WARNING:Xst:646 - Signal <Beta_Gain_mul_temp<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Alpha_Gain_mul_temp<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add_add_temp<17:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 34-bit adder for signal <Add_add_temp>.
+    Found 16x16-bit multiplier for signal <Alpha_Gain_mul_temp>.
+    Found 32-bit register for signal <Alpha_Gain_out1_1>.
+    Found 16x16-bit multiplier for signal <Beta_Gain_mul_temp>.
+    Found 32-bit register for signal <Beta_Gain_out1_1>.
+    Found 16-bit register for signal <Phase_Current_A_1>.
+    Found 16-bit register for signal <Phase_Current_B_1>.
+    Summary:
+	inferred  96 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+Unit <Clarke_Transform> synthesized.
+
+
+Synthesizing Unit <Park_Transform>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Park_Transform.vhd".
+WARNING:Xst:646 - Signal <Product4_out1_1<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product2_out1_1<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product1_out1_1<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Produc3t_out1_1<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add2_sub_temp<33>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add2_sub_temp<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_add_temp<33>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_add_temp<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 34-bit adder for signal <Add1_add_temp>.
+    Found 34-bit subtractor for signal <Add2_sub_temp>.
+    Found 16-bit register for signal <Beta_1>.
+    Found 16-bit register for signal <Cos_Coefficient_1>.
+    Found 16x16-bit multiplier for signal <Produc3t_out1>.
+    Found 32-bit register for signal <Produc3t_out1_1>.
+    Found 16x16-bit multiplier for signal <Product1_out1>.
+    Found 32-bit register for signal <Product1_out1_1>.
+    Found 16x16-bit multiplier for signal <Product2_out1>.
+    Found 32-bit register for signal <Product2_out1_1>.
+    Found 16x16-bit multiplier for signal <Product4_out1>.
+    Found 32-bit register for signal <Product4_out1_1>.
+    Found 48-bit register for signal <reduced_reg>.
+    Found 16-bit register for signal <Sin_Coefficient_1>.
+    Summary:
+	inferred 224 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   4 Multiplier(s).
+Unit <Park_Transform> synthesized.
+
+
+Synthesizing Unit <Inv_Park_Transform>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Park_Transform.vhd".
+WARNING:Xst:646 - Signal <Product4_out1_1<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product3_out1_1<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product2_out1_1<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product1_out1_1<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add2_add_temp<16:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_sub_temp<16:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 33-bit subtractor for signal <Add1_sub_temp>.
+    Found 33-bit adder for signal <Add2_add_temp>.
+    Found 16-bit register for signal <D_1>.
+    Found 16x16-bit multiplier for signal <Product1_out1>.
+    Found 32-bit register for signal <Product1_out1_1>.
+    Found 16x16-bit multiplier for signal <Product2_out1>.
+    Found 32-bit register for signal <Product2_out1_1>.
+    Found 16x16-bit multiplier for signal <Product3_out1>.
+    Found 32-bit register for signal <Product3_out1_1>.
+    Found 16x16-bit multiplier for signal <Product4_out1>.
+    Found 32-bit register for signal <Product4_out1_1>.
+    Found 16-bit register for signal <Q_1>.
+    Found 80-bit register for signal <reduced_reg>.
+    Found 80-bit register for signal <reduced_reg_1>.
+    Summary:
+	inferred 320 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   4 Multiplier(s).
+Unit <Inv_Park_Transform> synthesized.
+
+
+Synthesizing Unit <Inv_Clarke_Transform>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Inv_Clarke_Transform.vhd".
+WARNING:Xst:646 - Signal <Gain_cast<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Gain1_mul_temp<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add_sub_temp<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_sub_temp<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 34-bit adder for signal <Add1_cast_1>.
+    Found 34-bit subtractor for signal <Add1_sub_temp>.
+    Found 34-bit subtractor for signal <Add_sub_temp>.
+    Found 16-bit register for signal <Beta_1>.
+    Found 16x16-bit multiplier for signal <Gain1_mul_temp>.
+    Found 32-bit register for signal <Gain1_out1_1>.
+    Found 64-bit register for signal <reduced_reg>.
+    Summary:
+	inferred 112 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <Inv_Clarke_Transform> synthesized.
+
+
+Synthesizing Unit <Space_Vector_Modulation>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Space_Vector_Modulation.vhd".
+WARNING:Xst:646 - Signal <Gain_cast<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add_add_temp<16:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_sub_temp<0><16:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_sub_temp<1><16:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_sub_temp<2><16:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 33-bit subtractor for signal <Add1_sub_temp>.
+    Found 33-bit adder for signal <Add_add_temp>.
+    Found 64-bit register for signal <delayMatch_reg>.
+    Found 32-bit comparator greatequal for signal <Max_stage1_1_val$cmp_ge0000> created at line 89.
+    Found 32-bit comparator greatequal for signal <Max_stage2_val$cmp_ge0000> created at line 95.
+    Found 32-bit comparator lessequal for signal <Min_stage1_1_val$cmp_le0000> created at line 100.
+    Found 32-bit comparator lessequal for signal <Min_stage2_val$cmp_le0000> created at line 108.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <Space_Vector_Modulation> synthesized.
+
+
+Synthesizing Unit <Sine_Cosine_LUT>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd".
+WARNING:Xst:646 - Signal <u_signed<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <u_signed<13:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <div_temp1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <div_temp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Negate_cast_1<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Negate1_cast_1<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 33x16-bit ROM for signal <add_cast$rom0000> created at line 179.
+    Found 33x16-bit ROM for signal <add_cast1$rom0000> created at line 319.
+    Found 33x49-bit ROM for signal <mul_temp_01$rom0000> created at line 347.
+    Found 33x49-bit ROM for signal <mul_temp_01$rom0001> created at line 319.
+    Found 33x49-bit ROM for signal <mul_temp_0$rom0000> created at line 207.
+    Found 33x49-bit ROM for signal <mul_temp_0$rom0001> created at line 179.
+WARNING:Xst:643 - "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd" line 348: The result of a 49x33-bit multiplication is partially used. Only the 49 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine_LUT.vhd" line 208: The result of a 49x33-bit multiplication is partially used. Only the 49 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 49-bit adder for signal <add_temp$add0000> created at line 211.
+    Found 49-bit adder for signal <add_temp1$add0000> created at line 351.
+    Found 17-bit subtractor for signal <Amp25_out1>.
+    Found 17-bit subtractor for signal <Amp50_out1>.
+    Found 17-bit subtractor for signal <Amp75_out1>.
+    Found 18-bit subtractor for signal <cast_0$sub0000> created at line 194.
+    Found 17-bit subtractor for signal <cast_01$sub0000> created at line 334.
+    Found 18-bit adder for signal <div_temp$add0000>.
+    Found 18-bit adder for signal <div_temp$addsub0000>.
+    Found 17-bit adder for signal <div_temp1$add0000>.
+    Found 17-bit adder for signal <div_temp1$addsub0000>.
+    Found 50-bit adder for signal <div_temp_0$add0000>.
+    Found 50-bit adder for signal <div_temp_0$addsub0000>.
+    Found 49-bit adder for signal <div_temp_01$add0000>.
+    Found 49-bit adder for signal <div_temp_01$addsub0000>.
+    Found 16-bit comparator greatequal for signal <GTEp75_relop1$cmp_ge0000> created at line 244.
+    Found 18-bit comparator greatequal for signal <k$cmp_ge0000> created at line 180.
+    Found 18-bit comparator lessequal for signal <k$cmp_le0000> created at line 179.
+    Found 17-bit comparator greatequal for signal <k1$cmp_ge0000> created at line 320.
+    Found 17-bit comparator lessequal for signal <k1$cmp_le0000> created at line 319.
+    Found 17-bit comparator lessequal for signal <LTEp251_relop1$cmp_le0000> created at line 144.
+    Found 16-bit comparator lessequal for signal <LTEp25_relop1$cmp_le0000> created at line 236.
+    Found 16-bit comparator lessequal for signal <LTEp501_relop1$cmp_le0000> created at line 119.
+    Found 16-bit comparator lessequal for signal <LTEp50_relop1$cmp_le0000> created at line 261.
+    Found 49-bit subtractor for signal <mul_temp_0$addsub0000> created at line 207.
+    Found 49x33-bit multiplier for signal <mul_temp_0$mult0000> created at line 208.
+    Found 49-bit subtractor for signal <mul_temp_01$addsub0000> created at line 347.
+    Found 49x33-bit multiplier for signal <mul_temp_01$mult0000> created at line 348.
+    Found 6-bit adder for signal <n0001$addsub0000> created at line 203.
+    Found 6-bit adder for signal <n0003$addsub0000> created at line 343.
+    Found 17-bit adder for signal <Negate1_cast_1>.
+    Found 17-bit adder for signal <Negate_cast_1>.
+    Found 17-bit adder for signal <p25mA_out1>.
+    Found 18-bit adder for signal <p50mA_out1>.
+    Found 17-bit adder for signal <p75mA_out1>.
+    Summary:
+	inferred   6 ROM(s).
+	inferred  24 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred   9 Comparator(s).
+Unit <Sine_Cosine_LUT> synthesized.
+
+
+Synthesizing Unit <Saturate_Output>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output.vhd".
+WARNING:Xst:646 - Signal <Negate_out1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Negate_cast_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit comparator greater for signal <Saturation_Dynamic_out1$cmp_gt0000> created at line 56.
+    Found 32-bit comparator less for signal <Saturation_Dynamic_out1$cmp_lt0000> created at line 56.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <Saturate_Output> synthesized.
+
+
+Synthesizing Unit <Saturate_Output_block>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Saturate_Output_block.vhd".
+WARNING:Xst:646 - Signal <Negate_out1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Negate_cast_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit comparator greater for signal <Saturation_Dynamic_out1$cmp_gt0000> created at line 56.
+    Found 32-bit comparator less for signal <Saturation_Dynamic_out1$cmp_lt0000> created at line 56.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <Saturate_Output_block> synthesized.
+
+
+Synthesizing Unit <Sine_Cosine>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Sine_Cosine.vhd".
+WARNING:Xst:646 - Signal <Normalize_Position_mul_temp<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x16-bit multiplier for signal <Normalize_Position_mul_temp>.
+    Found 32-bit register for signal <Normalize_Position_out1_1>.
+    Found 16-bit register for signal <P_1>.
+    Summary:
+	inferred  48 D-type flip-flop(s).
+	inferred   1 Multiplier(s).
+Unit <Sine_Cosine> synthesized.
+
+
+Synthesizing Unit <D_Current_Control>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/D_Current_Control.vhd".
+WARNING:Xst:1780 - Signal <currentControlError_2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Zero_out1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Voltage_2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product_mul_temp<31:24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product_mul_temp<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product1_mul_temp<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Error_sub_temp<32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Error_sub_temp<15:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add_add_temp<36>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add_add_temp<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_add_temp<40:39>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_add_temp<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 41-bit adder for signal <Add1_add_temp>.
+    Found 37-bit adder for signal <Add_add_temp>.
+    Found 16-bit register for signal <currentControlError_1>.
+    Found 32-bit register for signal <currentControlITerm>.
+    Found 64-bit register for signal <delayMatch_reg>.
+    Found 33-bit subtractor for signal <Error_sub_temp>.
+    Found 64-bit register for signal <HwModeRegister3_reg>.
+    Found 80-bit register for signal <HwModeRegister4_reg>.
+    Found 32-bit comparator not equal for signal <Not_Equal_relop1$cmp_ne0000> created at line 241.
+    Found 16-bit register for signal <paramCurrentControlI_1>.
+    Found 16x16-bit multiplier for signal <Product1_mul_temp>.
+    Found 32-bit register for signal <Product1_out1_1>.
+    Found 16x16-bit multiplier for signal <Product2_out1>.
+    Found 32-bit register for signal <Product2_out1_1>.
+    Found 16x16-bit multiplier for signal <Product_mul_temp>.
+    Found 16-bit register for signal <sampleTime_1>.
+    Found 32-bit comparator greater for signal <Saturate_out1$cmp_gt0000> created at line 257.
+    Found 32-bit comparator less for signal <Saturate_out1$cmp_lt0000> created at line 257.
+    Summary:
+	inferred 352 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   3 Multiplier(s).
+	inferred   3 Comparator(s).
+Unit <D_Current_Control> synthesized.
+
+
+Synthesizing Unit <Q_Current_Control>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/Q_Current_Control.vhd".
+WARNING:Xst:1780 - Signal <currentControlError_2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Zero_out1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Voltage_2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product_mul_temp<31:24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product_mul_temp<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Product1_mul_temp<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Error_sub_temp<32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Error_sub_temp<15:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add_add_temp<36>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add_add_temp<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_add_temp<40:39>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Add1_add_temp<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 41-bit adder for signal <Add1_add_temp>.
+    Found 37-bit adder for signal <Add_add_temp>.
+    Found 16-bit register for signal <currentControlError_1>.
+    Found 32-bit register for signal <currentControlITerm>.
+    Found 16x16-bit multiplier for signal <currentControlPTerm>.
+    Found 32-bit register for signal <currentControlPTerm_1>.
+    Found 64-bit register for signal <delayMatch_reg>.
+    Found 33-bit subtractor for signal <Error_sub_temp>.
+    Found 64-bit register for signal <HwModeRegister3_reg>.
+    Found 80-bit register for signal <HwModeRegister4_reg>.
+    Found 32-bit comparator not equal for signal <Not_Equal_relop1$cmp_ne0000> created at line 241.
+    Found 16-bit register for signal <paramCurrentControlI_1>.
+    Found 16x16-bit multiplier for signal <Product1_mul_temp>.
+    Found 32-bit register for signal <Product1_out1_1>.
+    Found 16x16-bit multiplier for signal <Product_mul_temp>.
+    Found 16-bit register for signal <sampleTime_1>.
+    Found 32-bit comparator greater for signal <Saturate_out1$cmp_gt0000> created at line 257.
+    Found 32-bit comparator less for signal <Saturate_out1$cmp_lt0000> created at line 257.
+    Summary:
+	inferred 352 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   3 Multiplier(s).
+	inferred   3 Comparator(s).
+Unit <Q_Current_Control> synthesized.
+
+
+Synthesizing Unit <DQ_Current_Control>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/DQ_Current_Control.vhd".
+Unit <DQ_Current_Control> synthesized.
+
+
+Synthesizing Unit <controller>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/FOC/FOC_v3/controller.vhd".
+WARNING:Xst:647 - Input <freq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 84-bit adder for signal <Add1_out1>.
+    Found 84-bit adder for signal <Add2_out1>.
+    Found 84-bit adder for signal <Add_out1>.
+    Found 16-bit register for signal <Delay_1_out1>.
+    Found 16-bit register for signal <Delay_2_out1>.
+    Found 16-bit register for signal <Delay_3_out1>.
+    Found 16-bit register for signal <Delay_4_out1>.
+    Found 16-bit register for signal <Delay_5_out1>.
+    Found 16-bit register for signal <Delay_6_out1>.
+    Found 16-bit register for signal <Delay_7_out1>.
+    Summary:
+	inferred 112 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <controller> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 33x16-bit ROM                                         : 2
+ 33x49-bit ROM                                         : 4
+# Multipliers                                          : 20
+ 16x16-bit multiplier                                  : 18
+ 49x33-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 45
+ 17-bit adder                                          : 6
+ 17-bit subtractor                                     : 4
+ 18-bit adder                                          : 3
+ 18-bit subtractor                                     : 1
+ 33-bit adder                                          : 2
+ 33-bit subtractor                                     : 6
+ 34-bit adder                                          : 3
+ 34-bit subtractor                                     : 3
+ 37-bit adder                                          : 2
+ 41-bit adder                                          : 2
+ 49-bit adder                                          : 4
+ 49-bit subtractor                                     : 2
+ 50-bit adder                                          : 2
+ 6-bit adder                                           : 2
+ 84-bit adder                                          : 3
+# Registers                                            : 83
+ 16-bit register                                       : 61
+ 32-bit register                                       : 22
+# Comparators                                          : 23
+ 16-bit comparator greatequal                          : 1
+ 16-bit comparator lessequal                           : 3
+ 17-bit comparator greatequal                          : 1
+ 17-bit comparator lessequal                           : 2
+ 18-bit comparator greatequal                          : 1
+ 18-bit comparator lessequal                           : 1
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator greater                             : 4
+ 32-bit comparator less                                : 4
+ 32-bit comparator lessequal                           : 2
+ 32-bit comparator not equal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <Alpha_Gain_out1_1_0> in Unit <u_Clarke_Transform> is equivalent to the following 3 FFs/Latches, which will be removed : <Alpha_Gain_out1_1_1> <Beta_Gain_out1_1_0> <Beta_Gain_out1_1_1> 
+INFO:Xst:2261 - The FF/Latch <paramCurrentControlI_1_4> in Unit <u_D_Current_Control> is equivalent to the following 12 FFs/Latches, which will be removed : <paramCurrentControlI_1_6> <paramCurrentControlI_1_7> <paramCurrentControlI_1_8> <paramCurrentControlI_1_9> <paramCurrentControlI_1_10> <sampleTime_1_1> <sampleTime_1_2> <sampleTime_1_3> <sampleTime_1_7> <sampleTime_1_9> <sampleTime_1_10> <HwModeRegister4_reg_0_3> 
+INFO:Xst:2261 - The FF/Latch <paramCurrentControlI_1_0> in Unit <u_D_Current_Control> is equivalent to the following 51 FFs/Latches, which will be removed : <paramCurrentControlI_1_1> <paramCurrentControlI_1_2> <paramCurrentControlI_1_3> <paramCurrentControlI_1_5> <paramCurrentControlI_1_11> <paramCurrentControlI_1_12> <paramCurrentControlI_1_13> <paramCurrentControlI_1_14> <paramCurrentControlI_1_15> <sampleTime_1_0> <sampleTime_1_4> <sampleTime_1_5> <sampleTime_1_6> <sampleTime_1_8> <sampleTime_1_11> <sampleTime_1_12> <sampleTime_1_13> <sampleTime_1_14> <sampleTime_1_15> <HwModeRegister4_reg_0_0> <HwModeRegister4_reg_0_1> <HwModeRegister4_reg_0_2> <HwModeRegister4_reg_0_4> <HwModeRegister4_reg_0_5> <HwModeRegister4_reg_0_6> <HwModeRegister4_reg_0_7> <HwModeRegister4_reg_0_8> <HwModeRegister4_reg_0_9> <HwModeRegister4_reg_0_10> <HwModeRegister4_reg_0_11> <HwModeRegister4_reg_0_12> <HwModeRegister4_reg_0_13> <HwModeRegister4_reg_0_14> <HwModeRegister4_reg_0_15> <delayMatch_reg_0_0> <delayMatch_reg_0_1>
+   <delayMatch_reg_0_2> <delayMatch_reg_0_3> <delayMatch_reg_0_4> <delayMatch_reg_0_5> <delayMatch_reg_0_6> <delayMatch_reg_0_7> <delayMatch_reg_0_8> <delayMatch_reg_0_9> <delayMatch_reg_0_10> <delayMatch_reg_0_11> <delayMatch_reg_0_12> <delayMatch_reg_0_13> <delayMatch_reg_0_14> <delayMatch_reg_0_15> <Product1_out1_1_0> 
+INFO:Xst:2261 - The FF/Latch <HwModeRegister4_reg_1_0> in Unit <u_D_Current_Control> is equivalent to the following 30 FFs/Latches, which will be removed : <HwModeRegister4_reg_1_1> <HwModeRegister4_reg_1_2> <HwModeRegister4_reg_1_4> <HwModeRegister4_reg_1_5> <HwModeRegister4_reg_1_6> <HwModeRegister4_reg_1_7> <HwModeRegister4_reg_1_8> <HwModeRegister4_reg_1_9> <HwModeRegister4_reg_1_10> <HwModeRegister4_reg_1_11> <HwModeRegister4_reg_1_12> <HwModeRegister4_reg_1_13> <HwModeRegister4_reg_1_14> <HwModeRegister4_reg_1_15> <delayMatch_reg_1_0> <delayMatch_reg_1_1> <delayMatch_reg_1_2> <delayMatch_reg_1_3> <delayMatch_reg_1_4> <delayMatch_reg_1_5> <delayMatch_reg_1_6> <delayMatch_reg_1_7> <delayMatch_reg_1_8> <delayMatch_reg_1_9> <delayMatch_reg_1_10> <delayMatch_reg_1_11> <delayMatch_reg_1_12> <delayMatch_reg_1_13> <delayMatch_reg_1_14> <delayMatch_reg_1_15> 
+INFO:Xst:2261 - The FF/Latch <paramCurrentControlI_1_4> in Unit <u_Q_Current_Control> is equivalent to the following 12 FFs/Latches, which will be removed : <paramCurrentControlI_1_6> <paramCurrentControlI_1_7> <paramCurrentControlI_1_8> <paramCurrentControlI_1_9> <paramCurrentControlI_1_10> <sampleTime_1_1> <sampleTime_1_2> <sampleTime_1_3> <sampleTime_1_7> <sampleTime_1_9> <sampleTime_1_10> <HwModeRegister4_reg_0_3> 
+INFO:Xst:2261 - The FF/Latch <paramCurrentControlI_1_0> in Unit <u_Q_Current_Control> is equivalent to the following 35 FFs/Latches, which will be removed : <paramCurrentControlI_1_1> <paramCurrentControlI_1_2> <paramCurrentControlI_1_3> <paramCurrentControlI_1_5> <paramCurrentControlI_1_11> <paramCurrentControlI_1_12> <paramCurrentControlI_1_13> <paramCurrentControlI_1_14> <paramCurrentControlI_1_15> <sampleTime_1_0> <sampleTime_1_4> <sampleTime_1_5> <sampleTime_1_6> <sampleTime_1_8> <sampleTime_1_11> <sampleTime_1_12> <sampleTime_1_13> <sampleTime_1_14> <sampleTime_1_15> <HwModeRegister4_reg_0_0> <HwModeRegister4_reg_0_1> <HwModeRegister4_reg_0_2> <HwModeRegister4_reg_0_4> <HwModeRegister4_reg_0_5> <HwModeRegister4_reg_0_6> <HwModeRegister4_reg_0_7> <HwModeRegister4_reg_0_8> <HwModeRegister4_reg_0_9> <HwModeRegister4_reg_0_10> <HwModeRegister4_reg_0_11> <HwModeRegister4_reg_0_12> <HwModeRegister4_reg_0_13> <HwModeRegister4_reg_0_14> <HwModeRegister4_reg_0_15> <Product1_out1_1_0> 
+INFO:Xst:2261 - The FF/Latch <HwModeRegister4_reg_1_0> in Unit <u_Q_Current_Control> is equivalent to the following 14 FFs/Latches, which will be removed : <HwModeRegister4_reg_1_1> <HwModeRegister4_reg_1_2> <HwModeRegister4_reg_1_4> <HwModeRegister4_reg_1_5> <HwModeRegister4_reg_1_6> <HwModeRegister4_reg_1_7> <HwModeRegister4_reg_1_8> <HwModeRegister4_reg_1_9> <HwModeRegister4_reg_1_10> <HwModeRegister4_reg_1_11> <HwModeRegister4_reg_1_12> <HwModeRegister4_reg_1_13> <HwModeRegister4_reg_1_14> <HwModeRegister4_reg_1_15> 
+INFO:Xst:2261 - The FF/Latch <HwModeRegister4_reg_2_0> in Unit <u_D_Current_Control> is equivalent to the following 30 FFs/Latches, which will be removed : <HwModeRegister4_reg_2_1> <HwModeRegister4_reg_2_2> <HwModeRegister4_reg_2_4> <HwModeRegister4_reg_2_5> <HwModeRegister4_reg_2_6> <HwModeRegister4_reg_2_7> <HwModeRegister4_reg_2_8> <HwModeRegister4_reg_2_9> <HwModeRegister4_reg_2_10> <HwModeRegister4_reg_2_11> <HwModeRegister4_reg_2_12> <HwModeRegister4_reg_2_13> <HwModeRegister4_reg_2_14> <HwModeRegister4_reg_2_15> <delayMatch_reg_2_0> <delayMatch_reg_2_1> <delayMatch_reg_2_2> <delayMatch_reg_2_3> <delayMatch_reg_2_4> <delayMatch_reg_2_5> <delayMatch_reg_2_6> <delayMatch_reg_2_7> <delayMatch_reg_2_8> <delayMatch_reg_2_9> <delayMatch_reg_2_10> <delayMatch_reg_2_11> <delayMatch_reg_2_12> <delayMatch_reg_2_13> <delayMatch_reg_2_14> <delayMatch_reg_2_15> 
+INFO:Xst:2261 - The FF/Latch <HwModeRegister4_reg_2_0> in Unit <u_Q_Current_Control> is equivalent to the following 14 FFs/Latches, which will be removed : <HwModeRegister4_reg_2_1> <HwModeRegister4_reg_2_2> <HwModeRegister4_reg_2_4> <HwModeRegister4_reg_2_5> <HwModeRegister4_reg_2_6> <HwModeRegister4_reg_2_7> <HwModeRegister4_reg_2_8> <HwModeRegister4_reg_2_9> <HwModeRegister4_reg_2_10> <HwModeRegister4_reg_2_11> <HwModeRegister4_reg_2_12> <HwModeRegister4_reg_2_13> <HwModeRegister4_reg_2_14> <HwModeRegister4_reg_2_15> 
+INFO:Xst:2261 - The FF/Latch <HwModeRegister4_reg_3_0> in Unit <u_D_Current_Control> is equivalent to the following 30 FFs/Latches, which will be removed : <HwModeRegister4_reg_3_1> <HwModeRegister4_reg_3_2> <HwModeRegister4_reg_3_4> <HwModeRegister4_reg_3_5> <HwModeRegister4_reg_3_6> <HwModeRegister4_reg_3_7> <HwModeRegister4_reg_3_8> <HwModeRegister4_reg_3_9> <HwModeRegister4_reg_3_10> <HwModeRegister4_reg_3_11> <HwModeRegister4_reg_3_12> <HwModeRegister4_reg_3_13> <HwModeRegister4_reg_3_14> <HwModeRegister4_reg_3_15> <delayMatch_reg_3_0> <delayMatch_reg_3_1> <delayMatch_reg_3_2> <delayMatch_reg_3_3> <delayMatch_reg_3_4> <delayMatch_reg_3_5> <delayMatch_reg_3_6> <delayMatch_reg_3_7> <delayMatch_reg_3_8> <delayMatch_reg_3_9> <delayMatch_reg_3_10> <delayMatch_reg_3_11> <delayMatch_reg_3_12> <delayMatch_reg_3_13> <delayMatch_reg_3_14> <delayMatch_reg_3_15> 
+INFO:Xst:2261 - The FF/Latch <HwModeRegister4_reg_3_0> in Unit <u_Q_Current_Control> is equivalent to the following 14 FFs/Latches, which will be removed : <HwModeRegister4_reg_3_1> <HwModeRegister4_reg_3_2> <HwModeRegister4_reg_3_4> <HwModeRegister4_reg_3_5> <HwModeRegister4_reg_3_6> <HwModeRegister4_reg_3_7> <HwModeRegister4_reg_3_8> <HwModeRegister4_reg_3_9> <HwModeRegister4_reg_3_10> <HwModeRegister4_reg_3_11> <HwModeRegister4_reg_3_12> <HwModeRegister4_reg_3_13> <HwModeRegister4_reg_3_14> <HwModeRegister4_reg_3_15> 
+INFO:Xst:2261 - The FF/Latch <HwModeRegister4_reg_4_0> in Unit <u_D_Current_Control> is equivalent to the following 14 FFs/Latches, which will be removed : <HwModeRegister4_reg_4_1> <HwModeRegister4_reg_4_2> <HwModeRegister4_reg_4_4> <HwModeRegister4_reg_4_5> <HwModeRegister4_reg_4_6> <HwModeRegister4_reg_4_7> <HwModeRegister4_reg_4_8> <HwModeRegister4_reg_4_9> <HwModeRegister4_reg_4_10> <HwModeRegister4_reg_4_11> <HwModeRegister4_reg_4_12> <HwModeRegister4_reg_4_13> <HwModeRegister4_reg_4_14> <HwModeRegister4_reg_4_15> 
+INFO:Xst:2261 - The FF/Latch <HwModeRegister4_reg_4_0> in Unit <u_Q_Current_Control> is equivalent to the following 14 FFs/Latches, which will be removed : <HwModeRegister4_reg_4_1> <HwModeRegister4_reg_4_2> <HwModeRegister4_reg_4_4> <HwModeRegister4_reg_4_5> <HwModeRegister4_reg_4_6> <HwModeRegister4_reg_4_7> <HwModeRegister4_reg_4_8> <HwModeRegister4_reg_4_9> <HwModeRegister4_reg_4_10> <HwModeRegister4_reg_4_11> <HwModeRegister4_reg_4_12> <HwModeRegister4_reg_4_13> <HwModeRegister4_reg_4_14> <HwModeRegister4_reg_4_15> 
+INFO:Xst:2261 - The FF/Latch <reduced_reg_0_0> in Unit <u_Inv_Clarke_Transform> is equivalent to the following 16 FFs/Latches, which will be removed : <reduced_reg_0_1> <reduced_reg_0_2> <reduced_reg_0_3> <reduced_reg_0_4> <reduced_reg_0_5> <reduced_reg_0_6> <reduced_reg_0_7> <reduced_reg_0_8> <reduced_reg_0_9> <reduced_reg_0_10> <reduced_reg_0_11> <reduced_reg_0_12> <reduced_reg_0_13> <reduced_reg_0_14> <reduced_reg_0_15> <Gain1_out1_1_0> 
+INFO:Xst:2261 - The FF/Latch <reduced_reg_1_0> in Unit <u_Inv_Clarke_Transform> is equivalent to the following 15 FFs/Latches, which will be removed : <reduced_reg_1_1> <reduced_reg_1_2> <reduced_reg_1_3> <reduced_reg_1_4> <reduced_reg_1_5> <reduced_reg_1_6> <reduced_reg_1_7> <reduced_reg_1_8> <reduced_reg_1_9> <reduced_reg_1_10> <reduced_reg_1_11> <reduced_reg_1_12> <reduced_reg_1_13> <reduced_reg_1_14> <reduced_reg_1_15> 
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_14> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_13> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_12> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_11> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_10> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_9> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_8> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_7> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_6> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_5> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_4> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_3> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_2> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_1> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <delayMatch_reg_0_0> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reduced_reg_0_0> (without init value) has a constant value of 0 in block <u_Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Alpha_Gain_out1_1_0> (without init value) has a constant value of 0 in block <u_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <paramCurrentControlI_1_0> (without init value) has a constant value of 0 in block <u_D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <paramCurrentControlI_1_0> (without init value) has a constant value of 0 in block <u_Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_3> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_4> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_5> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_6> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_7> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_8> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_9> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_10> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_11> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_12> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_13> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_14> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_2> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_1> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_1_0> (without init value) has a constant value of 0 in block <u_Space_Vector_Modulation>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_1_0> (without init value) has a constant value of 0 in block <u_D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_1_0> (without init value) has a constant value of 0 in block <u_Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_0> (without init value) has a constant value of 0 in block <u_Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_2_0> (without init value) has a constant value of 0 in block <u_D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_2_0> (without init value) has a constant value of 0 in block <u_Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_3_0> (without init value) has a constant value of 0 in block <u_D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_3_0> (without init value) has a constant value of 0 in block <u_Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_4_0> (without init value) has a constant value of 0 in block <u_D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_4_0> (without init value) has a constant value of 0 in block <u_Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_0> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_1> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_2> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_3> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_4> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_5> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_6> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_7> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_8> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_9> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_10> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_11> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_12> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_13> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_30> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Normalize_Position_out1_1_31> of sequential type is unconnected in block <u_Sine_Cosine>.
+WARNING:Xst:2677 - Node <Product4_out1_1_30> of sequential type is unconnected in block <u_Park_Transform>.
+WARNING:Xst:2677 - Node <Product4_out1_1_31> of sequential type is unconnected in block <u_Park_Transform>.
+WARNING:Xst:2677 - Node <Product2_out1_1_30> of sequential type is unconnected in block <u_Park_Transform>.
+WARNING:Xst:2677 - Node <Product2_out1_1_31> of sequential type is unconnected in block <u_Park_Transform>.
+WARNING:Xst:2677 - Node <Product1_out1_1_30> of sequential type is unconnected in block <u_Park_Transform>.
+WARNING:Xst:2677 - Node <Product1_out1_1_31> of sequential type is unconnected in block <u_Park_Transform>.
+WARNING:Xst:2677 - Node <Produc3t_out1_1_30> of sequential type is unconnected in block <u_Park_Transform>.
+WARNING:Xst:2677 - Node <Produc3t_out1_1_31> of sequential type is unconnected in block <u_Park_Transform>.
+WARNING:Xst:2677 - Node <Product_mul_temp_0> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_1> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_2> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_3> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_4> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_5> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_6> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_7> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_24> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_25> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_26> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_27> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_28> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_29> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_30> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_31> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_0> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_1> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_2> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_3> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_4> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_5> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_6> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_7> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_24> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_25> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_26> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_27> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_28> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_29> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_30> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N0_31> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_0> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_1> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_2> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_3> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_4> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_5> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_6> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_7> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_24> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_25> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_26> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_27> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_28> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_29> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_30> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N1_31> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_0> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_1> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_2> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_3> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_4> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_5> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_6> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_7> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_24> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_25> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_26> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_27> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_28> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_29> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_30> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <N2_31> of sequential type is unconnected in block <u_D_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_0> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_1> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_2> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_3> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_4> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_5> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_6> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_7> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_24> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_25> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_26> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_27> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_28> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_29> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_30> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product_mul_temp_31> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_0> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_1> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_2> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_3> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_4> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_5> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_6> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_7> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_24> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_25> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_26> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_27> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_28> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_29> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_30> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N0_31> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_0> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_1> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_2> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_3> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_4> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_5> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_6> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_7> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_24> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_25> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_26> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_27> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_28> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_29> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_30> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N1_31> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_0> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_1> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_2> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_3> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_4> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_5> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_6> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_7> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_24> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_25> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_26> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_27> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_28> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_29> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_30> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <N2_31> of sequential type is unconnected in block <u_Q_Current_Control>.
+WARNING:Xst:2677 - Node <Product1_out1_1_30> of sequential type is unconnected in block <u_Inv_Park_Transform>.
+WARNING:Xst:2677 - Node <Product1_out1_1_31> of sequential type is unconnected in block <u_Inv_Park_Transform>.
+WARNING:Xst:2677 - Node <Product4_out1_1_30> of sequential type is unconnected in block <u_Inv_Park_Transform>.
+WARNING:Xst:2677 - Node <Product4_out1_1_31> of sequential type is unconnected in block <u_Inv_Park_Transform>.
+WARNING:Xst:2677 - Node <Product3_out1_1_30> of sequential type is unconnected in block <u_Inv_Park_Transform>.
+WARNING:Xst:2677 - Node <Product3_out1_1_31> of sequential type is unconnected in block <u_Inv_Park_Transform>.
+WARNING:Xst:2677 - Node <Product2_out1_1_30> of sequential type is unconnected in block <u_Inv_Park_Transform>.
+WARNING:Xst:2677 - Node <Product2_out1_1_31> of sequential type is unconnected in block <u_Inv_Park_Transform>.
+WARNING:Xst:2404 -  FFs/Latches <paramCurrentControlI_1<15:11>> (without init value) have a constant value of 0 in block <D_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <sampleTime_1<15:11>> (without init value) have a constant value of 0 in block <D_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <HwModeRegister4_reg_0<15:4>> (without init value) have a constant value of 0 in block <D_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg_0<15:0>> (without init value) have a constant value of 0 in block <D_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <paramCurrentControlI_1<15:11>> (without init value) have a constant value of 0 in block <Q_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <sampleTime_1<15:11>> (without init value) have a constant value of 0 in block <Q_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <HwModeRegister4_reg_0<15:4>> (without init value) have a constant value of 0 in block <Q_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <HwModeRegister4_reg_1<15:4>> (without init value) have a constant value of 0 in block <D_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg_1<15:0>> (without init value) have a constant value of 0 in block <D_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <HwModeRegister4_reg_1<15:4>> (without init value) have a constant value of 0 in block <Q_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <HwModeRegister4_reg_2<15:4>> (without init value) have a constant value of 0 in block <D_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg_2<15:0>> (without init value) have a constant value of 0 in block <D_Current_Control>.
+WARNING:Xst:2404 -  FFs/Latches <HwModeRegister4_reg_2<15:4>> (without init value) have a constant value of 0 in block <Q_Current_Control>.
+
+Synthesizing (advanced) Unit <D_Current_Control>.
+	Found pipelined multiplier on signal <Product1_mul_temp>:
+		- 1 pipeline level(s) found in a register on signal <currentControlError_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <N3>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <Product2_out1>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <HwModeRegister4_reg<4>>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <currentControlError_1>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <Product_mul_temp>:
+		- 2 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <paramCurrentControlI_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <sampleTime_1>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product1_mul_temp by adding 2 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product2_out1 by adding 1 register level(s).
+Unit <D_Current_Control> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Inv_Clarke_Transform>.
+	Found pipelined multiplier on signal <Gain1_mul_temp>:
+		- 1 pipeline level(s) found in a register on signal <Beta_1>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Gain1_mul_temp by adding 2 register level(s).
+Unit <Inv_Clarke_Transform> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Inv_Park_Transform>.
+	Found pipelined multiplier on signal <Product1_out1>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <D_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <reduced_reg<4>>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <Product2_out1>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <Q_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <reduced_reg_1<4>>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <Product3_out1>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <D_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <reduced_reg_1<4>>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <Product4_out1>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <Q_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <reduced_reg<4>>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product1_out1 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product2_out1 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product3_out1 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product4_out1 by adding 1 register level(s).
+Unit <Inv_Park_Transform> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Park_Transform>.
+	Found pipelined multiplier on signal <Product1_out1>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <reduced_reg<2>>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <Cos_Coefficient_1>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <Produc3t_out1>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <reduced_reg<2>>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <Sin_Coefficient_1>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <Product2_out1>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <Beta_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <Sin_Coefficient_1>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <Product4_out1>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <Beta_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <Cos_Coefficient_1>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product1_out1 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Produc3t_out1 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product2_out1 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product4_out1 by adding 1 register level(s).
+Unit <Park_Transform> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Q_Current_Control>.
+	Found pipelined multiplier on signal <Product1_mul_temp>:
+		- 1 pipeline level(s) found in a register on signal <currentControlError_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <N3>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <currentControlPTerm>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 2 pipeline level(s) found in a register on signal <HwModeRegister4_reg<4>>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <currentControlError_1>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <Product_mul_temp>:
+		- 2 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <paramCurrentControlI_1>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <sampleTime_1>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_Product1_mul_temp by adding 2 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_currentControlPTerm by adding 1 register level(s).
+Unit <Q_Current_Control> synthesized (advanced).
+
+Synthesizing (advanced) Unit <controller>.
+	Found pipelined multiplier on signal <u_Clarke_Transform/Beta_Gain_mul_temp>:
+		- 2 pipeline level(s) found in a register on signal <u_Clarke_Transform/Phase_Current_B_1>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <u_Clarke_Transform/Alpha_Gain_mul_temp>:
+		- 2 pipeline level(s) found in a register on signal <u_Clarke_Transform/Phase_Current_A_1>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <u_Sine_Cosine/Normalize_Position_mul_temp>:
+		- 2 pipeline level(s) found in a register on signal <u_Sine_Cosine/P_1>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier u_Clarke_Transform/Mmult_Beta_Gain_mul_temp by adding 2 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier u_Clarke_Transform/Mmult_Alpha_Gain_mul_temp by adding 2 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier u_Sine_Cosine/Mmult_Normalize_Position_mul_temp by adding 2 register level(s).
+Unit <controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 33x16-bit ROM                                         : 2
+ 33x49-bit ROM                                         : 4
+# Multipliers                                          : 20
+ 12x12-bit registered multiplier                       : 2
+ 16x16-bit registered multiplier                       : 16
+ 49x33-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 45
+ 15-bit adder                                          : 2
+ 16-bit adder                                          : 2
+ 17-bit adder                                          : 2
+ 17-bit subtractor                                     : 4
+ 18-bit adder                                          : 1
+ 18-bit subtractor                                     : 1
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 2
+ 33-bit adder                                          : 3
+ 33-bit subtractor                                     : 5
+ 34-bit adder                                          : 2
+ 34-bit subtractor                                     : 2
+ 36-bit adder                                          : 2
+ 39-bit adder                                          : 2
+ 41-bit adder                                          : 2
+ 48-bit adder                                          : 2
+ 49-bit subtractor                                     : 2
+ 6-bit adder                                           : 4
+ 84-bit adder                                          : 3
+# Registers                                            : 648
+ Flip-Flops                                            : 648
+# Comparators                                          : 23
+ 16-bit comparator greatequal                          : 1
+ 16-bit comparator lessequal                           : 3
+ 17-bit comparator greatequal                          : 1
+ 17-bit comparator lessequal                           : 2
+ 18-bit comparator greatequal                          : 1
+ 18-bit comparator lessequal                           : 1
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator greater                             : 4
+ 32-bit comparator less                                : 4
+ 32-bit comparator lessequal                           : 2
+ 32-bit comparator not equal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <Gain1_out1_1_0> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_15> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_14> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_13> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_12> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_11> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_10> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_9> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_0> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_1> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_2> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_3> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_4> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_5> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_6> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_7> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_0_8> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_15> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_14> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_13> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_12> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_11> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_10> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_9> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_8> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_7> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_6> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_5> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_4> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_3> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_2> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_1> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reduced_reg_1_0> (without init value) has a constant value of 0 in block <Inv_Clarke_Transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Product1_out1_1_0> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_0_2> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_0_1> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_0_0> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_15> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_14> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_13> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_12> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_11> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_10> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_9> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_8> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_7> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_6> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_5> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_4> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_3> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_2> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_1> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <delayMatch_reg_3_0> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_1_0> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_1_1> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_1_2> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_2_0> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_2_1> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_2_2> (without init value) has a constant value of 0 in block <D_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <HwModeRegister4_reg_0_0> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_0_1> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_0_2> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Product1_out1_1_0> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_1_0> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_1_1> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_1_2> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_2_0> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_2_1> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <HwModeRegister4_reg_2_2> (without init value) has a constant value of 0 in block <Q_Current_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u_Clarke_Transform/Beta_Gain_out1_1_0> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Clarke_Transform/Beta_Gain_out1_1_1> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Clarke_Transform/Alpha_Gain_out1_1_0> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Clarke_Transform/Alpha_Gain_out1_1_1> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Sine_Cosine/Normalize_Position_out1_1_0> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Mmult_mul_temp_01_mult0000_submult_11> of sequential type is unconnected in block <Sine_Cosine_LUT>.
+WARNING:Xst:2677 - Node <Mmult_mul_temp_0_mult0000_submult_11> of sequential type is unconnected in block <Sine_Cosine_LUT>.
+
+Optimizing unit <controller> ...
+
+Optimizing unit <Inv_Park_Transform> ...
+
+Optimizing unit <Inv_Clarke_Transform> ...
+
+Optimizing unit <Space_Vector_Modulation> ...
+
+Optimizing unit <Sine_Cosine_LUT> ...
+
+Optimizing unit <Saturate_Output> ...
+
+Optimizing unit <Saturate_Output_block> ...
+
+Optimizing unit <D_Current_Control> ...
+
+Optimizing unit <Q_Current_Control> ...
+WARNING:Xst:1710 - FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_0> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_1> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_2> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_3> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_4> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_5> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_6> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_7> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_8> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_9> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_10> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_11> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_12> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_13> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_0_14> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_0> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_1> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_2> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_3> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_4> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_5> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_6> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_7> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_8> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_9> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_10> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_11> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_12> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_13> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_Space_Vector_Modulation/delayMatch_reg_1_14> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_22> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_21> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_20> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_19> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_30> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_29> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_18> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_17> 
+INFO:Xst:2261 - The FF/Latch <u_DQ_Current_Control/u_D_Current_Control/HwModeRegister4_reg_0_3> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_DQ_Current_Control/u_Q_Current_Control/HwModeRegister4_reg_0_3> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_28> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_27> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_16> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_15> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_26> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_25> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_25> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_24> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_23> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_22> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_21> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_20> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_31> in Unit <controller> is equivalent to the following 2 FFs/Latches, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_31> <u_Space_Vector_Modulation/delayMatch_reg_0_30> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_19> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_18> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_29> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_28> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_17> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_16> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_27> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_26> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_0_24> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_0_23> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_21> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_20> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_16> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_15> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_22> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_21> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_17> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_16> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_23> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_22> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_18> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_17> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_24> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_23> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_19> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_18> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_30> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_29> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_25> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_24> 
+INFO:Xst:2261 - The FF/Latch <u_DQ_Current_Control/u_D_Current_Control/HwModeRegister4_reg_1_3> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_DQ_Current_Control/u_Q_Current_Control/HwModeRegister4_reg_1_3> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_31> in Unit <controller> is equivalent to the following 2 FFs/Latches, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_31> <u_Space_Vector_Modulation/delayMatch_reg_1_30> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_26> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_25> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_27> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_26> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_28> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_27> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_29> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_28> 
+INFO:Xst:2261 - The FF/Latch <u_Inv_Clarke_Transform/reduced_reg_1_20> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_Space_Vector_Modulation/delayMatch_reg_1_19> 
+INFO:Xst:2261 - The FF/Latch <u_DQ_Current_Control/u_D_Current_Control/HwModeRegister4_reg_2_3> in Unit <controller> is equivalent to the following FF/Latch, which will be removed : <u_DQ_Current_Control/u_Q_Current_Control/HwModeRegister4_reg_2_3> 
+Found area constraint ratio of 100 (+ 5) on block controller, actual ratio is 6.
+
+Final Macro Processing ...
+
+Processing Unit <controller> :
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_15>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_14>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_13>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_12>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_11>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_10>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_9>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_8>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_7>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_6>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_5>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_4>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_3>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_2>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_1>.
+	Found 5-bit shift register for signal <u_DQ_Current_Control/u_Q_Current_Control/delayMatch_reg_3_0>.
+Unit <controller> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 243
+ Flip-Flops                                            : 243
+# Shift Registers                                      : 16
+ 5-bit shift register                                  : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : controller.ngr
+Top Level Output File Name         : controller
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 336
+
+Cell Usage :
+# BELS                             : 2844
+#      GND                         : 1
+#      INV                         : 158
+#      LUT1                        : 14
+#      LUT2                        : 412
+#      LUT3                        : 221
+#      LUT4                        : 190
+#      LUT5                        : 242
+#      LUT6                        : 257
+#      MUXCY                       : 778
+#      VCC                         : 1
+#      XORCY                       : 570
+# FlipFlops/Latches                : 279
+#      FDE                         : 16
+#      FDRE                        : 263
+# Shift Registers                  : 16
+#      SRLC16E                     : 16
+# DSPs                             : 28
+#      DSP48E                      : 28
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50ff676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             279  out of  28800     0%  
+ Number of Slice LUTs:                 1510  out of  28800     5%  
+    Number used as Logic:              1494  out of  28800     5%  
+    Number used as Memory:               16  out of   7680     0%  
+       Number used as SRL:               16
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1578
+   Number with an unused Flip Flop:    1299  out of   1578    82%  
+   Number with an unused LUT:            68  out of   1578     4%  
+   Number of fully used LUT-FF pairs:   211  out of   1578    13%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                         336
+ Number of bonded IOBs:                   0  out of    440     0%  
+
+Specific Feature Utilization:
+ Number of DSP48Es:                      28  out of     48    58%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(Delay_5_out1_0)   | 313   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 23.672ns (Maximum Frequency: 42.245MHz)
+   Minimum input arrival time before clock: 1.481ns
+   Maximum output required time after clock: 2.369ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 23.672ns (frequency: 42.245MHz)
+  Total number of paths / destination ports: 3040139368641652 / 780
+-------------------------------------------------------------------------
+Delay:               23.672ns (Levels of Logic = 40)
+  Source:            u_Sine_Cosine/Mmult_Normalize_Position_mul_temp (DSP)
+  Destination:       u_Park_Transform/Mmult_Product4_out1 (DSP)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: u_Sine_Cosine/Mmult_Normalize_Position_mul_temp to u_Park_Transform/Mmult_Product4_out1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E:CLK->P18       7   0.556   1.102  u_Sine_Cosine/Mmult_Normalize_Position_mul_temp (u_Sine_Cosine/Normalize_Position_out1_1<19>)
+     LUT6:I0->O           20   0.094   0.680  u_Sine_Cosine/u_Sine_Cosine_LUT/QuadHandle2_out1_1<15>122 (u_Sine_Cosine/u_Sine_Cosine_LUT/QuadHandle2_out1_1<15>122)
+     LUT4:I2->O           39   0.094   0.609  u_Sine_Cosine/u_Sine_Cosine_LUT/QuadHandle2_out1_1<15>131 (u_Sine_Cosine/u_Sine_Cosine_LUT/N01)
+     LUT5:I4->O           11   0.094   1.028  u_Sine_Cosine/u_Sine_Cosine_LUT/QuadHandle2_out1_1<15>2 (u_Sine_Cosine/u_Sine_Cosine_LUT/QuadHandle2_out1_1<15>)
+     LUT6:I1->O           54   0.094   0.841  u_Sine_Cosine/u_Sine_Cosine_LUT/k1_mux0001<3>1 (u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_n0003_addsub0000_lut<3>)
+     LUT6:I3->O            3   0.094   0.800  u_Sine_Cosine/u_Sine_Cosine_LUT/Mrom_add_cast1_rom000011_SW1 (N20)
+     LUT6:I2->O            1   0.094   0.973  u_Sine_Cosine/u_Sine_Cosine_LUT/Mrom_mul_temp_01_rom0000111_SW3 (N451)
+     LUT6:I1->O            1   0.094   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_lut<1> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.372   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<1> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<2> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<3> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<4> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<5> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<6> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<7> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<8> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<9> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<10> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<11> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<12> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<13> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<14> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<14>)
+     MUXCY:CI->O           0   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<15> (u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_cy<15>)
+     XORCY:CI->O          50   0.357   0.467  u_Sine_Cosine/u_Sine_Cosine_LUT/Msub_mul_temp_01_addsub0000_xor<16> (u_Sine_Cosine/u_Sine_Cosine_LUT/mul_temp_01_addsub0000<16>)
+     DSP48E:A16->PCOUT12    1   3.832   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult0000_submult_0 (u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult0000_submult_0_PCOUT_to_Mmult_mul_temp_01_mult0000_submult_01_PCIN_12)
+     DSP48E:PCIN12->PCOUT34    1   2.013   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult0000_submult_01 (u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult0000_submult_01_PCOUT_to_Mmult_mul_temp_01_mult0000_submult_02_PCIN_34)
+     DSP48E:PCIN34->PCOUT8    1   2.013   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult0000_submult_02 (u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult0000_submult_02_PCOUT_to_Mmult_mul_temp_01_mult0000_submult_03_PCIN_8)
+     DSP48E:PCIN8->P7      1   1.816   0.480  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult0000_submult_03 (u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult0000_submult_0_41)
+     LUT2:I1->O            1   0.094   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_lut<41> (u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_lut<41>)
+     MUXCY:S->O            1   0.372   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_cy<41> (u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_cy<41>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_cy<42> (u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_cy<42>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_cy<43> (u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_cy<43>)
+     MUXCY:CI->O           1   0.026   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_cy<44> (u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_cy<44>)
+     XORCY:CI->O           1   0.357   0.480  u_Sine_Cosine/u_Sine_Cosine_LUT/Mmult_mul_temp_01_mult00000_Madd_xor<45> (u_Sine_Cosine/u_Sine_Cosine_LUT/mul_temp_01_mult0000<45>)
+     LUT2:I1->O            1   0.094   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_add_temp1_add0000_Madd_lut<45> (u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_add_temp1_add0000_Madd_lut<45>)
+     MUXCY:S->O            1   0.372   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_add_temp1_add0000_Madd_cy<45> (u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_add_temp1_add0000_Madd_cy<45>)
+     XORCY:CI->O           2   0.357   0.341  u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_add_temp1_add0000_Madd_xor<46> (u_Sine_Cosine/u_Sine_Cosine_LUT/Look_Up_Table_out1_1<14>)
+     INV:I->O              1   0.238   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_Negate_cast_1_not0000<14>1_INV_0 (u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_Negate_cast_1_not0000<14>)
+     MUXCY:S->O            0   0.372   0.000  u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_Negate_cast_1_Madd_cy<14> (u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_Negate_cast_1_Madd_cy<14>)
+     XORCY:CI->O           1   0.357   0.480  u_Sine_Cosine/u_Sine_Cosine_LUT/Madd_Negate_cast_1_Madd_xor<15> (u_Sine_Cosine/u_Sine_Cosine_LUT/Negate_cast_1<15>)
+     LUT5:I4->O            7   0.094   0.369  u_Sine_Cosine/u_Sine_Cosine_LUT/SignCorrected_out1_1<15>1 (Sine_Cosine_out2<15>)
+     DSP48E:B15                0.256          u_Park_Transform/Mmult_Product4_out1
+    ----------------------------------------
+    Total                     23.672ns (15.022ns logic, 8.650ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 757 / 757
+-------------------------------------------------------------------------
+Offset:              1.481ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       u_Clarke_Transform/Mmult_Beta_Gain_mul_temp (DSP)
+  Destination Clock: clk rising
+
+  Data Path: reset to u_Clarke_Transform/Mmult_Beta_Gain_mul_temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     INV:I->O            312   0.238   0.515  u_Space_Vector_Modulation/reset_inv1_INV_0 (reset_inv)
+     DSP48E:RSTP               0.728          u_Clarke_Transform/Mmult_Alpha_Gain_mul_temp
+    ----------------------------------------
+    Total                      1.481ns (0.966ns logic, 0.515ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 372 / 78
+-------------------------------------------------------------------------
+Offset:              2.369ns (Levels of Logic = 2)
+  Source:            Delay_5_out1_11 (FF)
+  Destination:       Va<73> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Delay_5_out1_11 to Va<73>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.471   0.989  Delay_5_out1_11 (Delay_5_out1_11)
+     LUT5:I0->O            3   0.094   0.721  Madd_Add_out1_xor<16>111 (N9)
+     LUT4:I1->O            0   0.094   0.000  Madd_Add_out1_xor<17>11 (Va<73>)
+    ----------------------------------------
+    Total                      2.369ns (0.659ns logic, 1.710ns route)
+                                       (27.8% logic, 72.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            clk_enable (PAD)
+  Destination:       ce_out (PAD)
+
+  Data Path: clk_enable to ce_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 40.53 secs
+ 
+--> 
+
+Total memory usage is 451980 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  390 (   0 filtered)
+Number of infos    :   67 (   0 filtered)
+
