@@ -1,0 +1,168 @@
+Release 14.7 - Bitgen P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Loading device for application Rf_Device from file '5vlx50.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\.
+   "top" is an NCD, version 3.2, device xc5vlx50, package ff676, speed -1
+Opened constraints file config_2.pcf.
+
+Tue Nov 28 20:17:52 2017
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -b -w -intstyle pa -g Partial:RECONFIG_PART -g ActiveReconfig:Yes config_2_routed.ncd config_2_RECONFIG_PART_controllerFOC_partial.bgn config_2.pcf 
+
+Summary of Bitgen Options:
++----------------------+----------------------+
+| Option Name          | Current Setting      |
++----------------------+----------------------+
+| Compress             | (Not Specified)*     |
++----------------------+----------------------+
+| Readback             | (Not Specified)*     |
++----------------------+----------------------+
+| CRC                  | Enable*              |
++----------------------+----------------------+
+| DebugBitstream       | No*                  |
++----------------------+----------------------+
+| ConfigRate           | 2*                   |
++----------------------+----------------------+
+| StartupClk           | Cclk*                |
++----------------------+----------------------+
+| CclkPin              | Pullup*              |
++----------------------+----------------------+
+| DonePin              | Pullup*              |
++----------------------+----------------------+
+| HswapenPin           | Pullup*              |
++----------------------+----------------------+
+| M0Pin                | Pullup*              |
++----------------------+----------------------+
+| M1Pin                | Pullup*              |
++----------------------+----------------------+
+| M2Pin                | Pullup*              |
++----------------------+----------------------+
+| ProgPin              | Pullup*              |
++----------------------+----------------------+
+| InitPin              | Pullup*              |
++----------------------+----------------------+
+| CsPin                | Pullup*              |
++----------------------+----------------------+
+| DinPin               | Pullup*              |
++----------------------+----------------------+
+| BusyPin              | Pullup*              |
++----------------------+----------------------+
+| RdWrPin              | Pullup*              |
++----------------------+----------------------+
+| TckPin               | Pullup*              |
++----------------------+----------------------+
+| TdiPin               | Pullup*              |
++----------------------+----------------------+
+| TdoPin               | Pullup*              |
++----------------------+----------------------+
+| TmsPin               | Pullup*              |
++----------------------+----------------------+
+| UnusedPin            | Pulldown*            |
++----------------------+----------------------+
+| GWE_cycle            | 6*                   |
++----------------------+----------------------+
+| GTS_cycle            | 5*                   |
++----------------------+----------------------+
+| OverTempPowerDown    | Disable*             |
++----------------------+----------------------+
+| LCK_cycle            | NoWait*              |
++----------------------+----------------------+
+| Match_cycle          | NoWait               |
++----------------------+----------------------+
+| DONE_cycle           | 4*                   |
++----------------------+----------------------+
+| Persist              | No*                  |
++----------------------+----------------------+
+| DriveDone            | No*                  |
++----------------------+----------------------+
+| DonePipe             | No*                  |
++----------------------+----------------------+
+| Security             | None*                |
++----------------------+----------------------+
+| UserID               | 0xFFFFFFFF*          |
++----------------------+----------------------+
+| ActiveReconfig       | Yes                  |
++----------------------+----------------------+
+| Partial              | RECONFIG_PART        |
++----------------------+----------------------+
+| Encrypt              | No*                  |
++----------------------+----------------------+
+| Key0                 | pick*                |
++----------------------+----------------------+
+| StartCBC             | pick*                |
++----------------------+----------------------+
+| KeyFile              | (Not Specified)*     |
++----------------------+----------------------+
+| DCIUpdateMode        | AsRequired*          |
++----------------------+----------------------+
+| ConfigFallback       | Enable*              |
++----------------------+----------------------+
+| SelectMAPAbort       | Enable*              |
++----------------------+----------------------+
+| BPI_page_size        | 1*                   |
++----------------------+----------------------+
+| BPI_1st_read_cycle   | 1*                   |
++----------------------+----------------------+
+| JTAG_SysMon          | Enable*              |
++----------------------+----------------------+
+| TIMER_CFG            | None*                |
++----------------------+----------------------+
+| TIMER_USR            | None*                |
++----------------------+----------------------+
+| USR_ACCESS           | None*                |
++----------------------+----------------------+
+| TimeStamp            | Default*             |
++----------------------+----------------------+
+| IEEE1532             | No*                  |
++----------------------+----------------------+
+| Binary               | No*                  |
++----------------------+----------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+There were 0 CONFIG constraint(s) processed from config_2.pcf.
+
+
+Running DRC.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net CONFIG_STATE/cfg_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONFIG_STATE/src_sel_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ELEC_POS/count_enb is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D6/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D6/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D5/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D5/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D4/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D4/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D3/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D3/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D2/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D2/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D1/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D1/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 15 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+Creating bit stream for Partition "/top/RECONFIG_PART" (Reconfigurable Module
+"controllerFOC")
+Creating bit map...
+Saving bit stream in "config_2_reconfig_part_controllerfoc_partial.bit".
+Saving bit stream in "config_2_reconfig_part_controllerfoc_partial.rbt".
+Bitstream generation is complete.

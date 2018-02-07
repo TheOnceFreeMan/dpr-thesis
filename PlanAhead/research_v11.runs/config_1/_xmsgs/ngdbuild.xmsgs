@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NgdBuild" num="1023" delta="new" >Could not resolve reconfigurable Partition block &apos;<arg fmt="%s" index="1">RECONFIG_PART</arg>&apos;.  This may be legal if you are implementing the Partition as a blackbox.   If it is not a blackbox, you should check that the Partition&apos;s module file, &apos;<arg fmt="%s" index="2">controller</arg>.ngc&apos;  or &apos;<arg fmt="%s" index="3">controller</arg>.edf&apos; (or another valid EDIF extension), exists and is properly set up in a search path (see the -sd option).
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_i</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_i</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLK2X</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_ICAP_CLK_COMP_CLK2X_BUF = PERIOD &quot;ICAP_CLK_COMP_CLK2X_BUF&quot; TS_clk_i HIGH 50% INPUT_JITTER 5 ps&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_i</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_i</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_ICAP_CLK_COMP_CLK0_BUF = PERIOD &quot;ICAP_CLK_COMP_CLK0_BUF&quot; TS_clk_i / 2 HIGH 50% INPUT_JITTER 5 ps&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1212" delta="new" >User specified non-default attribute value (<arg fmt="%s" index="1">20.000000</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">DCM_ADV_INST</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">100 MHz.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.
+</msg>
+
+</messages>
+

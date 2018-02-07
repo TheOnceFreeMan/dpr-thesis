@@ -1,0 +1,1197 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -intstyle pa -w config_2.ngd 
+Target Device  : xc5vlx50
+Target Package : ff676
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Tue Nov 28 19:59:43 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   19
+Slice Logic Utilization:
+  Number of Slice Registers:                   717 out of  28,800    2%
+    Number used as Flip Flops:                 698
+    Number used as Latches:                     19
+  Number of Slice LUTs:                      2,155 out of  28,800    7%
+    Number used as logic:                    2,130 out of  28,800    7%
+      Number using O6 output only:           1,572
+      Number using O5 output only:              92
+      Number using O5 and O6:                  466
+    Number used as Memory:                      18 out of   7,680    1%
+      Number used as Shift Register:            18
+        Number using O6 output only:            18
+    Number used as exclusive route-thru:         7
+  Number of route-thrus:                       117
+    Number using O6 output only:                98
+    Number using O5 output only:                19
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   727 out of   7,200   10%
+  Number of LUT Flip Flop pairs used:        2,557
+    Number with an unused Flip Flop:         1,840 out of   2,557   71%
+    Number with an unused LUT:                 402 out of   2,557   15%
+    Number of fully used LUT-FF pairs:         315 out of   2,557   12%
+    Number of unique control sets:              25
+    Number of slice register sites lost
+      to control set restrictions:              45 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        77 out of     440   17%
+    Number of LOCed IOBs:                       77 out of      77  100%
+
+Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      5 out of      32   15%
+    Number used as BUFGs:                        5
+  Number of DCM_ADVs:                            1 out of      12    8%
+  Number of DSP48Es:                            29 out of      48   60%
+  Number of ICAPs:                               1 out of       2   50%
+
+Average Fanout of Non-Clock Nets:                2.61
+
+Peak Memory Usage:  564 MB
+Total REAL time to MAP completion:  22 secs 
+Total CPU time to MAP completion:   21 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:934 - Output port "ce_out" connected to sig "tmp_ce_out" on
+   Partition "/top/RECONFIG_PART" is not connected.  To fix this problem, either
+   remove the output port from the appropriate input source file or make sure
+   the port is connected to logic outside the Partition.
+WARNING:MapLib:1235 - The undriven or constant signals indicate that further
+   logic reduction is possible if the Partition "/top/RECONFIG_PART" is removed.
+WARNING:Place:644 - A clock IOB clock component is not placed at an optimal
+   clock IOB site. The clock IOB component <EOC_A> is placed at site <E13>. The
+   clock IO site can use the fast path between the IO and the Clock buffer/GCLK
+   if the IOB is placed in the master Clock IOB Site. This is normally an ERROR
+   but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <EOC_A_BUFGP/EOC_A.PAD> allowing your design to continue. This constraint
+   disables all clock placer rules related to the specified COMP.PIN. The use of
+   this override is highly discouraged as it may lead to very poor timing
+   results. It is recommended that this error condition be corrected in the
+   design.
+WARNING:Place:644 - A clock IOB clock component is not placed at an optimal
+   clock IOB site. The clock IOB component <EOC_B> is placed at site <D14>. The
+   clock IO site can use the fast path between the IO and the Clock buffer/GCLK
+   if the IOB is placed in the master Clock IOB Site. This is normally an ERROR
+   but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <EOC_B_BUFGP/EOC_B.PAD> allowing your design to continue. This constraint
+   disables all clock placer rules related to the specified COMP.PIN. The use of
+   this override is highly discouraged as it may lead to very poor timing
+   results. It is recommended that this error condition be corrected in the
+   design.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net CONFIG_STATE/cfg_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONFIG_STATE/src_sel_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ELEC_POS/count_enb is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D6/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D6/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D5/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D5/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D4/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D4/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D3/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D3/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D2/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D2/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D1/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D1/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network tmp_ce_out has no load.
+INFO:LIT:395 - The above info message is repeated 1 more times for the following
+   (max. 5 shown):
+   ICAP_CLK_COMP/LOCKED_OUT
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  30 block(s) optimized away
+ 739 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "clk_i" is sourceless and has been removed.
+The signal "ICAP_CLK_COMP/CLKIN_IBUFG_OUT" is sourceless and has been removed.
+The signal "ICAP_CLK_COMP/LOCKED_OUT" is sourceless and has been removed.
+The signal "ICAP_CONTR/CE" is sourceless and has been removed.
+The signal "ICAP_CONTR/dn" is sourceless and has been removed.
+The signal "CURR_SENSE_B/Maddsub_data_o_tmp_mult0000_2" is sourceless and has
+been removed.
+The signal "CURR_SENSE_B/Maddsub_data_o_tmp_mult0000_3" is sourceless and has
+been removed.
+The signal "CURR_SENSE_B/Maddsub_data_o_tmp_mult0000_4" is sourceless and has
+been removed.
+The signal "CURR_SENSE_B/Maddsub_data_o_tmp_mult0000_5" is sourceless and has
+been removed.
+The signal "CURR_SENSE_B/Maddsub_data_o_tmp_mult0000_6" is sourceless and has
+been removed.
+The signal "CURR_SENSE_B/data_o_tmp[10]" is sourceless and has been removed.
+The signal "CURR_SENSE_B/data_o_tmp[11]" is sourceless and has been removed.
+The signal "CURR_SENSE_B/data_o_tmp[12]" is sourceless and has been removed.
+The signal "CURR_SENSE_B/data_o_tmp[13]" is sourceless and has been removed.
+The signal "CURR_SENSE_B/data_o_tmp[14]" is sourceless and has been removed.
+The signal "CURR_SENSE_B/data_o_tmp[15]" is sourceless and has been removed.
+The signal "CURR_SENSE_B/data_o_tmp[7]" is sourceless and has been removed.
+The signal "CURR_SENSE_B/data_o_tmp[8]" is sourceless and has been removed.
+The signal "CURR_SENSE_B/data_o_tmp[9]" is sourceless and has been removed.
+The signal "CURR_SENSE_A/Maddsub_data_o_tmp_mult0000_2" is sourceless and has
+been removed.
+The signal "CURR_SENSE_A/Maddsub_data_o_tmp_mult0000_3" is sourceless and has
+been removed.
+The signal "CURR_SENSE_A/Maddsub_data_o_tmp_mult0000_4" is sourceless and has
+been removed.
+The signal "CURR_SENSE_A/Maddsub_data_o_tmp_mult0000_5" is sourceless and has
+been removed.
+The signal "CURR_SENSE_A/Maddsub_data_o_tmp_mult0000_6" is sourceless and has
+been removed.
+The signal "CURR_SENSE_A/data_o_tmp[10]" is sourceless and has been removed.
+The signal "CURR_SENSE_A/data_o_tmp[11]" is sourceless and has been removed.
+The signal "CURR_SENSE_A/data_o_tmp[12]" is sourceless and has been removed.
+The signal "CURR_SENSE_A/data_o_tmp[13]" is sourceless and has been removed.
+The signal "CURR_SENSE_A/data_o_tmp[14]" is sourceless and has been removed.
+The signal "CURR_SENSE_A/data_o_tmp[15]" is sourceless and has been removed.
+The signal "CURR_SENSE_A/data_o_tmp[7]" is sourceless and has been removed.
+The signal "CURR_SENSE_A/data_o_tmp[8]" is sourceless and has been removed.
+The signal "CURR_SENSE_A/data_o_tmp[9]" is sourceless and has been removed.
+The signal "ELEC_POS/N1" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[0]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[10]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[11]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[12]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[13]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[14]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[15]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[1]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[2]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[3]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[4]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[5]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[6]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[7]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[8]" is sourceless and has been removed.
+The signal "ELEC_POS/cnt_val[9]" is sourceless and has been removed.
+The signal "ELEC_POS/count_enb" is sourceless and has been removed.
+The signal "ELEC_POS/direction" is sourceless and has been removed.
+The signal "ELEC_POS/DECODER/N0" is sourceless and has been removed.
+The signal "ELEC_POS/DECODER/N1" is sourceless and has been removed.
+The signal "ELEC_POS/DECODER/Q_temp[0]" is sourceless and has been removed.
+The signal "ELEC_POS/DECODER/Q_temp[1]" is sourceless and has been removed.
+The signal "ELEC_POS/DECODER/Q_temp[2]" is sourceless and has been removed.
+The signal "ELEC_POS/DECODER/Q_temp[3]" is sourceless and has been removed.
+The signal "ELEC_POS/DECODER/Q_temp[4]" is sourceless and has been removed.
+The signal "ELEC_POS/DECODER/Q_temp[5]" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "mem_addr_0_OBUF" is unused and has been removed.
+The signal "Va[76]" is unused and has been removed.
+The signal "Va[81]" is unused and has been removed.
+The signal "Va[77]" is unused and has been removed.
+The signal "Va[82]" is unused and has been removed.
+The signal "s_i_b[10]" is unused and has been removed.
+The signal "Va[78]" is unused and has been removed.
+The signal "Va[83]" is unused and has been removed.
+The signal "s_i_b[11]" is unused and has been removed.
+The signal "Va[79]" is unused and has been removed.
+The signal "s_i_b[12]" is unused and has been removed.
+The signal "s_i_b[13]" is unused and has been removed.
+The signal "s_i_b[14]" is unused and has been removed.
+The signal "s_i_b[15]" is unused and has been removed.
+The signal "mem_addr_1_OBUF" is unused and has been removed.
+The signal "busy" is unused and has been removed.
+The signal "mem_addr_2_OBUF" is unused and has been removed.
+The signal "VbHigh_OBUF" is unused and has been removed.
+The signal "mem_addr_3_OBUF" is unused and has been removed.
+The signal "tmp_Vb[10]" is unused and has been removed.
+The signal "tmp_Vb[11]" is unused and has been removed.
+The signal "done" is unused and has been removed.
+The signal "tmp_Vb[12]" is unused and has been removed.
+The signal "tmp_Vb[13]" is unused and has been removed.
+The signal "tmp_Vb[14]" is unused and has been removed.
+The signal "tmp_Vb[20]" is unused and has been removed.
+The signal "tmp_Vb[15]" is unused and has been removed.
+The signal "mem_addr_4_OBUF" is unused and has been removed.
+The signal "tmp_Vb[21]" is unused and has been removed.
+The signal "tmp_Vb[16]" is unused and has been removed.
+The signal "controller_sel_IBUF" is unused and has been removed.
+The signal "tmp_Vb[22]" is unused and has been removed.
+The signal "tmp_Vb[17]" is unused and has been removed.
+The signal "tmp_Vb[23]" is unused and has been removed.
+The signal "tmp_Vb[18]" is unused and has been removed.
+The signal "tmp_Vb[19]" is unused and has been removed.
+The signal "tmp_Vb[24]" is unused and has been removed.
+The signal "tmp_Vb[30]" is unused and has been removed.
+The signal "tmp_Vb[25]" is unused and has been removed.
+The signal "tmp_Vb[31]" is unused and has been removed.
+The signal "tmp_Vb[26]" is unused and has been removed.
+The signal "tmp_Vb[32]" is unused and has been removed.
+The signal "tmp_Vb[27]" is unused and has been removed.
+The signal "tmp_Vb[33]" is unused and has been removed.
+The signal "tmp_Vb[28]" is unused and has been removed.
+The signal "mem_addr_5_OBUF" is unused and has been removed.
+The signal "tmp_Vb[34]" is unused and has been removed.
+The signal "tmp_Vb[29]" is unused and has been removed.
+The signal "tmp_Vb[40]" is unused and has been removed.
+The signal "tmp_Vb[35]" is unused and has been removed.
+The signal "tmp_Vb[41]" is unused and has been removed.
+The signal "tmp_Vb[36]" is unused and has been removed.
+The signal "r_Current_Command[10]" is unused and has been removed.
+The signal "tmp_Vb[42]" is unused and has been removed.
+The signal "tmp_Vb[37]" is unused and has been removed.
+The signal "tmp_Vb[43]" is unused and has been removed.
+The signal "tmp_Vb[38]" is unused and has been removed.
+The signal "tmp_Vb[44]" is unused and has been removed.
+The signal "tmp_Vb[39]" is unused and has been removed.
+The signal "tmp_Vb[50]" is unused and has been removed.
+The signal "tmp_Vb[45]" is unused and has been removed.
+The signal "tmp_Vb[51]" is unused and has been removed.
+The signal "tmp_Vb[46]" is unused and has been removed.
+The signal "mem_addr_6_OBUF" is unused and has been removed.
+The signal "tmp_Vb[47]" is unused and has been removed.
+The signal "tmp_Vb[52]" is unused and has been removed.
+The signal "eeprom_sel_0_OBUF" is unused and has been removed.
+The signal "tmp_Vb[48]" is unused and has been removed.
+The signal "tmp_Vb[53]" is unused and has been removed.
+The signal "tmp_Vb[49]" is unused and has been removed.
+The signal "tmp_Vb[54]" is unused and has been removed.
+The signal "mem_addr_10_OBUF" is unused and has been removed.
+The signal "tmp_Vb[60]" is unused and has been removed.
+The signal "tmp_Vb[55]" is unused and has been removed.
+The signal "tmp_Vb[61]" is unused and has been removed.
+The signal "tmp_Vb[56]" is unused and has been removed.
+The signal "tmp_Vb[62]" is unused and has been removed.
+The signal "tmp_Vb[57]" is unused and has been removed.
+The signal "tmp_Vb[58]" is unused and has been removed.
+The signal "tmp_Vb[63]" is unused and has been removed.
+The signal "tmp_Vb[59]" is unused and has been removed.
+The signal "tmp_Vb[64]" is unused and has been removed.
+The signal "mem_addr_7_OBUF" is unused and has been removed.
+The signal "tmp_Vb[65]" is unused and has been removed.
+The signal "tmp_Vb[70]" is unused and has been removed.
+The signal "eeprom_sel_1_OBUF" is unused and has been removed.
+The signal "tmp_Vb[66]" is unused and has been removed.
+The signal "tmp_Vb[71]" is unused and has been removed.
+The signal "tmp_Vb[67]" is unused and has been removed.
+The signal "tmp_Vb[72]" is unused and has been removed.
+The signal "mem_addr_11_OBUF" is unused and has been removed.
+The signal "tmp_Vb[68]" is unused and has been removed.
+The signal "tmp_Vb[73]" is unused and has been removed.
+The signal "tmp_Vb[74]" is unused and has been removed.
+The signal "tmp_Vb[69]" is unused and has been removed.
+The signal "tmp_Vb[80]" is unused and has been removed.
+The signal "tmp_Vb[75]" is unused and has been removed.
+The signal "tmp_Vb[81]" is unused and has been removed.
+The signal "tmp_Vb[76]" is unused and has been removed.
+The signal "tmp_Vb[82]" is unused and has been removed.
+The signal "tmp_Vb[77]" is unused and has been removed.
+The signal "mem_addr_8_OBUF" is unused and has been removed.
+The signal "tmp_Vb[83]" is unused and has been removed.
+The signal "tmp_Vb[78]" is unused and has been removed.
+The signal "tmp_Vb[79]" is unused and has been removed.
+The signal "rst_IBUF" is unused and has been removed.
+The signal "mem_addr_12_OBUF" is unused and has been removed.
+The signal "quadA_IBUF" is unused and has been removed.
+The signal "mem_addr_9_OBUF" is unused and has been removed.
+The signal "mem_addr_13_OBUF" is unused and has been removed.
+The signal "quadB_IBUF" is unused and has been removed.
+The signal "VaHigh_OBUF" is unused and has been removed.
+The signal "mem_addr_14_OBUF" is unused and has been removed.
+The signal "DECOUPLE_IN_not0000" is unused and has been removed.
+The signal "Vb[10]" is unused and has been removed.
+The signal "mem_addr_15_OBUF" is unused and has been removed.
+The signal "Vb[11]" is unused and has been removed.
+The signal "Vb[12]" is unused and has been removed.
+The signal "Vb[13]" is unused and has been removed.
+The signal "Vb[14]" is unused and has been removed.
+The signal "Vb[15]" is unused and has been removed.
+The signal "Vb[20]" is unused and has been removed.
+The signal "Vb[16]" is unused and has been removed.
+The signal "Vb[21]" is unused and has been removed.
+The signal "Vb[17]" is unused and has been removed.
+The signal "Vb[22]" is unused and has been removed.
+The signal "Vb[18]" is unused and has been removed.
+The signal "Vb[23]" is unused and has been removed.
+The signal "mem_addr_16_OBUF" is unused and has been removed.
+The signal "r_Phase_Current_A[0]" is unused and has been removed.
+The signal "Vb[19]" is unused and has been removed.
+The signal "Vb[24]" is unused and has been removed.
+The signal "r_Phase_Current_A[1]" is unused and has been removed.
+The signal "r_clk_enable" is unused and has been removed.
+The signal "Vb[25]" is unused and has been removed.
+The signal "Vb[30]" is unused and has been removed.
+The signal "r_Phase_Current_A[2]" is unused and has been removed.
+The signal "Vb[31]" is unused and has been removed.
+The signal "Vb[26]" is unused and has been removed.
+The signal "r_Phase_Current_A[3]" is unused and has been removed.
+The signal "Vb[27]" is unused and has been removed.
+The signal "Vb[32]" is unused and has been removed.
+The signal "r_Phase_Current_A[4]" is unused and has been removed.
+The signal "Vb[28]" is unused and has been removed.
+The signal "Vb[33]" is unused and has been removed.
+The signal "r_Phase_Current_A[5]" is unused and has been removed.
+The signal "Vb[29]" is unused and has been removed.
+The signal "Vb[34]" is unused and has been removed.
+The signal "r_Phase_Current_A[6]" is unused and has been removed.
+The signal "Vb[35]" is unused and has been removed.
+The signal "Vb[40]" is unused and has been removed.
+The signal "r_Phase_Current_A[7]" is unused and has been removed.
+The signal "mem_addr_17_OBUF" is unused and has been removed.
+The signal "Vb[36]" is unused and has been removed.
+The signal "Vb[41]" is unused and has been removed.
+The signal "r_Phase_Current_A[8]" is unused and has been removed.
+The signal "Vb[37]" is unused and has been removed.
+The signal "Vb[42]" is unused and has been removed.
+The signal "r_Phase_Current_A[9]" is unused and has been removed.
+The signal "Vb[38]" is unused and has been removed.
+The signal "Vb[43]" is unused and has been removed.
+The signal "tmp_Va[0]" is unused and has been removed.
+The signal "Vb[39]" is unused and has been removed.
+The signal "Vb[44]" is unused and has been removed.
+The signal "tmp_Va[1]" is unused and has been removed.
+The signal "EOC_A_BUFGP" is unused and has been removed.
+The signal "Vb[45]" is unused and has been removed.
+The signal "Vb[50]" is unused and has been removed.
+The signal "tmp_Va[2]" is unused and has been removed.
+The signal "Vb[46]" is unused and has been removed.
+The signal "Vb[51]" is unused and has been removed.
+The signal "cfg" is unused and has been removed.
+The signal "tmp_Va[3]" is unused and has been removed.
+The signal "Vb[47]" is unused and has been removed.
+The signal "Vb[52]" is unused and has been removed.
+The signal "tmp_Va[4]" is unused and has been removed.
+The signal "Vb[48]" is unused and has been removed.
+The signal "Vb[53]" is unused and has been removed.
+The signal "mem_addr_18_OBUF" is unused and has been removed.
+The signal "tmp_Va[5]" is unused and has been removed.
+The signal "data_i_B_0_IBUF" is unused and has been removed.
+The signal "Vb[54]" is unused and has been removed.
+The signal "Vb[49]" is unused and has been removed.
+The signal "tmp_Va[6]" is unused and has been removed.
+The signal "Vb[55]" is unused and has been removed.
+The signal "Vb[60]" is unused and has been removed.
+The signal "tmp_Va[7]" is unused and has been removed.
+The signal "Vb[56]" is unused and has been removed.
+The signal "Vb[61]" is unused and has been removed.
+The signal "tmp_Va[8]" is unused and has been removed.
+The signal "Vb[57]" is unused and has been removed.
+The signal "Vb[62]" is unused and has been removed.
+The signal "tmp_Va[9]" is unused and has been removed.
+The signal "Vb[58]" is unused and has been removed.
+The signal "Vb[63]" is unused and has been removed.
+The signal "clk" is unused and has been removed.
+The signal "Vb[59]" is unused and has been removed.
+The signal "Vb[64]" is unused and has been removed.
+The signal "Vb[65]" is unused and has been removed.
+The signal "Vb[70]" is unused and has been removed.
+The signal "Vb[66]" is unused and has been removed.
+The signal "Vb[71]" is unused and has been removed.
+The signal "data_i_B_1_IBUF" is unused and has been removed.
+The signal "Vb[67]" is unused and has been removed.
+The signal "Vb[72]" is unused and has been removed.
+The signal "VaLow_OBUF" is unused and has been removed.
+The signal "Vb[68]" is unused and has been removed.
+The signal "Vb[73]" is unused and has been removed.
+The signal "r_Phase_Current_B[0]" is unused and has been removed.
+The signal "Vb[69]" is unused and has been removed.
+The signal "Vb[74]" is unused and has been removed.
+The signal "r_Phase_Current_B[1]" is unused and has been removed.
+The signal "Vb[75]" is unused and has been removed.
+The signal "Vb[80]" is unused and has been removed.
+The signal "r_Phase_Current_B[2]" is unused and has been removed.
+The signal "Vb[76]" is unused and has been removed.
+The signal "Vb[81]" is unused and has been removed.
+The signal "r_Phase_Current_B[3]" is unused and has been removed.
+The signal "Vb[77]" is unused and has been removed.
+The signal "Vb[82]" is unused and has been removed.
+The signal "r_Phase_Current_B[4]" is unused and has been removed.
+The signal "Vb[78]" is unused and has been removed.
+The signal "Vb[83]" is unused and has been removed.
+The signal "r_Phase_Current_B[5]" is unused and has been removed.
+The signal "Vb[79]" is unused and has been removed.
+The signal "data_i_B_2_IBUF" is unused and has been removed.
+The signal "r_Phase_Current_B[6]" is unused and has been removed.
+The signal "r_Phase_Current_A[10]" is unused and has been removed.
+The signal "r_Phase_Current_B[7]" is unused and has been removed.
+The signal "r_Phase_Current_A[11]" is unused and has been removed.
+The signal "r_Phase_Current_B[8]" is unused and has been removed.
+The signal "r_Phase_Current_A[12]" is unused and has been removed.
+The signal "r_Phase_Current_B[9]" is unused and has been removed.
+The signal "r_Phase_Current_A[13]" is unused and has been removed.
+The signal "tmp_Vb[0]" is unused and has been removed.
+The signal "r_Phase_Current_A[14]" is unused and has been removed.
+The signal "tmp_Vb[1]" is unused and has been removed.
+The signal "r_Phase_Current_A[15]" is unused and has been removed.
+The signal "tmp_Vb[2]" is unused and has been removed.
+The signal "tmp_Vb[3]" is unused and has been removed.
+The signal "data_i_B_3_IBUF" is unused and has been removed.
+The signal "tmp_Vb[4]" is unused and has been removed.
+The signal "tmp_Vb[5]" is unused and has been removed.
+The signal "tmp_Vb[6]" is unused and has been removed.
+The signal "r_Electrical_Position[10]" is unused and has been removed.
+The signal "tmp_Vb[7]" is unused and has been removed.
+The signal "r_Electrical_Position[11]" is unused and has been removed.
+The signal "tmp_Vb[8]" is unused and has been removed.
+The signal "mem_dat_0_IBUF" is unused and has been removed.
+The signal "r_Electrical_Position[12]" is unused and has been removed.
+The signal "tmp_Vb[9]" is unused and has been removed.
+The signal "r_Electrical_Position[13]" is unused and has been removed.
+The signal "r_Electrical_Position[14]" is unused and has been removed.
+The signal "data_i_B_4_IBUF" is unused and has been removed.
+The signal "r_Electrical_Position[15]" is unused and has been removed.
+The signal "EOC_B_BUFGP" is unused and has been removed.
+The signal "mem_dat_1_IBUF" is unused and has been removed.
+The signal "tmp_Vc[10]" is unused and has been removed.
+The signal "tmp_Vc[11]" is unused and has been removed.
+The signal "data_i_B_5_IBUF" is unused and has been removed.
+The signal "tmp_Vc[12]" is unused and has been removed.
+The signal "tmp_Vc[13]" is unused and has been removed.
+The signal "tmp_Vc[14]" is unused and has been removed.
+The signal "tmp_Vc[20]" is unused and has been removed.
+The signal "tmp_Vc[15]" is unused and has been removed.
+The signal "tmp_Vc[21]" is unused and has been removed.
+The signal "tmp_Vc[16]" is unused and has been removed.
+The signal "mem_dat_2_IBUF" is unused and has been removed.
+The signal "tmp_Vc[22]" is unused and has been removed.
+The signal "tmp_Vc[17]" is unused and has been removed.
+The signal "tmp_Vc[0]" is unused and has been removed.
+The signal "tmp_Vc[23]" is unused and has been removed.
+The signal "tmp_Vc[18]" is unused and has been removed.
+The signal "tmp_Vc[1]" is unused and has been removed.
+The signal "tmp_Vc[24]" is unused and has been removed.
+The signal "tmp_Vc[19]" is unused and has been removed.
+The signal "tmp_Vc[2]" is unused and has been removed.
+The signal "data_i_B_6_IBUF" is unused and has been removed.
+The signal "tmp_Vc[30]" is unused and has been removed.
+The signal "tmp_Vc[25]" is unused and has been removed.
+The signal "tmp_Vc[3]" is unused and has been removed.
+The signal "tmp_Vc[26]" is unused and has been removed.
+The signal "tmp_Vc[31]" is unused and has been removed.
+The signal "tmp_Vc[4]" is unused and has been removed.
+The signal "tmp_Vc[32]" is unused and has been removed.
+The signal "tmp_Vc[27]" is unused and has been removed.
+The signal "tmp_Vc[5]" is unused and has been removed.
+The signal "tmp_Vc[33]" is unused and has been removed.
+The signal "tmp_Vc[28]" is unused and has been removed.
+The signal "tmp_Vc[6]" is unused and has been removed.
+The signal "tmp_Vc[34]" is unused and has been removed.
+The signal "tmp_Vc[29]" is unused and has been removed.
+The signal "r_Current_Command[0]" is unused and has been removed.
+The signal "tmp_Vc[7]" is unused and has been removed.
+The signal "mem_dat_3_IBUF" is unused and has been removed.
+The signal "tmp_Vc[35]" is unused and has been removed.
+The signal "tmp_Vc[40]" is unused and has been removed.
+The signal "tmp_Vc[8]" is unused and has been removed.
+The signal "tmp_Vc[36]" is unused and has been removed.
+The signal "tmp_Vc[41]" is unused and has been removed.
+The signal "tmp_Vc[9]" is unused and has been removed.
+The signal "tmp_Vc[37]" is unused and has been removed.
+The signal "tmp_Vc[42]" is unused and has been removed.
+The signal "data_i_B_7_IBUF" is unused and has been removed.
+The signal "tmp_Vc[38]" is unused and has been removed.
+The signal "tmp_Vc[43]" is unused and has been removed.
+The signal "tmp_Vc[39]" is unused and has been removed.
+The signal "tmp_Vc[44]" is unused and has been removed.
+The signal "tmp_Vc[45]" is unused and has been removed.
+The signal "tmp_Vc[50]" is unused and has been removed.
+The signal "VbLow_OBUF" is unused and has been removed.
+The signal "tmp_Vc[46]" is unused and has been removed.
+The signal "tmp_Vc[51]" is unused and has been removed.
+The signal "tmp_Vc[47]" is unused and has been removed.
+The signal "tmp_Vc[52]" is unused and has been removed.
+The signal "mem_dat_4_IBUF" is unused and has been removed.
+The signal "tmp_Vc[48]" is unused and has been removed.
+The signal "tmp_Vc[53]" is unused and has been removed.
+The signal "r_rst" is unused and has been removed.
+The signal "tmp_Vc[49]" is unused and has been removed.
+The signal "tmp_Vc[54]" is unused and has been removed.
+The signal "tmp_Vc[60]" is unused and has been removed.
+The signal "tmp_Vc[55]" is unused and has been removed.
+The signal "tmp_Vc[61]" is unused and has been removed.
+The signal "tmp_Vc[56]" is unused and has been removed.
+The signal "tmp_Vc[62]" is unused and has been removed.
+The signal "tmp_Vc[57]" is unused and has been removed.
+The signal "tmp_Vc[58]" is unused and has been removed.
+The signal "tmp_Vc[63]" is unused and has been removed.
+The signal "clk_icap" is unused and has been removed.
+The signal "tmp_Vc[59]" is unused and has been removed.
+The signal "tmp_Vc[64]" is unused and has been removed.
+The signal "tmp_Vc[65]" is unused and has been removed.
+The signal "tmp_Vc[70]" is unused and has been removed.
+The signal "mem_dat_5_IBUF" is unused and has been removed.
+The signal "tmp_Vc[66]" is unused and has been removed.
+The signal "tmp_Vc[71]" is unused and has been removed.
+The signal "tmp_Vc[67]" is unused and has been removed.
+The signal "tmp_Vc[72]" is unused and has been removed.
+The signal "tmp_Vc[68]" is unused and has been removed.
+The signal "tmp_Vc[73]" is unused and has been removed.
+The signal "tmp_Vc[69]" is unused and has been removed.
+The signal "tmp_Vc[74]" is unused and has been removed.
+The signal "s_i_a[10]" is unused and has been removed.
+The signal "tmp_Vc[80]" is unused and has been removed.
+The signal "tmp_Vc[75]" is unused and has been removed.
+The signal "s_i_a[11]" is unused and has been removed.
+The signal "tmp_Vc[81]" is unused and has been removed.
+The signal "tmp_Vc[76]" is unused and has been removed.
+The signal "s_i_a[12]" is unused and has been removed.
+The signal "tmp_Vc[82]" is unused and has been removed.
+The signal "tmp_Vc[77]" is unused and has been removed.
+The signal "s_i_a[13]" is unused and has been removed.
+The signal "tmp_Vc[83]" is unused and has been removed.
+The signal "tmp_Vc[78]" is unused and has been removed.
+The signal "mem_dat_6_IBUF" is unused and has been removed.
+The signal "s_i_a[14]" is unused and has been removed.
+The signal "tmp_Vc[79]" is unused and has been removed.
+The signal "s_i_a[15]" is unused and has been removed.
+The signal "s_Electrical_Position[0]" is unused and has been removed.
+The signal "s_Electrical_Position[1]" is unused and has been removed.
+The signal "s_Electrical_Position[2]" is unused and has been removed.
+The signal "s_Electrical_Position[3]" is unused and has been removed.
+The signal "s_Electrical_Position[4]" is unused and has been removed.
+The signal "s_Electrical_Position[5]" is unused and has been removed.
+The signal "mem_dat_7_IBUF" is unused and has been removed.
+The signal "s_Electrical_Position[6]" is unused and has been removed.
+The signal "s_Electrical_Position[7]" is unused and has been removed.
+The signal "s_Electrical_Position[8]" is unused and has been removed.
+The signal "s_Electrical_Position[9]" is unused and has been removed.
+The signal "Current_Command_IBUF" is unused and has been removed.
+The signal "s_Electrical_Position[10]" is unused and has been removed.
+The signal "s_Electrical_Position[11]" is unused and has been removed.
+The signal "s_Electrical_Position[12]" is unused and has been removed.
+The signal "s_Electrical_Position[13]" is unused and has been removed.
+The signal "s_Electrical_Position[14]" is unused and has been removed.
+The signal "s_Electrical_Position[15]" is unused and has been removed.
+The signal "tmp_Va[10]" is unused and has been removed.
+The signal "tmp_Va[11]" is unused and has been removed.
+The signal "tmp_Va[12]" is unused and has been removed.
+The signal "tmp_Va[13]" is unused and has been removed.
+The signal "tmp_Va[14]" is unused and has been removed.
+The signal "tmp_Va[20]" is unused and has been removed.
+The signal "tmp_Va[15]" is unused and has been removed.
+The signal "Vc[10]" is unused and has been removed.
+The signal "convst_A_OBUF" is unused and has been removed.
+The signal "tmp_Va[21]" is unused and has been removed.
+The signal "tmp_Va[16]" is unused and has been removed.
+The signal "Vc[11]" is unused and has been removed.
+The signal "tmp_Va[22]" is unused and has been removed.
+The signal "tmp_Va[17]" is unused and has been removed.
+The signal "Vc[12]" is unused and has been removed.
+The signal "tmp_Va[23]" is unused and has been removed.
+The signal "tmp_Va[18]" is unused and has been removed.
+The signal "Vc[13]" is unused and has been removed.
+The signal "tmp_Va[24]" is unused and has been removed.
+The signal "tmp_Va[19]" is unused and has been removed.
+The signal "Vc[14]" is unused and has been removed.
+The signal "tmp_Va[30]" is unused and has been removed.
+The signal "tmp_Va[25]" is unused and has been removed.
+The signal "Vc[15]" is unused and has been removed.
+The signal "Vc[20]" is unused and has been removed.
+The signal "tmp_Va[31]" is unused and has been removed.
+The signal "tmp_Va[26]" is unused and has been removed.
+The signal "VcLow_OBUF" is unused and has been removed.
+The signal "Vc[16]" is unused and has been removed.
+The signal "Vc[21]" is unused and has been removed.
+The signal "tmp_Va[32]" is unused and has been removed.
+The signal "tmp_Va[27]" is unused and has been removed.
+The signal "Vc[17]" is unused and has been removed.
+The signal "Vc[22]" is unused and has been removed.
+The signal "convst_B_OBUF" is unused and has been removed.
+The signal "tmp_Va[28]" is unused and has been removed.
+The signal "tmp_Va[33]" is unused and has been removed.
+The signal "Vc[18]" is unused and has been removed.
+The signal "Vc[23]" is unused and has been removed.
+The signal "tmp_Va[29]" is unused and has been removed.
+The signal "tmp_Va[34]" is unused and has been removed.
+The signal "Vc[19]" is unused and has been removed.
+The signal "Vc[24]" is unused and has been removed.
+The signal "tmp_Va[35]" is unused and has been removed.
+The signal "tmp_Va[40]" is unused and has been removed.
+The signal "Vc[25]" is unused and has been removed.
+The signal "Vc[30]" is unused and has been removed.
+The signal "tmp_Va[36]" is unused and has been removed.
+The signal "tmp_Va[41]" is unused and has been removed.
+The signal "Vc[26]" is unused and has been removed.
+The signal "Vc[31]" is unused and has been removed.
+The signal "tmp_Va[37]" is unused and has been removed.
+The signal "tmp_Va[42]" is unused and has been removed.
+The signal "Vc[27]" is unused and has been removed.
+The signal "Vc[32]" is unused and has been removed.
+The signal "s_i_a[0]" is unused and has been removed.
+The signal "data_i_A_0_IBUF" is unused and has been removed.
+The signal "tmp_Va[38]" is unused and has been removed.
+The signal "tmp_Va[43]" is unused and has been removed.
+The signal "Vc[28]" is unused and has been removed.
+The signal "Vc[33]" is unused and has been removed.
+The signal "s_i_a[1]" is unused and has been removed.
+The signal "tmp_Va[39]" is unused and has been removed.
+The signal "tmp_Va[44]" is unused and has been removed.
+The signal "Vc[29]" is unused and has been removed.
+The signal "Vc[34]" is unused and has been removed.
+The signal "s_i_a[2]" is unused and has been removed.
+The signal "tmp_Va[45]" is unused and has been removed.
+The signal "tmp_Va[50]" is unused and has been removed.
+The signal "Vc[35]" is unused and has been removed.
+The signal "Vc[40]" is unused and has been removed.
+The signal "s_i_a[3]" is unused and has been removed.
+The signal "tmp_Va[46]" is unused and has been removed.
+The signal "tmp_Va[51]" is unused and has been removed.
+The signal "Vc[36]" is unused and has been removed.
+The signal "Vc[41]" is unused and has been removed.
+The signal "s_i_a[4]" is unused and has been removed.
+The signal "tmp_Va[47]" is unused and has been removed.
+The signal "tmp_Va[52]" is unused and has been removed.
+The signal "Vc[37]" is unused and has been removed.
+The signal "Vc[42]" is unused and has been removed.
+The signal "s_i_a[5]" is unused and has been removed.
+The signal "tmp_Va[48]" is unused and has been removed.
+The signal "tmp_Va[53]" is unused and has been removed.
+The signal "Vc[38]" is unused and has been removed.
+The signal "Vc[43]" is unused and has been removed.
+The signal "s_i_a[6]" is unused and has been removed.
+The signal "tmp_Va[49]" is unused and has been removed.
+The signal "tmp_Va[54]" is unused and has been removed.
+The signal "Vc[39]" is unused and has been removed.
+The signal "Vc[44]" is unused and has been removed.
+The signal "s_i_a[7]" is unused and has been removed.
+The signal "tmp_Va[55]" is unused and has been removed.
+The signal "tmp_Va[60]" is unused and has been removed.
+The signal "Vc[45]" is unused and has been removed.
+The signal "Vc[50]" is unused and has been removed.
+The signal "s_i_a[8]" is unused and has been removed.
+The signal "data_i_A_1_IBUF" is unused and has been removed.
+The signal "tmp_Va[56]" is unused and has been removed.
+The signal "tmp_Va[61]" is unused and has been removed.
+The signal "Vc[46]" is unused and has been removed.
+The signal "Vc[51]" is unused and has been removed.
+The signal "s_i_a[9]" is unused and has been removed.
+The signal "tmp_Va[62]" is unused and has been removed.
+The signal "tmp_Va[57]" is unused and has been removed.
+The signal "Vc[47]" is unused and has been removed.
+The signal "Vc[52]" is unused and has been removed.
+The signal "tmp_Va[63]" is unused and has been removed.
+The signal "tmp_Va[58]" is unused and has been removed.
+The signal "Vc[48]" is unused and has been removed.
+The signal "Vc[53]" is unused and has been removed.
+The signal "tmp_Va[64]" is unused and has been removed.
+The signal "tmp_Va[59]" is unused and has been removed.
+The signal "Vc[49]" is unused and has been removed.
+The signal "Vc[54]" is unused and has been removed.
+The signal "tmp_Va[65]" is unused and has been removed.
+The signal "tmp_Va[70]" is unused and has been removed.
+The signal "Vc[55]" is unused and has been removed.
+The signal "Vc[60]" is unused and has been removed.
+The signal "tmp_Va[71]" is unused and has been removed.
+The signal "tmp_Va[66]" is unused and has been removed.
+The signal "Vc[56]" is unused and has been removed.
+The signal "Vc[61]" is unused and has been removed.
+The signal "tmp_Va[72]" is unused and has been removed.
+The signal "tmp_Va[67]" is unused and has been removed.
+The signal "Vc[57]" is unused and has been removed.
+The signal "Vc[62]" is unused and has been removed.
+The signal "cnt[0]" is unused and has been removed.
+The signal "tmp_Va[73]" is unused and has been removed.
+The signal "tmp_Va[68]" is unused and has been removed.
+The signal "Vc[58]" is unused and has been removed.
+The signal "Vc[63]" is unused and has been removed.
+The signal "data_i_A_2_IBUF" is unused and has been removed.
+The signal "cnt[1]" is unused and has been removed.
+The signal "tmp_Va[74]" is unused and has been removed.
+The signal "tmp_Va[69]" is unused and has been removed.
+The signal "Vc[59]" is unused and has been removed.
+The signal "Vc[64]" is unused and has been removed.
+The signal "cnt[2]" is unused and has been removed.
+The signal "Va[0]" is unused and has been removed.
+The signal "tmp_Va[80]" is unused and has been removed.
+The signal "tmp_Va[75]" is unused and has been removed.
+The signal "Vc[65]" is unused and has been removed.
+The signal "Vc[70]" is unused and has been removed.
+The signal "cnt[3]" is unused and has been removed.
+The signal "Va[1]" is unused and has been removed.
+The signal "tmp_Va[81]" is unused and has been removed.
+The signal "tmp_Va[76]" is unused and has been removed.
+The signal "Vc[66]" is unused and has been removed.
+The signal "Vc[71]" is unused and has been removed.
+The signal "cnt[4]" is unused and has been removed.
+The signal "Va[2]" is unused and has been removed.
+The signal "tmp_Va[77]" is unused and has been removed.
+The signal "tmp_Va[82]" is unused and has been removed.
+The signal "Vc[67]" is unused and has been removed.
+The signal "Vc[72]" is unused and has been removed.
+The signal "cnt[5]" is unused and has been removed.
+The signal "Va[3]" is unused and has been removed.
+The signal "tmp_Va[78]" is unused and has been removed.
+The signal "tmp_Va[83]" is unused and has been removed.
+The signal "Vc[68]" is unused and has been removed.
+The signal "Vc[73]" is unused and has been removed.
+The signal "cnt[6]" is unused and has been removed.
+The signal "Va[4]" is unused and has been removed.
+The signal "tmp_Va[79]" is unused and has been removed.
+The signal "Vc[69]" is unused and has been removed.
+The signal "Vc[74]" is unused and has been removed.
+The signal "cnt[7]" is unused and has been removed.
+The signal "Va[5]" is unused and has been removed.
+The signal "Vc[75]" is unused and has been removed.
+The signal "Vc[80]" is unused and has been removed.
+The signal "Va[6]" is unused and has been removed.
+The signal "Vc[76]" is unused and has been removed.
+The signal "Vc[81]" is unused and has been removed.
+The signal "data_i_A_3_IBUF" is unused and has been removed.
+The signal "Va[7]" is unused and has been removed.
+The signal "Vc[77]" is unused and has been removed.
+The signal "Vc[82]" is unused and has been removed.
+The signal "s_i_b[0]" is unused and has been removed.
+The signal "Va[8]" is unused and has been removed.
+The signal "Vc[78]" is unused and has been removed.
+The signal "Vc[83]" is unused and has been removed.
+The signal "s_i_b[1]" is unused and has been removed.
+The signal "Va[9]" is unused and has been removed.
+The signal "Vc[79]" is unused and has been removed.
+The signal "s_i_b[2]" is unused and has been removed.
+The signal "s_i_b[3]" is unused and has been removed.
+The signal "r_Phase_Current_B[10]" is unused and has been removed.
+The signal "s_i_b[4]" is unused and has been removed.
+The signal "r_Phase_Current_B[11]" is unused and has been removed.
+The signal "s_i_b[5]" is unused and has been removed.
+The signal "r_Phase_Current_B[12]" is unused and has been removed.
+The signal "s_i_b[6]" is unused and has been removed.
+The signal "r_Phase_Current_B[13]" is unused and has been removed.
+The signal "data_i_A_4_IBUF" is unused and has been removed.
+The signal "s_i_b[7]" is unused and has been removed.
+The signal "r_Phase_Current_B[14]" is unused and has been removed.
+The signal "s_i_b[8]" is unused and has been removed.
+The signal "r_Phase_Current_B[15]" is unused and has been removed.
+The signal "s_i_b[9]" is unused and has been removed.
+The signal "VcHigh_OBUF" is unused and has been removed.
+The signal "data_i_A_5_IBUF" is unused and has been removed.
+The signal "Vb[0]" is unused and has been removed.
+The signal "Vb[1]" is unused and has been removed.
+The signal "Vb[2]" is unused and has been removed.
+The signal "Vb[3]" is unused and has been removed.
+The signal "Va[10]" is unused and has been removed.
+The signal "Vb[4]" is unused and has been removed.
+The signal "data_i_A_6_IBUF" is unused and has been removed.
+The signal "Va[11]" is unused and has been removed.
+The signal "Vb[5]" is unused and has been removed.
+The signal "Va[12]" is unused and has been removed.
+The signal "Vb[6]" is unused and has been removed.
+The signal "Va[13]" is unused and has been removed.
+The signal "Vb[7]" is unused and has been removed.
+The signal "Va[14]" is unused and has been removed.
+The signal "Vb[8]" is unused and has been removed.
+The signal "Va[15]" is unused and has been removed.
+The signal "Va[20]" is unused and has been removed.
+The signal "Vb[9]" is unused and has been removed.
+The signal "Va[16]" is unused and has been removed.
+The signal "Va[21]" is unused and has been removed.
+The signal "Va[17]" is unused and has been removed.
+The signal "Va[22]" is unused and has been removed.
+The signal "Va[18]" is unused and has been removed.
+The signal "Va[23]" is unused and has been removed.
+The signal "data_i_A_7_IBUF" is unused and has been removed.
+The signal "Va[19]" is unused and has been removed.
+The signal "Va[24]" is unused and has been removed.
+The signal "Va[25]" is unused and has been removed.
+The signal "Va[30]" is unused and has been removed.
+The signal "Va[26]" is unused and has been removed.
+The signal "Va[31]" is unused and has been removed.
+The signal "Va[27]" is unused and has been removed.
+The signal "Va[32]" is unused and has been removed.
+The signal "r_Electrical_Position[0]" is unused and has been removed.
+The signal "Va[28]" is unused and has been removed.
+The signal "Va[33]" is unused and has been removed.
+The signal "r_Electrical_Position[1]" is unused and has been removed.
+The signal "Va[29]" is unused and has been removed.
+The signal "Va[34]" is unused and has been removed.
+The signal "r_Electrical_Position[2]" is unused and has been removed.
+The signal "Va[35]" is unused and has been removed.
+The signal "Va[40]" is unused and has been removed.
+The signal "r_Electrical_Position[3]" is unused and has been removed.
+The signal "Va[36]" is unused and has been removed.
+The signal "Va[41]" is unused and has been removed.
+The signal "r_Electrical_Position[4]" is unused and has been removed.
+The signal "Va[37]" is unused and has been removed.
+The signal "Va[42]" is unused and has been removed.
+The signal "r_Electrical_Position[5]" is unused and has been removed.
+The signal "Va[38]" is unused and has been removed.
+The signal "Va[43]" is unused and has been removed.
+The signal "r_Electrical_Position[6]" is unused and has been removed.
+The signal "Va[39]" is unused and has been removed.
+The signal "Va[44]" is unused and has been removed.
+The signal "r_Electrical_Position[7]" is unused and has been removed.
+The signal "Va[45]" is unused and has been removed.
+The signal "Va[50]" is unused and has been removed.
+The signal "r_Electrical_Position[8]" is unused and has been removed.
+The signal "Va[46]" is unused and has been removed.
+The signal "Va[51]" is unused and has been removed.
+The signal "Vc[0]" is unused and has been removed.
+The signal "r_Electrical_Position[9]" is unused and has been removed.
+The signal "clk_int" is unused and has been removed.
+The signal "Va[47]" is unused and has been removed.
+The signal "Va[52]" is unused and has been removed.
+The signal "Vc[1]" is unused and has been removed.
+The signal "Va[48]" is unused and has been removed.
+The signal "Va[53]" is unused and has been removed.
+The signal "Vc[2]" is unused and has been removed.
+The signal "Va[49]" is unused and has been removed.
+The signal "Va[54]" is unused and has been removed.
+The signal "Vc[3]" is unused and has been removed.
+The signal "Va[55]" is unused and has been removed.
+The signal "Va[60]" is unused and has been removed.
+The signal "Vc[4]" is unused and has been removed.
+The signal "Va[56]" is unused and has been removed.
+The signal "Va[61]" is unused and has been removed.
+The signal "Vc[5]" is unused and has been removed.
+The signal "Va[57]" is unused and has been removed.
+The signal "Va[62]" is unused and has been removed.
+The signal "Vc[6]" is unused and has been removed.
+The signal "Va[58]" is unused and has been removed.
+The signal "Va[63]" is unused and has been removed.
+The signal "Vc[7]" is unused and has been removed.
+The signal "Va[59]" is unused and has been removed.
+The signal "Va[64]" is unused and has been removed.
+The signal "Vc[8]" is unused and has been removed.
+The signal "Va[70]" is unused and has been removed.
+The signal "Va[65]" is unused and has been removed.
+The signal "Vc[9]" is unused and has been removed.
+The signal "Va[66]" is unused and has been removed.
+The signal "Va[71]" is unused and has been removed.
+The signal "Va[67]" is unused and has been removed.
+The signal "Va[72]" is unused and has been removed.
+The signal "Va[68]" is unused and has been removed.
+The signal "Va[73]" is unused and has been removed.
+The signal "Va[69]" is unused and has been removed.
+The signal "Va[74]" is unused and has been removed.
+The signal "Va[75]" is unused and has been removed.
+The signal "Va[80]" is unused and has been removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		CLK_FIX/XST_GND
+VCC 		CLK_FIX/XST_VCC
+GND 		CONFIG_STATE/XST_GND
+GND 		CURR_SENSE_A/XST_GND
+VCC 		CURR_SENSE_A/XST_VCC
+GND 		CURR_SENSE_B/XST_GND
+VCC 		CURR_SENSE_B/XST_VCC
+VCC 		DECOUPLE_IN/CLK_ENABLE_BUFF/XST_VCC
+GND 		DECOUPLE_IN/CURRENT_COMMAND_BUFF/XST_GND
+GND 		ELEC_POS/XST_GND
+VCC 		ELEC_POS/XST_VCC
+GND 		ELEC_POS/CNTR/XST_GND
+VCC 		ELEC_POS/CNTR/XST_VCC
+GND 		ELEC_POS/DECODER/XST_GND
+VCC 		ELEC_POS/DECODER/XST_VCC
+GND 		ICAP_CLK_COMP/XST_GND
+GND 		ICAP_CONTR/XST_GND
+GND 		ICAP_CONTR/EEPROM_INT/XST_GND
+VCC 		ICAP_CONTR/EEPROM_INT/XST_VCC
+GND 		PWM_GEN/XST_GND
+VCC 		PWM_GEN/XST_VCC
+GND 		RECONFIG_PART/XST_GND
+VCC 		RECONFIG_PART/XST_VCC
+LUT4
+		RECONFIG_PART/u_Space_Vector_Modulation/Mcompar_Max_stage1_1_val_cmp_ge0000_lu
+tdi
+   optimized to 0
+LUT4
+		RECONFIG_PART/u_Space_Vector_Modulation/Mcompar_Max_stage1_1_val_cmp_ge0000_lu
+tdi1
+   optimized to 0
+LUT4
+		RECONFIG_PART/u_Space_Vector_Modulation/Mcompar_Max_stage1_1_val_cmp_ge0000_lu
+tdi2
+   optimized to 0
+LUT4
+		RECONFIG_PART/u_Space_Vector_Modulation/Mcompar_Max_stage1_1_val_cmp_ge0000_lu
+tdi3
+   optimized to 0
+LUT4
+		RECONFIG_PART/u_Space_Vector_Modulation/Mcompar_Max_stage1_1_val_cmp_ge0000_lu
+tdi4
+   optimized to 0
+LUT4
+		RECONFIG_PART/u_Space_Vector_Modulation/Mcompar_Max_stage1_1_val_cmp_ge0000_lu
+tdi5
+   optimized to 0
+LUT4
+		RECONFIG_PART/u_Space_Vector_Modulation/Mcompar_Max_stage1_1_val_cmp_ge0000_lu
+tdi6
+   optimized to 0
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Current_Command                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| EOC_A                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| EOC_B                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| VaHigh                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VaLow                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VbHigh                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VbLow                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VcHigh                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| VcLow                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk_i                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| controller_sel                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| convst_A                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| convst_B                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_i_A[0]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_A[1]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_A[2]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_A[3]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_A[4]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_A[5]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_A[6]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_A[7]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_B[0]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_B[1]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_B[2]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_B[3]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_B[4]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_B[5]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_B[6]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_i_B[7]                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| eeprom_sel[0]                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| eeprom_sel[1]                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| freq[0]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[1]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[2]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[3]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[4]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[5]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[6]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[7]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[8]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[9]                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[10]                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[11]                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[12]                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[13]                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[14]                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| freq[15]                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mem_addr[0]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[1]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[2]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[3]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[4]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[5]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[6]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[7]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[8]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[9]                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[10]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[11]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[12]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[13]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[14]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[15]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[16]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[17]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_addr[18]                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mem_dat[0]                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mem_dat[1]                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mem_dat[2]                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mem_dat[3]                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mem_dat[4]                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mem_dat[5]                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mem_dat[6]                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mem_dat[7]                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| quadA                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| quadB                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| rst                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  Preserved Partitions:
+
+    Partition "/top"
+
+
+  Implemented Partitions:
+
+    Partition "/top/RECONFIG_PART" (Reconfigurable Module "controllerFOC"):
+Attribute STATE set to IMPLEMENT.
+
+-------------------------------
+
+Partition Resource Summary:
+---------------------------
+Resources are reported for each Partition followed in parenthesis by resources
+for the Partition plus all of its descendents.
+
+Partition "/top":
+  ImportLocation=../../research_v11.promote/Xconfig_1
+  State=import
+  Slice Logic Utilization:
+    Number of Slice Registers:             438 (717)
+    Number of Slice LUTs:                  401 (2,166)
+      Number used as logic:                399 (2,148)
+      Number used as Memory:                 2 (18)
+  Slice Logic Distribution:
+    Number of occupied Slices:             227 (727)
+    Number of LUT Flip Flop pairs used:    756 (2,557)
+      Number with an unused Flip Flop:     318 out of    756   42%
+      Number with an unused LUT:           352 out of    756   46%
+      Number of fully used LUT-FF pairs:    86 out of    756   11%
+  IO Utilization:
+    Number of bonded IOBs:                  77 (77)
+  Number of DCM_ADV:                         1 (1)
+  Number of DSP48E:                          1 (29)
+  Number of ICAP:                            1 (1)
+
+Partition "/top/RECONFIG_PART" (Reconfigurable Module "controllerFOC") (Area Group "pblock_RECONFIG_PART"):
+  State=implement
+  Slice Logic Utilization:
+    Number of Slice Registers:             279 (279)
+    Number of Slice LUTs:                1,765 (1,765)
+      Number used as logic:              1,749 (1,749)
+      Number used as Memory:                16 (16)
+  Slice Logic Distribution:
+    Number of occupied Slices:             500 (500)
+    Number of LUT Flip Flop pairs used:  1,801 (1,801)
+      Number with an unused Flip Flop:   1,522 out of  1,801   84%
+      Number with an unused LUT:            50 out of  1,801    2%
+      Number of fully used LUT-FF pairs:   229 out of  1,801   12%
+  Number of DSP48E:                         28 (28)
+
+
+Area Group Information
+----------------------
+
+Area Group "pblock_RECONFIG_PART"
+  No COMPRESSION specified for Area Group "pblock_RECONFIG_PART"
+  RANGE: DSP48_X0Y0:DSP48_X0Y35
+  RANGE: RAMB36_X0Y0:RAMB36_X0Y17
+  RANGE: SLICE_X8Y0:SLICE_X15Y89
+  Slice Logic Utilization:
+    Number of Slice Registers:             279 out of  2,880    9%
+    Number of Slice LUTs:                1,765 out of  2,880   61%
+      Number used as logic:              1,749
+      Number used as Memory:                16
+  Slice Logic Distribution:
+    Number of occupied Slices:             500 out of    720   69%
+    Number of LUT Flip Flop pairs used:  1,801
+      Number with an unused Flip Flop:   1,522 out of  1,801   84%
+      Number with an unused LUT:            50 out of  1,801    2%
+      Number of fully used LUT-FF pairs:   229 out of  1,801   12%
+  Number of DSP48E:                         28 out of     36   77%
+
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

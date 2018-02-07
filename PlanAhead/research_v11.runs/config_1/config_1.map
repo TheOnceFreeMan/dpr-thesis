@@ -1,0 +1,210 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -intstyle pa -w config_1.ngd 
+Target Device  : xc5vlx50
+Target Package : ff676
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Tue Nov 28 19:57:24 2017
+
+Mapping design into LUTs...
+WARNING:MapLib:934 - Output port "ce_out" connected to sig "tmp_ce_out" on
+   Partition "/top/RECONFIG_PART" is not connected.  To fix this problem, either
+   remove the output port from the appropriate input source file or make sure
+   the port is connected to logic outside the Partition.
+WARNING:MapLib:1235 - The undriven or constant signals indicate that further
+   logic reduction is possible if the Partition "/top/RECONFIG_PART" is removed.
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 10 secs 
+Total CPU  time at the beginning of Placer: 7 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:b44f871e) REAL time: 11 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:b44f871e) REAL time: 11 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:3c044df9) REAL time: 11 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:3c044df9) REAL time: 11 secs 
+
+Phase 5.33  Local Placement Optimization
+Phase 5.33  Local Placement Optimization (Checksum:3c044df9) REAL time: 13 secs 
+
+Phase 6.32  Local Placement Optimization
+Phase 6.32  Local Placement Optimization (Checksum:3c044df9) REAL time: 14 secs 
+
+Phase 7.2  Initial Clock and IO Placement
+
+.........
+WARNING:Place:644 - A clock IOB clock component is not placed at an optimal
+   clock IOB site. The clock IOB component <EOC_A> is placed at site <E13>. The
+   clock IO site can use the fast path between the IO and the Clock buffer/GCLK
+   if the IOB is placed in the master Clock IOB Site. This is normally an ERROR
+   but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <EOC_A_BUFGP/EOC_A.PAD> allowing your design to continue. This constraint
+   disables all clock placer rules related to the specified COMP.PIN. The use of
+   this override is highly discouraged as it may lead to very poor timing
+   results. It is recommended that this error condition be corrected in the
+   design.
+WARNING:Place:644 - A clock IOB clock component is not placed at an optimal
+   clock IOB site. The clock IOB component <EOC_B> is placed at site <D14>. The
+   clock IO site can use the fast path between the IO and the Clock buffer/GCLK
+   if the IOB is placed in the master Clock IOB Site. This is normally an ERROR
+   but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <EOC_B_BUFGP/EOC_B.PAD> allowing your design to continue. This constraint
+   disables all clock placer rules related to the specified COMP.PIN. The use of
+   this override is highly discouraged as it may lead to very poor timing
+   results. It is recommended that this error condition be corrected in the
+   design.
+Phase 7.2  Initial Clock and IO Placement (Checksum:de648ef) REAL time: 14 secs 
+
+Phase 8.36  Local Placement Optimization
+Phase 8.36  Local Placement Optimization (Checksum:de648ef) REAL time: 14 secs 
+
+Phase 9.30  Global Clock Region Assignment
+Phase 9.30  Global Clock Region Assignment (Checksum:de648ef) REAL time: 14 secs 
+
+Phase 10.3  Local Placement Optimization
+Phase 10.3  Local Placement Optimization (Checksum:de648ef) REAL time: 14 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:de648ef) REAL time: 14 secs 
+
+Phase 12.8  Global Placement
+.....................
+.....
+Phase 12.8  Global Placement (Checksum:72ded4eb) REAL time: 14 secs 
+
+Phase 13.29  Local Placement Optimization
+Phase 13.29  Local Placement Optimization (Checksum:72ded4eb) REAL time: 14 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:72ded4eb) REAL time: 14 secs 
+
+Phase 15.18  Placement Optimization
+Phase 15.18  Placement Optimization (Checksum:68ca0ae3) REAL time: 16 secs 
+
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:68ca0ae3) REAL time: 16 secs 
+
+Phase 17.34  Placement Validation
+Phase 17.34  Placement Validation (Checksum:68ca0ae3) REAL time: 16 secs 
+
+Total REAL time to Placer completion: 17 secs 
+Total CPU  time to Placer completion: 13 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ELEC_POS/count_enb is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONFIG_STATE/src_sel_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net CONFIG_STATE/cfg_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <CURR_SENSE_B/REGIS/D[14]> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <CURR_SENSE_B/REGIS/D[13]> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <CURR_SENSE_A/REGIS/D[14]> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <CURR_SENSE_A/REGIS/D[13]> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D6/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D6/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D5/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D5/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D4/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D4/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D3/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D3/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D2/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D2/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D1/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D1/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   23
+Slice Logic Utilization:
+  Number of Slice Registers:                   438 out of  28,800    1%
+    Number used as Flip Flops:                 419
+    Number used as Latches:                     19
+  Number of Slice LUTs:                        739 out of  28,800    2%
+    Number used as logic:                      732 out of  28,800    2%
+      Number using O6 output only:             476
+      Number using O5 output only:              79
+      Number using O5 and O6:                  177
+    Number used as Memory:                       2 out of   7,680    1%
+      Number used as Shift Register:             2
+        Number using O6 output only:             2
+    Number used as exclusive route-thru:         5
+  Number of route-thrus:                        85
+    Number using O6 output only:                84
+    Number using O5 output only:                 1
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   332 out of   7,200    4%
+  Number of LUT Flip Flop pairs used:        1,091
+    Number with an unused Flip Flop:           653 out of   1,091   59%
+    Number with an unused LUT:                 352 out of   1,091   32%
+    Number of fully used LUT-FF pairs:          86 out of   1,091    7%
+    Number of unique control sets:              23
+    Number of slice register sites lost
+      to control set restrictions:              44 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        77 out of     440   17%
+    Number of LOCed IOBs:                       77 out of      77  100%
+
+Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      5 out of      32   15%
+    Number used as BUFGs:                        5
+  Number of DCM_ADVs:                            1 out of      12    8%
+  Number of DSP48Es:                             1 out of      48    2%
+  Number of ICAPs:                               1 out of       2   50%
+
+Average Fanout of Non-Clock Nets:                2.05
+
+Peak Memory Usage:  509 MB
+Total REAL time to MAP completion:  18 secs 
+Total CPU time to MAP completion:   14 secs 
+
+Mapping completed.
+See MAP report file "config_1.mrp" for details.

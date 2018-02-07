@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">CONFIG_STATE/src_sel_not0001</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">CONFIG_STATE/cfg_not0001</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ELEC_POS/count_enb</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">CURR_SENSE_B/REGIS/D[14]</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">CURR_SENSE_B/REGIS/D[13]</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">CURR_SENSE_A/REGIS/D[14]</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">CURR_SENSE_A/REGIS/D[13]</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D6/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D6/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D5/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D5/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D4/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D4/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D3/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D3/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D2/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D2/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D1/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D1/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">CONFIG_STATE/src_sel_not0001</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">CONFIG_STATE/cfg_not0001</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ELEC_POS/count_enb</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">CURR_SENSE_B/REGIS/D[14]</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">CURR_SENSE_B/REGIS/D[13]</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">CURR_SENSE_A/REGIS/D[14]</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">CURR_SENSE_A/REGIS/D[13]</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D6/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D6/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D5/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D5/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D4/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D4/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D3/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D3/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D2/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D2/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D1/GLOBAL_LOGIC0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">ELEC_POS/DECODER/D1/GLOBAL_LOGIC1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+</messages>
+
