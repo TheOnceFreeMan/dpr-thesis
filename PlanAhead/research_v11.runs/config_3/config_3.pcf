@@ -1,0 +1,442 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Nov 28 20:00:04 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk_i" LOCATE = SITE "AD8" LEVEL 1;
+COMP "freq[0]" LOCATE = SITE "P20" LEVEL 1;
+COMP "freq[1]" LOCATE = SITE "P21" LEVEL 1;
+COMP "freq[2]" LOCATE = SITE "J24" LEVEL 1;
+COMP "freq[3]" LOCATE = SITE "H24" LEVEL 1;
+COMP "freq[4]" LOCATE = SITE "M19" LEVEL 1;
+COMP "freq[5]" LOCATE = SITE "M20" LEVEL 1;
+COMP "freq[6]" LOCATE = SITE "G25" LEVEL 1;
+COMP "freq[7]" LOCATE = SITE "G24" LEVEL 1;
+COMP "freq[8]" LOCATE = SITE "N23" LEVEL 1;
+COMP "freq[9]" LOCATE = SITE "P23" LEVEL 1;
+COMP "eeprom_sel[0]" LOCATE = SITE "P26" LEVEL 1;
+COMP "eeprom_sel[1]" LOCATE = SITE "Y26" LEVEL 1;
+COMP "freq[10]" LOCATE = SITE "L19" LEVEL 1;
+COMP "freq[11]" LOCATE = SITE "L20" LEVEL 1;
+COMP "freq[12]" LOCATE = SITE "H26" LEVEL 1;
+COMP "freq[13]" LOCATE = SITE "G26" LEVEL 1;
+COMP "freq[14]" LOCATE = SITE "K22" LEVEL 1;
+COMP "freq[15]" LOCATE = SITE "K23" LEVEL 1;
+COMP "quadA" LOCATE = SITE "AC26" LEVEL 1;
+COMP "quadB" LOCATE = SITE "AB26" LEVEL 1;
+COMP "data_i_A[0]" LOCATE = SITE "N19" LEVEL 1;
+COMP "data_i_A[1]" LOCATE = SITE "P19" LEVEL 1;
+COMP "data_i_A[2]" LOCATE = SITE "G22" LEVEL 1;
+COMP "data_i_A[3]" LOCATE = SITE "G21" LEVEL 1;
+COMP "data_i_B[0]" LOCATE = SITE "U26" LEVEL 1;
+COMP "data_i_A[4]" LOCATE = SITE "E26" LEVEL 1;
+COMP "data_i_B[1]" LOCATE = SITE "V26" LEVEL 1;
+COMP "data_i_A[5]" LOCATE = SITE "E25" LEVEL 1;
+COMP "data_i_B[2]" LOCATE = SITE "N21" LEVEL 1;
+COMP "data_i_A[6]" LOCATE = SITE "F25" LEVEL 1;
+COMP "data_i_B[3]" LOCATE = SITE "N22" LEVEL 1;
+COMP "data_i_A[7]" LOCATE = SITE "F24" LEVEL 1;
+COMP "data_i_B[4]" LOCATE = SITE "R23" LEVEL 1;
+COMP "data_i_B[5]" LOCATE = SITE "R22" LEVEL 1;
+COMP "data_i_B[6]" LOCATE = SITE "J26" LEVEL 1;
+COMP "data_i_B[7]" LOCATE = SITE "J25" LEVEL 1;
+COMP "controller_sel" LOCATE = SITE "U4" LEVEL 1;
+COMP "VaHigh" LOCATE = SITE "Y8" LEVEL 1;
+COMP "VbHigh" LOCATE = SITE "T22" LEVEL 1;
+COMP "convst_A" LOCATE = SITE "E12" LEVEL 1;
+COMP "convst_B" LOCATE = SITE "F12" LEVEL 1;
+COMP "VcHigh" LOCATE = SITE "C21" LEVEL 1;
+COMP "VaLow" LOCATE = SITE "A22" LEVEL 1;
+COMP "VbLow" LOCATE = SITE "AA18" LEVEL 1;
+COMP "VcLow" LOCATE = SITE "AA8" LEVEL 1;
+COMP "rst" LOCATE = SITE "B21" LEVEL 1;
+PIN EOC_A_BUFGP/EOC_A_pin<0> = BEL "EOC_A_BUFGP/EOC_A" PINNAME PAD;
+PIN "EOC_A_BUFGP/EOC_A_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "EOC_A" LOCATE = SITE "E13" LEVEL 1;
+COMP "mem_addr[10]" LOCATE = SITE "AB25" LEVEL 1;
+COMP "Current_Command" LOCATE = SITE "T7" LEVEL 1;
+COMP "mem_addr[11]" LOCATE = SITE "M24" LEVEL 1;
+COMP "mem_addr[12]" LOCATE = SITE "N24" LEVEL 1;
+COMP "mem_addr[13]" LOCATE = SITE "M25" LEVEL 1;
+COMP "mem_addr[14]" LOCATE = SITE "M26" LEVEL 1;
+COMP "mem_addr[15]" LOCATE = SITE "K25" LEVEL 1;
+COMP "mem_addr[16]" LOCATE = SITE "K26" LEVEL 1;
+PIN EOC_B_BUFGP/EOC_B_pin<0> = BEL "EOC_B_BUFGP/EOC_B" PINNAME PAD;
+PIN "EOC_B_BUFGP/EOC_B_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "EOC_B" LOCATE = SITE "D14" LEVEL 1;
+COMP "mem_addr[17]" LOCATE = SITE "L24" LEVEL 1;
+COMP "mem_addr[18]" LOCATE = SITE "L25" LEVEL 1;
+COMP "mem_addr[0]" LOCATE = SITE "Y25" LEVEL 1;
+COMP "mem_addr[1]" LOCATE = SITE "W26" LEVEL 1;
+COMP "mem_addr[2]" LOCATE = SITE "W25" LEVEL 1;
+COMP "mem_addr[3]" LOCATE = SITE "U25" LEVEL 1;
+COMP "mem_addr[4]" LOCATE = SITE "U24" LEVEL 1;
+COMP "mem_addr[5]" LOCATE = SITE "T25" LEVEL 1;
+COMP "mem_addr[6]" LOCATE = SITE "T24" LEVEL 1;
+COMP "mem_addr[7]" LOCATE = SITE "P24" LEVEL 1;
+COMP "mem_addr[8]" LOCATE = SITE "P25" LEVEL 1;
+COMP "mem_addr[9]" LOCATE = SITE "N26" LEVEL 1;
+COMP "mem_dat[0]" LOCATE = SITE "M21" LEVEL 1;
+COMP "mem_dat[1]" LOCATE = SITE "K21" LEVEL 1;
+COMP "mem_dat[2]" LOCATE = SITE "K20" LEVEL 1;
+COMP "mem_dat[3]" LOCATE = SITE "M22" LEVEL 1;
+COMP "mem_dat[4]" LOCATE = SITE "H23" LEVEL 1;
+COMP "mem_dat[5]" LOCATE = SITE "J21" LEVEL 1;
+COMP "mem_dat[6]" LOCATE = SITE "J23" LEVEL 1;
+COMP "mem_dat[7]" LOCATE = SITE "J20" LEVEL 1;
+COMPGRP pblock_RECONFIG_PART.SLICE = COMP
+        "RECONFIG_PART/u_cosinea/Madd_p25mA_out1_cy[5]" COMP
+        "RECONFIG_PART/u_cosinea/Madd_p25mA_out1_cy[9]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[44]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[48]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[52]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[56]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[60]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[64]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[68]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[72]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[76]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[80]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_p25mA_out1_cy[5]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_p25mA_out1_cy[9]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_p25mA_out1_cy[13]" COMP
+        "RECONFIG_PART/Madd_phasecdc_out1_cy[73]" COMP
+        "RECONFIG_PART/Madd_phasecdc_out1_cy[81]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_Negate_cast_1_Madd_cy[3]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_Negate_cast_1_Madd_cy[15]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_Negate_cast_1_Madd_cy[19]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_Negate_cast_1_Madd_cy[23]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_Negate_cast_1_Madd_cy[27]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_Negate_cast_1_Madd_cy[31]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_Negate_cast_1_Madd_cy[35]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_Negate_cast_1_Madd_cy[39]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_Negate_cast_1_Madd_cy[47]" COMP
+        "RECONFIG_PART/u_cosinec/Negate_cast_1[50]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[44]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[48]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[52]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[56]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[60]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[64]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[68]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[72]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[76]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[80]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[82]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_p75mA_out1_cy[5]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_p75mA_out1_cy[9]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_p75mA_out1_cy[13]" COMP
+        "RECONFIG_PART/u_cosinec/p75mA_out1[51]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_p75mA_out1_cy[5]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_p75mA_out1_cy[9]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_p75mA_out1_cy[13]" COMP
+        "RECONFIG_PART/u_cosineb/p75mA_out1[51]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_x_reg[3]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_x_reg[7]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_x_reg[11]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_x_reg[15]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_x_reg[19]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_x_reg[23]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_x_reg[27]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_x_reg[31]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_x_reg[34]" COMP
+        "RECONFIG_PART/u_cosinea/Madd_p75mA_out1_cy[5]" COMP
+        "RECONFIG_PART/u_cosinea/Madd_p75mA_out1_cy[9]" COMP
+        "RECONFIG_PART/u_cosinea/Madd_p75mA_out1_cy[13]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_p25mA_out1_cy[5]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_p25mA_out1_cy[9]" COMP
+        "RECONFIG_PART/u_cosinec/Madd_p25mA_out1_cy[13]" COMP
+        "RECONFIG_PART/u_cosinec/p25mA_out1[51]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[3]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[7]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[11]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[15]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[19]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[23]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[27]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[31]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[35]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[39]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[43]" COMP
+        "RECONFIG_PART/u_cosineb/Madd_Negate_cast_1_Madd_cy[47]" COMP
+        "RECONFIG_PART/u_cosineb/Negate_cast_1[50]" COMP
+        "RECONFIG_PART/Madd_phaseadc_out1_cy[69]" COMP
+        "RECONFIG_PART/Madd_phaseadc_out1_cy[73]" COMP
+        "RECONFIG_PART/Madd_phaseadc_out1_cy[77]" COMP
+        "RECONFIG_PART/Madd_phaseadc_out1_cy[81]" COMP "RECONFIG_PART/Va[83]"
+        COMP "RECONFIG_PART/phasecmultiplier_out1_1[44]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[48]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[52]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[56]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[60]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[64]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[68]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[72]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[76]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[80]" COMP
+        "RECONFIG_PART/Madd_phasebdc_out1_cy[69]" COMP
+        "RECONFIG_PART/Madd_phasebdc_out1_cy[73]" COMP
+        "RECONFIG_PART/Madd_phasebdc_out1_cy[77]" COMP
+        "RECONFIG_PART/Madd_phasebdc_out1_cy[81]" COMP "RECONFIG_PART/Vb[83]"
+        COMP "RECONFIG_PART/Msub_subtractb_out1_cy[26]" COMP
+        "RECONFIG_PART/Msub_subtractb_out1_cy[30]" COMP
+        "RECONFIG_PART/subtractb_out1[34]" COMP
+        "RECONFIG_PART/Msub_subtractc_out1_cy[26]" COMP
+        "RECONFIG_PART/Msub_subtractc_out1_cy[30]" COMP
+        "RECONFIG_PART/subtractc_out1[34]" COMP "Comp_13978" COMP
+        "RECONFIG_PART/ce_out_PROXY" COMP
+        "RECONFIG_PART/u_cosineb/CastU16En2_out1[3]" COMP
+        "RECONFIG_PART/u_cosineb/N2" COMP "RECONFIG_PART/freq[2]" COMP
+        "RECONFIG_PART/reduced_reg_0_3" COMP "Comp_13987" COMP
+        "RECONFIG_PART/reduced_reg_0_7" COMP "Comp_13989" COMP
+        "RECONFIG_PART/reduced_reg_1_11" COMP "Comp_13982" COMP
+        "RECONFIG_PART/reduced_reg_0_23" COMP "RECONFIG_PART/freq[9]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[19]" COMP "Comp_13986" COMP
+        "RECONFIG_PART/gain_out1_1[23]" COMP "RECONFIG_PART/reduced_reg_0_11"
+        COMP "RECONFIG_PART/Discrete_Time_Integrator_indtc_1[3]" COMP
+        "RECONFIG_PART/reduced_reg_0_12" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_indtc_1[4]" COMP
+        "RECONFIG_PART/reduced_reg_0_24" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_indtc_1[12]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_u_gain_1[4]" COMP
+        "RECONFIG_PART/gain_out1_1[8]" COMP "RECONFIG_PART/gain_out1_1[24]"
+        COMP "RECONFIG_PART/Discrete_Time_Integrator_u_gain_1[10]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_u_gain_1[12]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_u_gain_1[16]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_u_gain_1[0]" COMP
+        "RECONFIG_PART/gain_out1_1[12]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_u_gain_1[20]" COMP
+        "RECONFIG_PART/reset" COMP "RECONFIG_PART/reduced_reg_0_19" COMP
+        "RECONFIG_PART/gain_out1_1[19]" COMP "RECONFIG_PART/ce_out" COMP
+        "Comp_13981" COMP "RECONFIG_PART/N120" COMP "RECONFIG_PART/N50" COMP
+        "RECONFIG_PART/Cosine_3[11]" COMP "RECONFIG_PART/Cosine_3[15]" COMP
+        "RECONFIG_PART/Cosine_3[19]" COMP "RECONFIG_PART/Cosine_3[31]" COMP
+        "RECONFIG_PART/Cosine_3[35]" COMP "RECONFIG_PART/Cosine_3[23]" COMP
+        "RECONFIG_PART/Cosine_3[27]" COMP "RECONFIG_PART/Cosine_3[43]" COMP
+        "RECONFIG_PART/Cosine_3[47]" COMP "RECONFIG_PART/freq[3]" COMP
+        "RECONFIG_PART/Va(5)_PROXY" COMP "RECONFIG_PART/freq[12]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[7]" COMP "Comp_14983" COMP
+        "RECONFIG_PART/freq[1]" COMP "Comp_13991" COMP
+        "RECONFIG_PART/gain_out1_1[3]" COMP "RECONFIG_PART/freq[8]" COMP
+        "RECONFIG_PART/freq[4]" COMP "Comp_13995" COMP
+        "RECONFIG_PART/freq[10]" COMP "RECONFIG_PART/freq[14]" COMP
+        "RECONFIG_PART/Cosine_1[3]" COMP
+        "RECONFIG_PART/Discrete_Time_Integrator_indtc_1[8]" COMP
+        "RECONFIG_PART/u_cosinea/CastU16En2_out1[0]" COMP
+        "RECONFIG_PART/u_cosinea/alpha1st_or_4th_Quad_out1[1]" COMP
+        "RECONFIG_PART/reset_inv" COMP "Comp_14985" COMP
+        "RECONFIG_PART/u_cosineb/CastU16En2_out1[8]" COMP
+        "RECONFIG_PART/u_cosineb/CastU16En2_out1[11]" COMP
+        "RECONFIG_PART/N122" COMP "RECONFIG_PART/Cosine_3[3]" COMP
+        "RECONFIG_PART/Cosine_3[50]" COMP "RECONFIG_PART/Cosine_5[7]" COMP
+        "RECONFIG_PART/Cosine_5[11]" COMP "RECONFIG_PART/reduced_reg_1_7" COMP
+        "RECONFIG_PART/freq[6]" COMP "RECONFIG_PART/reduced_reg_1_23" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[3]" COMP
+        "RECONFIG_PART/reduced_reg_1_15" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[31]" COMP
+        "RECONFIG_PART/gain_out1_1[7]" COMP "RECONFIG_PART/reduced_reg_1_26"
+        COMP "RECONFIG_PART/reduced_reg_1_19" COMP
+        "RECONFIG_PART/u_cosinea/CastU16En2_out1[6]" COMP
+        "RECONFIG_PART/u_cosinea/CastU16En2_out1[3]" COMP
+        "RECONFIG_PART/u_cosinea/N1" COMP
+        "RECONFIG_PART/u_cosinea/CastU16En2_out1[10]" COMP
+        "RECONFIG_PART/u_cosinea/N2" COMP "RECONFIG_PART/Cosine_1[43]" COMP
+        "RECONFIG_PART/u_cosineb/CastU16En2_out1[6]" COMP
+        "RECONFIG_PART/u_cosineb/CastU16En2_out1[10]" COMP
+        "RECONFIG_PART/Cosine_3[7]" COMP
+        "RECONFIG_PART/u_cosineb/alpha1st_or_4th_Quad_out1[1]" COMP
+        "RECONFIG_PART/Cosine_3[39]" COMP "RECONFIG_PART/reduced_reg_1_3" COMP
+        "RECONFIG_PART/Cosine_5[3]" COMP "RECONFIG_PART/Va(7)_PROXY" COMP
+        "RECONFIG_PART/Va(12)_PROXY" COMP "RECONFIG_PART/Va(9)_PROXY" COMP
+        "RECONFIG_PART/u_cosinea/CastU16En2_out1[9]" COMP
+        "RECONFIG_PART/Cosine_1[7]" COMP "RECONFIG_PART/Cosine_1[11]" COMP
+        "RECONFIG_PART/Cosine_1[15]" COMP "RECONFIG_PART/Cosine_1[19]" COMP
+        "RECONFIG_PART/Cosine_1[23]" COMP "RECONFIG_PART/Cosine_1[27]" COMP
+        "RECONFIG_PART/Cosine_1[31]" COMP "RECONFIG_PART/Cosine_1[35]" COMP
+        "RECONFIG_PART/Cosine_1[39]" COMP "RECONFIG_PART/Cosine_1[47]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[27]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[3]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[15]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[23]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[11]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[7]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[19]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[35]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[40]" COMP
+        "RECONFIG_PART/Vb(29)_PROXY" COMP "RECONFIG_PART/Vb(22)_PROXY" COMP
+        "RECONFIG_PART/Vb(31)_PROXY" COMP "RECONFIG_PART/Vb(56)_PROXY" COMP
+        "RECONFIG_PART/Vb(72)_PROXY" COMP "RECONFIG_PART/Vb(76)_PROXY" COMP
+        "RECONFIG_PART/Vb(80)_PROXY" COMP "RECONFIG_PART/Vc(15)_PROXY" COMP
+        "RECONFIG_PART/Vc(44)_PROXY" COMP "RECONFIG_PART/Vc(58)_PROXY" COMP
+        "RECONFIG_PART/Va(66)_PROXY" COMP "RECONFIG_PART/Va(28)_PROXY" COMP
+        "RECONFIG_PART/Va(13)_PROXY" COMP "RECONFIG_PART/Va(54)_PROXY" COMP
+        "RECONFIG_PART/Va(60)_PROXY" COMP "RECONFIG_PART/Va(77)_PROXY" COMP
+        "RECONFIG_PART/Cosine_5[15]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[23]" COMP
+        "RECONFIG_PART/u_cosinec/alpha1st_or_4th_Quad_out1[1]" COMP
+        "RECONFIG_PART/Cosine_5[19]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[24]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[36]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[32]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[82]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[31]" COMP
+        "RECONFIG_PART/phasebmultiplier_out1_1[39]" COMP
+        "RECONFIG_PART/Vb(32)_PROXY" COMP "RECONFIG_PART/Vb(38)_PROXY" COMP
+        "RECONFIG_PART/Vb(64)_PROXY" COMP "RECONFIG_PART/Vb(21)_PROXY" COMP
+        "RECONFIG_PART/Vb(40)_PROXY" COMP "RECONFIG_PART/Vb(79)_PROXY" COMP
+        "RECONFIG_PART/Vc(13)_PROXY" COMP "RECONFIG_PART/Vc(0)_PROXY" COMP
+        "RECONFIG_PART/Vc(40)_PROXY" COMP "RECONFIG_PART/Vc(66)_PROXY" COMP
+        "RECONFIG_PART/Vc(68)_PROXY" COMP "RECONFIG_PART/Va(32)_PROXY" COMP
+        "RECONFIG_PART/Va(69)_PROXY" COMP "RECONFIG_PART/Va(55)_PROXY" COMP
+        "RECONFIG_PART/Va(50)_PROXY" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[10]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[12]" COMP
+        "RECONFIG_PART/phaseamultiplier_out1_1[40]" COMP
+        "RECONFIG_PART/Cosine_5[47]" COMP "RECONFIG_PART/Cosine_5[50]" COMP
+        "RECONFIG_PART/u_cosinec/N2" COMP
+        "RECONFIG_PART/u_cosinec/CastU16En2_out1[4]" COMP
+        "RECONFIG_PART/u_cosinec/N21" COMP "Comp_14876" COMP
+        "RECONFIG_PART/Vb(13)_PROXY" COMP "RECONFIG_PART/Vb(19)_PROXY" COMP
+        "RECONFIG_PART/Vb(0)_PROXY" COMP "RECONFIG_PART/Vb(75)_PROXY" COMP
+        "RECONFIG_PART/Vb(51)_PROXY" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[3]" COMP
+        "RECONFIG_PART/Vc(14)_PROXY" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[11]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[15]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[19]" COMP
+        "RECONFIG_PART/Vc(22)_PROXY" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[23]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[31]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[35]" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[40]" COMP
+        "RECONFIG_PART/Va(63)_PROXY" COMP "RECONFIG_PART/Va(71)_PROXY" COMP
+        "RECONFIG_PART/Vc(76)_PROXY" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[82]" COMP "RECONFIG_PART/N80"
+        COMP "RECONFIG_PART/u_cosinec/CastU16En2_out1[9]" COMP
+        "RECONFIG_PART/u_cosinec/CastU16En2_out1[11]" COMP
+        "RECONFIG_PART/Vb(8)_PROXY" COMP "RECONFIG_PART/Vb(24)_PROXY" COMP
+        "RECONFIG_PART/Vb(45)_PROXY" COMP "RECONFIG_PART/Vb(43)_PROXY" COMP
+        "RECONFIG_PART/Vb(70)_PROXY" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[7]" COMP
+        "RECONFIG_PART/Vb(78)_PROXY" COMP "RECONFIG_PART/Vb(82)_PROXY" COMP
+        "RECONFIG_PART/Vc(61)_PROXY" COMP "RECONFIG_PART/Vc(48)_PROXY" COMP
+        "RECONFIG_PART/Vc(51)_PROXY" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[27]" COMP
+        "RECONFIG_PART/Va(68)_PROXY" COMP
+        "RECONFIG_PART/phasecmultiplier_out1_1[39]" COMP
+        "RECONFIG_PART/Va(30)_PROXY" COMP "RECONFIG_PART/Va(46)_PROXY" COMP
+        "RECONFIG_PART/Vc(77)_PROXY" COMP "RECONFIG_PART/Vc(71)_PROXY" COMP
+        "RECONFIG_PART/Cosine_5[31]" COMP "RECONFIG_PART/Cosine_5[35]" COMP
+        "RECONFIG_PART/Cosine_5[23]" COMP "RECONFIG_PART/Cosine_5[39]" COMP
+        "RECONFIG_PART/Cosine_5[27]" COMP "RECONFIG_PART/Cosine_5[43]" COMP
+        "RECONFIG_PART/N81" COMP "RECONFIG_PART/u_cosinec/CastU16En2_out1[7]"
+        COMP "RECONFIG_PART/u_cosinec/CastU16En2_out1[6]";
+COMPGRP "pblock_RECONFIG_PART.SLICE" LOCATE = SITE "SLICE_X8Y0:SLICE_X15Y89"
+        LEVEL 4;
+COMPGRP pblock_RECONFIG_PART.DSP48 = COMP "RECONFIG_PART/Mmult_gain_mul_temp"
+        COMP "RECONFIG_PART/Mmult_phaseamultiplier_out1_submult_0" COMP
+        "RECONFIG_PART/Mmult_phaseamultiplier_out1_submult_1" COMP
+        "RECONFIG_PART/Mmult_phasebmultiplier_out1_submult_0" COMP
+        "RECONFIG_PART/Mmult_phasebmultiplier_out1_submult_1" COMP
+        "RECONFIG_PART/Mmult_phaseamultiplier_out1_submult_01" COMP
+        "RECONFIG_PART/Mmult_phaseamultiplier_out1_submult_02" COMP
+        "RECONFIG_PART/Mmult_phaseamultiplier_out1_submult_11" COMP
+        "RECONFIG_PART/Mmult_phaseamultiplier_out1_submult_03" COMP
+        "RECONFIG_PART/Mmult_phasecmultiplier_out1_submult_0" COMP
+        "RECONFIG_PART/Mmult_phasecmultiplier_out1_submult_1" COMP
+        "RECONFIG_PART/Mmult_phasebmultiplier_out1_submult_01" COMP
+        "RECONFIG_PART/Mmult_phasebmultiplier_out1_submult_02" COMP
+        "RECONFIG_PART/Mmult_phasebmultiplier_out1_submult_11" COMP
+        "RECONFIG_PART/Mmult_phasebmultiplier_out1_submult_03" COMP
+        "RECONFIG_PART/Mmult_gain_out1" COMP
+        "RECONFIG_PART/Mmult_phasecmultiplier_out1_submult_01" COMP
+        "RECONFIG_PART/Mmult_phasecmultiplier_out1_submult_02" COMP
+        "RECONFIG_PART/Mmult_phasecmultiplier_out1_submult_11" COMP
+        "RECONFIG_PART/Mmult_phasecmultiplier_out1_submult_03";
+COMPGRP "pblock_RECONFIG_PART.DSP48" LOCATE = SITE "DSP48_X0Y0:DSP48_X0Y35"
+        LEVEL 4;
+COMPGRP pblock_RECONFIG_PART.RAMB36 = COMP
+        "RECONFIG_PART/u_cosinec/Mrom_Look_Up_Table_out1_rom00001" COMP
+        "RECONFIG_PART/u_cosineb/Mrom_Look_Up_Table_out1_rom00001" COMP
+        "RECONFIG_PART/u_cosinea/Mrom_Look_Up_Table_out1_rom00001" COMP
+        "RECONFIG_PART/u_cosinec/Mrom_Look_Up_Table_out1_rom00002" COMP
+        "RECONFIG_PART/u_cosineb/Mrom_Look_Up_Table_out1_rom00002" COMP
+        "RECONFIG_PART/u_cosinea/Mrom_Look_Up_Table_out1_rom00002" COMP
+        "RECONFIG_PART/u_cosinec/Mrom_Look_Up_Table_out1_rom00003" COMP
+        "RECONFIG_PART/u_cosineb/Mrom_Look_Up_Table_out1_rom00003" COMP
+        "RECONFIG_PART/u_cosinea/Mrom_Look_Up_Table_out1_rom00003" COMP
+        "RECONFIG_PART/u_cosinec/Mrom_Look_Up_Table_out1_rom00004" COMP
+        "RECONFIG_PART/u_cosineb/Mrom_Look_Up_Table_out1_rom00004" COMP
+        "RECONFIG_PART/u_cosinea/Mrom_Look_Up_Table_out1_rom00004" COMP
+        "RECONFIG_PART/u_cosinec/Mrom_Look_Up_Table_out1_rom00005" COMP
+        "RECONFIG_PART/u_cosineb/Mrom_Look_Up_Table_out1_rom00005" COMP
+        "RECONFIG_PART/u_cosinea/Mrom_Look_Up_Table_out1_rom00005" COMP
+        "RECONFIG_PART/u_cosinec/Mrom_Look_Up_Table_out1_rom00006" COMP
+        "RECONFIG_PART/u_cosineb/Mrom_Look_Up_Table_out1_rom00006" COMP
+        "RECONFIG_PART/u_cosinea/Mrom_Look_Up_Table_out1_rom00006";
+COMPGRP "pblock_RECONFIG_PART.RAMB36" LOCATE = SITE "RAMB36_X0Y0:RAMB36_X0Y17"
+        LEVEL 4;
+TIMEGRP ICAP_CLK_COMP_CLK2X_BUF = BEL "CLK_FIX/t_clk" BEL "CLK_FIX/cycles_11"
+        BEL "CLK_FIX/cycles_0" BEL "CLK_FIX/cycles_1" BEL "CLK_FIX/cycles_2"
+        BEL "CLK_FIX/cycles_3" BEL "CLK_FIX/cycles_4" BEL "CLK_FIX/cycles_5"
+        BEL "CLK_FIX/cycles_6" BEL "CLK_FIX/cycles_7" BEL "CLK_FIX/cycles_8"
+        BEL "CLK_FIX/cycles_9" BEL "CLK_FIX/cycles_10" BEL
+        "ICAP_CLK_COMP/CLK2X_BUFG_INST";
+TIMEGRP ICAP_CLK_COMP_CLK0_BUF = BEL "ICAP_CLK_COMP/CLK0_BUFG_INST" BEL
+        "CONFIG_STATE/CS_FSM_FFd1" BEL "CONFIG_STATE/CS_FSM_FFd2" BEL
+        "CONFIG_STATE/CS_FSM_FFd3" BEL "CONFIG_STATE/CS_FSM_FFd4" BEL
+        "CONFIG_STATE/CS_FSM_FFd5" BEL "ICAP_CONTR/EEPROM_INT/temp_addr_0" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_1" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_2" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_3" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_4" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_5" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_6" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_7" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_8" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_9" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_10" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_11" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_12" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_13" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_14" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_15" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_16" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_17" BEL
+        "ICAP_CONTR/EEPROM_INT/temp_addr_18" BEL
+        "ICAP_CONTR/EEPROM_INT/CS_FSM_FFd1" BEL
+        "ICAP_CONTR/EEPROM_INT/CS_FSM_FFd2" BEL
+        "ICAP_CONTR/EEPROM_INT/CS_FSM_FFd3" BEL "ICAP_CONTR/busy" BEL
+        "ICAP_CONTR/done" BEL "CURR_SENSE_B/REGIS/Q_0" BEL
+        "CURR_SENSE_B/REGIS/Q_1" BEL "CURR_SENSE_B/REGIS/Q_2" BEL
+        "CURR_SENSE_B/REGIS/Q_3" BEL "CURR_SENSE_B/REGIS/Q_4" BEL
+        "CURR_SENSE_B/REGIS/Q_5" BEL "CURR_SENSE_B/REGIS/Q_6" BEL
+        "CURR_SENSE_B/REGIS/Q_7" BEL "CURR_SENSE_B/REGIS/Q_12" BEL
+        "CURR_SENSE_B/REGIS/Q_13" BEL "CURR_SENSE_B/REGIS/Q_14" BEL
+        "CURR_SENSE_B/REGIS/Q_15" BEL "CURR_SENSE_B/REGIS/Q_8" BEL
+        "CURR_SENSE_B/REGIS/Q_9" BEL "CURR_SENSE_B/REGIS/Q_10" BEL
+        "CURR_SENSE_B/REGIS/Q_11" BEL "CURR_SENSE_B/convst_tmp" BEL
+        "CURR_SENSE_B/Mshreg_convst_store_2" BEL "CURR_SENSE_B/convst_store_2"
+        BEL "CURR_SENSE_A/REGIS/Q_0" BEL "CURR_SENSE_A/REGIS/Q_1" BEL
+        "CURR_SENSE_A/REGIS/Q_2" BEL "CURR_SENSE_A/REGIS/Q_3" BEL
+        "CURR_SENSE_A/REGIS/Q_8" BEL "CURR_SENSE_A/REGIS/Q_9" BEL
+        "CURR_SENSE_A/REGIS/Q_10" BEL "CURR_SENSE_A/REGIS/Q_11" BEL
+        "CURR_SENSE_A/REGIS/Q_12" BEL "CURR_SENSE_A/REGIS/Q_13" BEL
+        "CURR_SENSE_A/REGIS/Q_14" BEL "CURR_SENSE_A/REGIS/Q_15" BEL
+        "CURR_SENSE_A/REGIS/Q_4" BEL "CURR_SENSE_A/REGIS/Q_5" BEL
+        "CURR_SENSE_A/REGIS/Q_6" BEL "CURR_SENSE_A/REGIS/Q_7" BEL
+        "CURR_SENSE_A/convst_tmp" BEL "CURR_SENSE_A/Mshreg_convst_store_2" BEL
+        "CURR_SENSE_A/convst_store_2" BEL "ELEC_POS/DECODER/D6/Q" BEL
+        "ELEC_POS/DECODER/D5/Q" BEL "ELEC_POS/DECODER/D4/Q" BEL
+        "ELEC_POS/DECODER/D3/Q" BEL "ELEC_POS/DECODER/D2/Q" BEL
+        "ELEC_POS/DECODER/D1/Q";
+PIN ICAP_CLK_COMP/DCM_ADV_INST_pins<10> = BEL "ICAP_CLK_COMP/DCM_ADV_INST"
+        PINNAME CLKIN;
+TIMEGRP clk_i = PIN "ICAP_CLK_COMP/DCM_ADV_INST_pins<10>";
+TS_clk_i = PERIOD TIMEGRP "clk_i" 100 MHz HIGH 50% INPUT_JITTER 0.005 ns;
+TS_ICAP_CLK_COMP_CLK2X_BUF = PERIOD TIMEGRP "ICAP_CLK_COMP_CLK2X_BUF" TS_clk_i
+        HIGH 50% INPUT_JITTER 0.005 ns;
+TS_ICAP_CLK_COMP_CLK0_BUF = PERIOD TIMEGRP "ICAP_CLK_COMP_CLK0_BUF" TS_clk_i /
+        2 HIGH 50% INPUT_JITTER 0.005 ns;
+SCHEMATIC END;
+

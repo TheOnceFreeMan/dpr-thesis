@@ -1,0 +1,43 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Nov 28 20:17:56 2017
+
+drc -z config_3_routed.ncd config_3.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net CONFIG_STATE/cfg_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONFIG_STATE/src_sel_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ELEC_POS/count_enb is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D6/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D6/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D5/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D5/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D4/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D4/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D3/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D3/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D2/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D2/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D1/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ELEC_POS/DECODER/D1/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 15 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

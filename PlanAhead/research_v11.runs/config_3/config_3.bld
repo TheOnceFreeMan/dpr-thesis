@@ -1,0 +1,68 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -p xc5vlx50ff676-1 -dd _ngo -uc config_3.ucf config_3.edf
+
+Executing edif2ngd -quiet "config_3.edf" "_ngo\config_3.ngo"
+Release 14.7 - edif2ngd P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading NGO file
+"C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11
+/research_v11.runs/config_3/_ngo/config_3.ngo" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "config_3.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into DCM_ADV instance DCM_ADV_INST. The following new
+   TNM groups and period specifications were generated at the DCM_ADV output(s):
+    
+   CLK2X: <TIMESPEC TS_ICAP_CLK_COMP_CLK2X_BUF = PERIOD
+   "ICAP_CLK_COMP_CLK2X_BUF" TS_clk_i HIGH 50% INPUT_JITTER 5 ps>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into DCM_ADV instance DCM_ADV_INST. The following new
+   TNM groups and period specifications were generated at the DCM_ADV output(s):
+    
+   CLK0: <TIMESPEC TS_ICAP_CLK_COMP_CLK0_BUF = PERIOD "ICAP_CLK_COMP_CLK0_BUF"
+   TS_clk_i / 2 HIGH 50% INPUT_JITTER 5 ps>
+
+Done...
+Checking Partitions ...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (20.000000)
+   was detected for the CLKIN_PERIOD attribute on DCM "DCM_ADV_INST".  This does
+   not match the PERIOD constraint value (100 MHz.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  Preserved Partitions:
+
+    Partition "/top"
+
+
+  Implemented Partitions:
+
+    Partition "/top/RECONFIG_PART" (Reconfigurable Module "controllerVf"):
+Attribute STATE set to IMPLEMENT.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 218396 kilobytes
+
+Writing NGD file "config_3.ngd" ...
+Total REAL time to NGDBUILD completion:  10 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "config_3.bld"...
