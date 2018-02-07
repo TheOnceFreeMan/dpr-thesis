@@ -1,0 +1,5 @@
+vhdl work "C:\Users\paul.rogers\OldStuff\GradSchool\Xilinx\ReConFig\Source\Top\top\Encoder\XOR_gen.vhd"
+vhdl work "C:\Users\paul.rogers\OldStuff\GradSchool\Xilinx\ReConFig\Source\Top\top\Encoder\D_FF.vhd"
+vhdl work "C:\Users\paul.rogers\OldStuff\GradSchool\Xilinx\ReConFig\Source\Top\top\Encoder\quad_dec.vhd"
+vhdl work "C:\Users\paul.rogers\OldStuff\GradSchool\Xilinx\ReConFig\Source\Top\top\Encoder\counter.vhd"
+vhdl work "C:\Users\paul.rogers\OldStuff\GradSchool\Xilinx\ReConFig\Source\Top\top\Encoder\conv_encoder.vhd"

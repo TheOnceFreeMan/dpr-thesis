@@ -1,0 +1,42 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 top.ngc top.ngd
+
+Reading NGO file
+"C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/top.ngc
+" ...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+ERROR:NgdBuild:604 - logical block 'RECONFIG_PART' with type 'controller' could
+   not be resolved. A pin name misspelling can cause this, a missing edif or ngc
+   file, case mismatch between the block name and the edif or ngc file name, or
+   the misspelling of a type name. Symbol 'controller' is not supported in
+   target 'virtex5'.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     1
+  Number of warnings:   0
+
+Total memory usage is 177564 kilobytes
+
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "top.bld"...

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/xst"
+elaborate
+-ifn conv_encoder.prj
+-ifmt mixed

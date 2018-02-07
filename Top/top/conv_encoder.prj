@@ -1,0 +1,5 @@
+vhdl work "Encoder/XOR_gen.vhd"
+vhdl work "Encoder/D_FF.vhd"
+vhdl work "Encoder/quad_dec.vhd"
+vhdl work "Encoder/counter.vhd"
+vhdl work "Encoder/conv_encoder.vhd"

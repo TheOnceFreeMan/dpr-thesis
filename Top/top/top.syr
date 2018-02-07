@@ -1,0 +1,1253 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc5vlx50-1-ff676
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/D_FF.vhd" in Library work.
+Architecture behavioral of Entity d_ff is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/XOR_gen.vhd" in Library work.
+Architecture dataflow of Entity xor_gen is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/quad_dec.vhd" in Library work.
+Architecture struct of Entity quad_dec is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/counter.vhd" in Library work.
+Architecture behav of Entity counter is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/current_sensor/register.vhd" in Library work.
+Entity <reg> compiled.
+Entity <reg> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/ext_mem_icap/eeprom_interface.vhd" in Library work.
+Architecture behavioral of Entity eeprom_interface is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/gen_register.vhd" in Library work.
+Architecture behavioral of Entity gen_register is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/decoupler_in.vhd" in Library work.
+Architecture behavioral of Entity decoupler_in is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/decoupler.vhd" in Library work.
+Architecture behavioral of Entity decoupler is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/ext_mem_icap/ICAP_EEPROM.vhd" in Library work.
+Architecture behavioral of Entity icap_eeprom is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/gen_triangle_generator.vhd" in Library work.
+Entity <gen_triangle_generator> compiled.
+Entity <gen_triangle_generator> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/PWMGenerator_v3.vhd" in Library work.
+Architecture rtl of Entity pwmgenerator_v3 is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/clock_div_200.vhd" in Library work.
+Entity <clock_div_200> compiled.
+Entity <clock_div_200> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/ipcore_dir/icap_clk.vhd" in Library work.
+Architecture behavioral of Entity icap_clk is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/current_sensor/sense_test.vhd" in Library work.
+Entity <sense_test> compiled.
+Entity <sense_test> (Architecture <struct>) compiled.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/conv_encoder.vhd" in Library work.
+Architecture struct of Entity conv_encoder is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/config_state_machine.vhd" in Library work.
+Entity <config_state_machine> compiled.
+Entity <config_state_machine> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/top.vhd" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoupler_in> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoupler> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ICAP_EEPROM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <gen_triangle_generator> in library <work> (architecture <behavioral>) with generics.
+	LIMIT = 50
+
+Analyzing hierarchy for entity <PWMGenerator_v3> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <clock_div_200> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <icap_clk> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <sense_test> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <conv_encoder> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <config_state_machine> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <gen_register> in library <work> (architecture <behavioral>) with generics.
+	size = 1
+
+Analyzing hierarchy for entity <gen_register> in library <work> (architecture <behavioral>) with generics.
+	size = 16
+
+Analyzing hierarchy for entity <gen_register> in library <work> (architecture <behavioral>) with generics.
+	size = 84
+
+Analyzing hierarchy for entity <eeprom_interface> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <quad_dec> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <behav>) with generics.
+	MAX = 4000
+	N = 16
+
+Analyzing hierarchy for entity <D_FF> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <XOR_gen> in library <work> (architecture <dataflow>) with generics.
+	N = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <decoupler_in> in library <work> (Architecture <behavioral>).
+Entity <decoupler_in> analyzed. Unit <decoupler_in> generated.
+
+Analyzing generic Entity <gen_register.1> in library <work> (Architecture <behavioral>).
+	size = 1
+Entity <gen_register.1> analyzed. Unit <gen_register.1> generated.
+
+Analyzing generic Entity <gen_register.2> in library <work> (Architecture <behavioral>).
+	size = 16
+Entity <gen_register.2> analyzed. Unit <gen_register.2> generated.
+
+Analyzing Entity <decoupler> in library <work> (Architecture <behavioral>).
+Entity <decoupler> analyzed. Unit <decoupler> generated.
+
+Analyzing generic Entity <gen_register.3> in library <work> (Architecture <behavioral>).
+	size = 84
+Entity <gen_register.3> analyzed. Unit <gen_register.3> generated.
+
+Analyzing Entity <ICAP_EEPROM> in library <work> (Architecture <behavioral>).
+    Set user-defined property "ICAP_WIDTH =  X8" for instance <ICAP_VIRTEX5_inst> in unit <ICAP_EEPROM>.
+Entity <ICAP_EEPROM> analyzed. Unit <ICAP_EEPROM> generated.
+
+Analyzing Entity <eeprom_interface> in library <work> (Architecture <behavioral>).
+Entity <eeprom_interface> analyzed. Unit <eeprom_interface> generated.
+
+Analyzing generic Entity <gen_triangle_generator> in library <work> (Architecture <behavioral>).
+	LIMIT = 50
+Entity <gen_triangle_generator> analyzed. Unit <gen_triangle_generator> generated.
+
+Analyzing Entity <PWMGenerator_v3> in library <work> (Architecture <rtl>).
+Entity <PWMGenerator_v3> analyzed. Unit <PWMGenerator_v3> generated.
+
+Analyzing Entity <clock_div_200> in library <work> (Architecture <behavioral>).
+Entity <clock_div_200> analyzed. Unit <clock_div_200> generated.
+
+Analyzing Entity <icap_clk> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <icap_clk>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <icap_clk>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <icap_clk>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <icap_clk>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  TRUE" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "CLKIN_PERIOD =  20.0000000000000000" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "DCM_AUTOCALIBRATION =  TRUE" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "DCM_PERFORMANCE_MODE =  MAX_SPEED" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "FACTORY_JF =  F0F0" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "SIM_DEVICE =  VIRTEX5" for instance <DCM_ADV_INST> in unit <icap_clk>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_ADV_INST> in unit <icap_clk>.
+Entity <icap_clk> analyzed. Unit <icap_clk> generated.
+
+Analyzing Entity <sense_test> in library <work> (Architecture <struct>).
+Entity <sense_test> analyzed. Unit <sense_test> generated.
+
+Analyzing Entity <reg> in library <work> (Architecture <behavioral>).
+Entity <reg> analyzed. Unit <reg> generated.
+
+Analyzing Entity <conv_encoder> in library <work> (Architecture <struct>).
+INFO:Xst:1739 - HDL ADVISOR - "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/conv_encoder.vhd" line 16: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+Entity <conv_encoder> analyzed. Unit <conv_encoder> generated.
+
+Analyzing Entity <quad_dec> in library <work> (Architecture <struct>).
+Entity <quad_dec> analyzed. Unit <quad_dec> generated.
+
+Analyzing Entity <D_FF> in library <work> (Architecture <behavioral>).
+Entity <D_FF> analyzed. Unit <D_FF> generated.
+
+Analyzing generic Entity <XOR_gen> in library <work> (Architecture <dataflow>).
+	N = 4
+Entity <XOR_gen> analyzed. Unit <XOR_gen> generated.
+
+Analyzing generic Entity <counter> in library <work> (Architecture <behav>).
+	MAX = 4000
+	N = 16
+Entity <counter> analyzed. Unit <counter> generated.
+
+Analyzing Entity <config_state_machine> in library <work> (Architecture <behavioral>).
+Entity <config_state_machine> analyzed. Unit <config_state_machine> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <gen_triangle_generator>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/gen_triangle_generator.vhd".
+    Found 8-bit register for signal <cnt>.
+    Found 1-bit register for signal <dir>.
+    Found 8-bit comparator greatequal for signal <dir$cmp_ge0000> created at line 58.
+    Found 8-bit updown counter for signal <tmp_cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <gen_triangle_generator> synthesized.
+
+
+Synthesizing Unit <PWMGenerator_v3>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/PWMGenerator_v3.vhd".
+    Found 84-bit adder for signal <Bias1_out1>.
+    Found 84-bit adder for signal <Bias2_out1>.
+    Found 84-bit adder for signal <Bias3_out1>.
+    Found 84-bit adder for signal <Bias4_out1>.
+    Found 84-bit adder for signal <Bias5_out1>.
+    Found 84-bit adder for signal <Bias_out1>.
+    Found 84-bit comparator greatequal for signal <vahighcomp_relop1$cmp_ge0000> created at line 84.
+    Found 84-bit comparator lessequal for signal <valowcomp_relop1$cmp_le0000> created at line 112.
+    Found 84-bit comparator greatequal for signal <vbhighcomp_relop1$cmp_ge0000> created at line 94.
+    Found 84-bit comparator lessequal for signal <vblowcomp_relop1$cmp_le0000> created at line 120.
+    Found 84-bit comparator greatequal for signal <vchighcomp_relop1$cmp_ge0000> created at line 104.
+    Found 84-bit comparator lessequal for signal <vclowcomp_relop1$cmp_le0000> created at line 128.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <PWMGenerator_v3> synthesized.
+
+
+Synthesizing Unit <clock_div_200>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/clock_div_200.vhd".
+    Found 12-bit up counter for signal <cycles>.
+    Found 1-bit register for signal <t_clk>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clock_div_200> synthesized.
+
+
+Synthesizing Unit <config_state_machine>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/config_state_machine.vhd".
+    Found finite state machine <FSM_0> for signal <CS>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 2-bit latch for signal <src_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <cfg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <config_state_machine> synthesized.
+
+
+Synthesizing Unit <gen_register_1>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/gen_register.vhd".
+    Found 1-bit register for signal <Q<0>>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <gen_register_1> synthesized.
+
+
+Synthesizing Unit <gen_register_2>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/gen_register.vhd".
+    Found 16-bit register for signal <Q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <gen_register_2> synthesized.
+
+
+Synthesizing Unit <gen_register_3>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/gen_register.vhd".
+    Found 84-bit register for signal <Q>.
+    Summary:
+	inferred  84 D-type flip-flop(s).
+Unit <gen_register_3> synthesized.
+
+
+Synthesizing Unit <eeprom_interface>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/ext_mem_icap/eeprom_interface.vhd".
+    Found finite state machine <FSM_1> for signal <CS>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | CS$and0000                (negative)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 19-bit up counter for signal <temp_addr>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+Unit <eeprom_interface> synthesized.
+
+
+Synthesizing Unit <reg>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/current_sensor/register.vhd".
+    Found 16-bit register for signal <Q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <reg> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/counter.vhd".
+    Found 16-bit up counter for signal <temp>.
+    Found 16-bit subtractor for signal <temp$addsub0000> created at line 37.
+    Found 16-bit comparator greatequal for signal <temp$cmp_ge0000> created at line 40.
+    Found 16-bit comparator lessequal for signal <temp$cmp_le0000> created at line 34.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <D_FF>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/D_FF.vhd".
+    Found 1-bit register for signal <Q>.
+    Found 1-bit register for signal <nQ>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <D_FF> synthesized.
+
+
+Synthesizing Unit <XOR_gen>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/XOR_gen.vhd".
+    Found 3-bit xor2 for signal <temp<3:1>>.
+Unit <XOR_gen> synthesized.
+
+
+Synthesizing Unit <decoupler_in>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/decoupler_in.vhd".
+Unit <decoupler_in> synthesized.
+
+
+Synthesizing Unit <decoupler>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/decoupler.vhd".
+Unit <decoupler> synthesized.
+
+
+Synthesizing Unit <ICAP_EEPROM>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/ext_mem_icap/ICAP_EEPROM.vhd".
+WARNING:Xst:646 - Signal <O> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <I<31:8>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000.
+WARNING:Xst:646 - Signal <BSY> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <enb> equivalent to <busy> has been removed
+    Register <is_cfg> equivalent to <busy> has been removed
+    Found 1-bit register for signal <busy>.
+    Found 1-bit register for signal <done>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <ICAP_EEPROM> synthesized.
+
+
+Synthesizing Unit <icap_clk>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/ipcore_dir/icap_clk.vhd".
+Unit <icap_clk> synthesized.
+
+
+Synthesizing Unit <sense_test>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/current_sensor/sense_test.vhd".
+WARNING:Xst:646 - Signal <data_o_tmp<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 8-bit latch for signal <temp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 3-bit register for signal <convst_store>.
+    Found 1-bit register for signal <convst_tmp>.
+    Found 18-bit subtractor for signal <data_o_tmp>.
+    Found 8x10-bit multiplier for signal <data_o_tmp$mult0000> created at line 63.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <sense_test> synthesized.
+
+
+Synthesizing Unit <quad_dec>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/quad_dec.vhd".
+WARNING:Xst:646 - Signal <nQ_temp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <dir>.
+Unit <quad_dec> synthesized.
+
+
+Synthesizing Unit <conv_encoder>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/Encoder/conv_encoder.vhd".
+WARNING:Xst:646 - Signal <tmp_val<35:25>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tmp_val<8:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <locked> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 16x20-bit multiplier for signal <tmp_val>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <conv_encoder> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Top/top/top.vhd".
+WARNING:Xst:646 - Signal <r_freq> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <locked> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_ibufg_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ce_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 16x20-bit multiplier                                  : 1
+ 8x10-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 9
+ 16-bit subtractor                                     : 1
+ 18-bit subtractor                                     : 2
+ 84-bit adder                                          : 6
+# Counters                                             : 4
+ 12-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 19-bit up counter                                     : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 34
+ 1-bit register                                        : 21
+ 16-bit register                                       : 7
+ 3-bit register                                        : 2
+ 8-bit register                                        : 1
+ 84-bit register                                       : 3
+# Latches                                              : 4
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 8-bit latch                                           : 2
+# Comparators                                          : 9
+ 16-bit comparator greatequal                          : 1
+ 16-bit comparator lessequal                           : 1
+ 8-bit comparator greatequal                           : 1
+ 84-bit comparator greatequal                          : 3
+ 84-bit comparator lessequal                           : 3
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <ICAP_CONTR/EEPROM_INT/CS/FSM> on signal <CS[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 000
+ s1    | 001
+ s2    | 010
+ s3    | 111
+ s4    | 011
+ s5    | 110
+ s6    | 101
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <CONFIG_STATE/CS/FSM> on signal <CS[1:5]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00001
+ s1    | 00010
+ s2    | 00100
+ s3    | 01000
+ s4    | 10000
+-------------------
+WARNING:Xst:1290 - Hierarchical block <FREQ_BUFF> is unconnected in block <DECOUPLE_IN>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <CE_OUT_BUFF> is unconnected in block <DECOUPLE>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <Q_0> (without init value) has a constant value of 1 in block <CLK_ENABLE_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_1> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_2> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_3> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_4> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_5> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_6> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_7> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_8> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_9> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_10> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_11> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_12> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_13> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_14> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_15> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <sense_test>.
+	Multiplier <Mmult_data_o_tmp_mult0000> in block <sense_test> and adder/subtractor <Msub_data_o_tmp> in block <sense_test> are combined into a MAC<Maddsub_data_o_tmp_mult0000>.
+Unit <sense_test> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# MACs                                                 : 2
+ 8x10-to-18-bit MAC                                    : 2
+# Multipliers                                          : 1
+ 16x20-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 7
+ 16-bit subtractor                                     : 1
+ 84-bit adder                                          : 6
+# Counters                                             : 4
+ 12-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 19-bit up counter                                     : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 399
+ Flip-Flops                                            : 399
+# Latches                                              : 4
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 8-bit latch                                           : 2
+# Comparators                                          : 9
+ 16-bit comparator greatequal                          : 1
+ 16-bit comparator lessequal                           : 1
+ 8-bit comparator greatequal                           : 1
+ 84-bit comparator greatequal                          : 3
+ 84-bit comparator lessequal                           : 3
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <gen_triangle_generator> ...
+
+Optimizing unit <PWMGenerator_v3> ...
+
+Optimizing unit <clock_div_200> ...
+
+Optimizing unit <gen_register_1> ...
+
+Optimizing unit <gen_register_2> ...
+
+Optimizing unit <gen_register_3> ...
+
+Optimizing unit <eeprom_interface> ...
+
+Optimizing unit <reg> ...
+
+Optimizing unit <counter> ...
+
+Optimizing unit <D_FF> ...
+
+Optimizing unit <XOR_gen> ...
+
+Optimizing unit <icap_clk> ...
+
+Optimizing unit <config_state_machine> ...
+
+Optimizing unit <decoupler_in> ...
+
+Optimizing unit <decoupler> ...
+
+Optimizing unit <ICAP_EEPROM> ...
+
+Optimizing unit <sense_test> ...
+
+Optimizing unit <quad_dec> ...
+
+Optimizing unit <conv_encoder> ...
+WARNING:Xst:1710 - FF/Latch <Q_0> (without init value) has a constant value of 1 in block <CLK_ENABLE_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_1> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_2> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_3> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_4> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_5> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_6> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_7> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_8> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_9> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_10> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_11> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_12> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_13> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_14> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Q_15> (without init value) has a constant value of 0 in block <CURRENT_COMMAND_BUFF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <FREQ_BUFF> is unconnected in block <DECOUPLE_IN>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <CE_OUT_BUFF> is unconnected in block <DECOUPLE>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <nQ> of sequential type is unconnected in block <D6>.
+WARNING:Xst:2677 - Node <nQ> of sequential type is unconnected in block <D5>.
+WARNING:Xst:2677 - Node <nQ> of sequential type is unconnected in block <D4>.
+WARNING:Xst:2677 - Node <nQ> of sequential type is unconnected in block <D3>.
+WARNING:Xst:2677 - Node <nQ> of sequential type is unconnected in block <D2>.
+WARNING:Xst:2677 - Node <nQ> of sequential type is unconnected in block <D1>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 1.
+
+Final Macro Processing ...
+
+Processing Unit <CURR_SENSE_A> :
+	Found 3-bit shift register for signal <convst_store_2>.
+Unit <CURR_SENSE_A> processed.
+
+Processing Unit <CURR_SENSE_B> :
+	Found 3-bit shift register for signal <convst_store_2>.
+Unit <CURR_SENSE_B> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 417
+ Flip-Flops                                            : 417
+# Shift Registers                                      : 2
+ 3-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+
+Design Statistics
+# IOs                              : 77
+
+Cell Usage :
+# BELS                             : 993
+#      GND                         : 12
+#      INV                         : 96
+#      LUT1                        : 84
+#      LUT2                        : 31
+#      LUT3                        : 16
+#      LUT4                        : 78
+#      LUT5                        : 100
+#      LUT6                        : 41
+#      MUXCY                       : 295
+#      MUXF7                       : 1
+#      VCC                         : 9
+#      XORCY                       : 230
+# FlipFlops/Latches                : 438
+#      FD                          : 2
+#      FDC                         : 29
+#      FDCE                        : 32
+#      FDE                         : 305
+#      FDR                         : 42
+#      FDRSE                       : 6
+#      FDS                         : 3
+#      LD                          : 3
+#      LDC_1                       : 16
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 5
+#      BUFG                        : 3
+#      BUFGP                       : 2
+# IO Buffers                       : 75
+#      IBUF                        : 45
+#      IBUFG                       : 1
+#      OBUF                        : 29
+# DCM_ADVs                         : 1
+#      DCM_ADV                     : 1
+# DSPs                             : 1
+#      DSP48E                      : 1
+# Others                           : 2
+#      controller                  : 1
+#      ICAP_VIRTEX5                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50ff676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             438  out of  28800     1%  
+ Number of Slice LUTs:                  448  out of  28800     1%  
+    Number used as Logic:               446  out of  28800     1%  
+    Number used as Memory:                2  out of   7680     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    816
+   Number with an unused Flip Flop:     378  out of    816    46%  
+   Number with an unused LUT:           368  out of    816    45%  
+   Number of fully used LUT-FF pairs:    70  out of    816     8%  
+   Number of unique control sets:        31
+
+IO Utilization: 
+ Number of IOs:                          77
+ Number of bonded IOBs:                  76  out of    440    17%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                5  out of     32    15%  
+ Number of DCM_ADVs:                      1  out of     12     8%  
+ Number of DSP48Es:                       1  out of     48     2%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------+--------------------------------+-------+
+Clock Signal                                                                           | Clock buffer(FF name)          | Load  |
+---------------------------------------------------------------------------------------+--------------------------------+-------+
+CLK_FIX/t_clk                                                                          | BUFG                           | 319   |
+clk_i                                                                                  | DCM_ADV_INST:CLK2X             | 13    |
+CONFIG_STATE/cfg_not0001(CONFIG_STATE/cfg_not00011:O)                                  | NONE(*)(CONFIG_STATE/cfg)      | 1     |
+clk_i                                                                                  | DCM_ADV_INST:CLK0              | 73    |
+CONFIG_STATE/src_sel_not0001(CONFIG_STATE/src_sel_not00011:O)                          | NONE(*)(CONFIG_STATE/src_sel_0)| 2     |
+EOC_B                                                                                  | BUFGP                          | 8     |
+EOC_A                                                                                  | BUFGP                          | 8     |
+ELEC_POS/DECODER/COUNT_ENABLE/oup(ELEC_POS/DECODER/COUNT_ENABLE/Mxor_temp<3>_Result1:O)| NONE(*)(ELEC_POS/CNTR/temp_0)  | 16    |
+---------------------------------------------------------------------------------------+--------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------+-----------------------------+-------+
+Control Signal                                                       | Buffer(FF name)             | Load  |
+---------------------------------------------------------------------+-----------------------------+-------+
+CURR_SENSE_A/REGIS/rst_inv(CURR_SENSE_A/REGIS/rst_inv1_INV_0:O)      | NONE(CURR_SENSE_A/REGIS/Q_0)| 16    |
+CURR_SENSE_B/REGIS/rst_inv(CURR_SENSE_B/REGIS/rst_inv1_INV_0:O)      | NONE(CURR_SENSE_B/REGIS/Q_0)| 16    |
+TRI_GEN/rst_inv(TRI_GEN/rst_inv1_INV_0:O)                            | NONE(TRI_GEN/cnt_0)         | 16    |
+CLK_FIX/rst_inv(CLK_FIX/rst_inv1_INV_0:O)                            | NONE(CLK_FIX/cycles_0)      | 13    |
+CURR_SENSE_A/temp_0_0_not0000(CURR_SENSE_A/temp_0_0_not00001_INV_0:O)| NONE(CURR_SENSE_A/temp_0)   | 8     |
+CURR_SENSE_B/temp_0_0_not0000(CURR_SENSE_B/temp_0_0_not00001_INV_0:O)| NONE(CURR_SENSE_B/temp_0)   | 8     |
+---------------------------------------------------------------------+-----------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 5.358ns (Maximum Frequency: 186.637MHz)
+   Minimum input arrival time before clock: 4.268ns
+   Maximum output required time after clock: 6.593ns
+   Maximum combinational path delay: 3.380ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_FIX/t_clk'
+  Clock period: 2.773ns (frequency: 360.620MHz)
+  Total number of paths / destination ports: 132 / 18
+-------------------------------------------------------------------------
+Delay:               2.773ns (Levels of Logic = 2)
+  Source:            TRI_GEN/tmp_cnt_4 (FF)
+  Destination:       TRI_GEN/dir (FF)
+  Source Clock:      CLK_FIX/t_clk rising
+  Destination Clock: CLK_FIX/t_clk rising
+
+  Data Path: TRI_GEN/tmp_cnt_4 to TRI_GEN/dir
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.471   1.085  tmp_cnt_4 (tmp_cnt_4)
+     LUT6:I0->O            1   0.094   0.480  dir_and0000_SW3 (N6)
+     LUT4:I3->O            1   0.094   0.336  dir_and0000 (dir_and0000)
+     FDE:CE                    0.213          dir
+    ----------------------------------------
+    Total                      2.773ns (0.872ns logic, 1.901ns route)
+                                       (31.4% logic, 68.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_i'
+  Clock period: 5.358ns (frequency: 186.637MHz)
+  Total number of paths / destination ports: 551 / 73
+-------------------------------------------------------------------------
+Delay:               2.679ns (Levels of Logic = 14)
+  Source:            CLK_FIX/cycles_0 (FF)
+  Destination:       CLK_FIX/cycles_11 (FF)
+  Source Clock:      clk_i rising 2.0X
+  Destination Clock: clk_i rising 2.0X
+
+  Data Path: CLK_FIX/cycles_0 to CLK_FIX/cycles_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.471   0.407  cycles_0 (cycles_0)
+     INV:I->O              1   0.238   0.000  Mcount_cycles_lut<0>_INV_0 (Mcount_cycles_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  Mcount_cycles_cy<0> (Mcount_cycles_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_cycles_cy<1> (Mcount_cycles_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_cycles_cy<2> (Mcount_cycles_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_cycles_cy<3> (Mcount_cycles_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_cycles_cy<4> (Mcount_cycles_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_cycles_cy<5> (Mcount_cycles_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_cycles_cy<6> (Mcount_cycles_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_cycles_cy<7> (Mcount_cycles_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_cycles_cy<8> (Mcount_cycles_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_cycles_cy<9> (Mcount_cycles_cy<9>)
+     MUXCY:CI->O           0   0.026   0.000  Mcount_cycles_cy<10> (Mcount_cycles_cy<10>)
+     XORCY:CI->O           1   0.357   0.480  Mcount_cycles_xor<11> (Result<11>)
+     LUT6:I5->O            1   0.094   0.000  Mcount_cycles_eqn_111 (Mcount_cycles_eqn_11)
+     FDC:D                    -0.018          cycles_11
+    ----------------------------------------
+    Total                      2.679ns (1.792ns logic, 0.887ns route)
+                                       (66.9% logic, 33.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ELEC_POS/DECODER/COUNT_ENABLE/oup'
+  Clock period: 4.238ns (frequency: 235.960MHz)
+  Total number of paths / destination ports: 3304 / 32
+-------------------------------------------------------------------------
+Delay:               4.238ns (Levels of Logic = 3)
+  Source:            ELEC_POS/CNTR/temp_10 (FF)
+  Destination:       ELEC_POS/CNTR/temp_0 (FF)
+  Source Clock:      ELEC_POS/DECODER/COUNT_ENABLE/oup rising
+  Destination Clock: ELEC_POS/DECODER/COUNT_ENABLE/oup rising
+
+  Data Path: ELEC_POS/CNTR/temp_10 to ELEC_POS/CNTR/temp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.471   0.995  temp_10 (temp_10)
+     LUT5:I0->O            1   0.094   0.710  temp_or000011 (temp_or000011)
+     LUT4:I1->O            1   0.094   0.789  temp_or000048_SW0 (N01)
+     LUT6:I2->O           16   0.094   0.418  temp_or000048 (temp_or0000)
+     FDR:R                     0.573          temp_0
+    ----------------------------------------
+    Total                      4.238ns (1.326ns logic, 2.912ns route)
+                                       (31.3% logic, 68.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_FIX/t_clk'
+  Total number of paths / destination ports: 255 / 255
+-------------------------------------------------------------------------
+Offset:              2.343ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       TRI_GEN/dir (FF)
+  Destination Clock: CLK_FIX/t_clk rising
+
+  Data Path: rst to TRI_GEN/dir
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.818   0.882  rst_IBUF (rst_IBUF)
+     begin scope: 'TRI_GEN'
+     LUT4:I0->O            1   0.094   0.336  dir_and0000 (dir_and0000)
+     FDE:CE                    0.213          dir
+    ----------------------------------------
+    Total                      2.343ns (1.125ns logic, 1.218ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CONFIG_STATE/cfg_not0001'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.745ns (Levels of Logic = 3)
+  Source:            controller_sel (PAD)
+  Destination:       CONFIG_STATE/cfg (LATCH)
+  Destination Clock: CONFIG_STATE/cfg_not0001 falling
+
+  Data Path: controller_sel to CONFIG_STATE/cfg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.818   0.833  controller_sel_IBUF (controller_sel_IBUF)
+     begin scope: 'CONFIG_STATE'
+     LUT4:I0->O            1   0.094   0.000  cfg_mux00002 (cfg_mux0000)
+     LD:D                     -0.071          cfg
+    ----------------------------------------
+    Total                      1.745ns (0.912ns logic, 0.833ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
+  Total number of paths / destination ports: 259 / 77
+-------------------------------------------------------------------------
+Offset:              4.268ns (Levels of Logic = 5)
+  Source:            mem_dat<1> (PAD)
+  Destination:       ICAP_CONTR/EEPROM_INT/temp_addr_0 (FF)
+  Destination Clock: clk_i rising
+
+  Data Path: mem_dat<1> to ICAP_CONTR/EEPROM_INT/temp_addr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.818   1.074  mem_dat_1_IBUF (mem_dat_1_IBUF)
+     begin scope: 'ICAP_CONTR'
+     begin scope: 'EEPROM_INT'
+     LUT6:I0->O            1   0.094   0.480  eof_SW0 (N2)
+     LUT6:I5->O            4   0.094   0.592  eof (done)
+     LUT2:I0->O           22   0.094   0.449  CS_FSM_Scst_FSM_inv1 (CS_FSM_Scst_FSM_inv)
+     FDR:R                     0.573          CS_FSM_FFd3
+    ----------------------------------------
+    Total                      4.268ns (1.673ns logic, 2.595ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CONFIG_STATE/src_sel_not0001'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.532ns (Levels of Logic = 3)
+  Source:            controller_sel (PAD)
+  Destination:       CONFIG_STATE/src_sel_0 (LATCH)
+  Destination Clock: CONFIG_STATE/src_sel_not0001 falling
+
+  Data Path: controller_sel to CONFIG_STATE/src_sel_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.818   0.620  controller_sel_IBUF (controller_sel_IBUF)
+     begin scope: 'CONFIG_STATE'
+     LUT2:I0->O            1   0.094   0.000  cfg_mux000011 (N01)
+     LD:D                     -0.071          src_sel_1
+    ----------------------------------------
+    Total                      1.532ns (0.912ns logic, 0.620ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'EOC_B'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.154ns (Levels of Logic = 2)
+  Source:            data_i_B<0> (PAD)
+  Destination:       CURR_SENSE_B/temp_0 (LATCH)
+  Destination Clock: EOC_B rising
+
+  Data Path: data_i_B<0> to CURR_SENSE_B/temp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.818   0.336  data_i_B_0_IBUF (data_i_B_0_IBUF)
+     begin scope: 'CURR_SENSE_B'
+     LDC_1:D                  -0.071          temp_0
+    ----------------------------------------
+    Total                      1.154ns (0.818ns logic, 0.336ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'EOC_A'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.154ns (Levels of Logic = 2)
+  Source:            data_i_A<0> (PAD)
+  Destination:       CURR_SENSE_A/temp_0 (LATCH)
+  Destination Clock: EOC_A rising
+
+  Data Path: data_i_A<0> to CURR_SENSE_A/temp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.818   0.336  data_i_A_0_IBUF (data_i_A_0_IBUF)
+     begin scope: 'CURR_SENSE_A'
+     LDC_1:D                  -0.071          temp_0
+    ----------------------------------------
+    Total                      1.154ns (0.818ns logic, 0.336ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ELEC_POS/DECODER/COUNT_ENABLE/oup'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              2.476ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       ELEC_POS/CNTR/temp_0 (FF)
+  Destination Clock: ELEC_POS/DECODER/COUNT_ENABLE/oup rising
+
+  Data Path: rst to ELEC_POS/CNTR/temp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.818   0.573  rst_IBUF (rst_IBUF)
+     begin scope: 'ELEC_POS'
+     begin scope: 'CNTR'
+     LUT6:I5->O           16   0.094   0.418  temp_or000048 (temp_or0000)
+     FDR:R                     0.573          temp_0
+    ----------------------------------------
+    Total                      2.476ns (1.485ns logic, 0.991ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_FIX/t_clk'
+  Total number of paths / destination ports: 2264 / 56
+-------------------------------------------------------------------------
+Offset:              6.593ns (Levels of Logic = 22)
+  Source:            DECOUPLE/VA_OUT_BUFF/Q_65 (FF)
+  Destination:       VaHigh (PAD)
+  Source Clock:      CLK_FIX/t_clk rising
+
+  Data Path: DECOUPLE/VA_OUT_BUFF/Q_65 to VaHigh
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.471   0.341  Q_65 (Q_65)
+     end scope: 'VA_OUT_BUFF'
+     end scope: 'DECOUPLE'
+     begin scope: 'PWM_GEN'
+     INV:I->O              1   0.238   0.000  Madd_Bias_out1_lut<65>_INV_0 (Madd_Bias_out1_lut<65>)
+     MUXCY:S->O            1   0.372   0.000  Madd_Bias_out1_cy<65> (Madd_Bias_out1_cy<65>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<66> (Madd_Bias_out1_cy<66>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<67> (Madd_Bias_out1_cy<67>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<68> (Madd_Bias_out1_cy<68>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<69> (Madd_Bias_out1_cy<69>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<70> (Madd_Bias_out1_cy<70>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<71> (Madd_Bias_out1_cy<71>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<72> (Madd_Bias_out1_cy<72>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<73> (Madd_Bias_out1_cy<73>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<74> (Madd_Bias_out1_cy<74>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<75> (Madd_Bias_out1_cy<75>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<76> (Madd_Bias_out1_cy<76>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<77> (Madd_Bias_out1_cy<77>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_Bias_out1_cy<78> (Madd_Bias_out1_cy<78>)
+     XORCY:CI->O           2   0.357   0.978  Madd_Bias_out1_xor<79> (Bias_out1<79>)
+     LUT5:I0->O            0   0.094   0.000  Mcompar_vahighcomp_relop1_cmp_ge0000_lutdi4 (Mcompar_vahighcomp_relop1_cmp_ge0000_lutdi4)
+     MUXCY:DI->O           1   0.362   0.000  Mcompar_vahighcomp_relop1_cmp_ge0000_cy<4> (Mcompar_vahighcomp_relop1_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.254   0.336  Mcompar_vahighcomp_relop1_cmp_ge0000_cy<5> (Vahigh)
+     end scope: 'PWM_GEN'
+     OBUF:I->O                 2.452          VaHigh_OBUF (VaHigh)
+    ----------------------------------------
+    Total                      6.593ns (4.938ns logic, 1.655ns route)
+                                       (74.9% logic, 25.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
+  Total number of paths / destination ports: 44 / 22
+-------------------------------------------------------------------------
+Offset:              3.270ns (Levels of Logic = 2)
+  Source:            ICAP_CONTR/EEPROM_INT/temp_addr_18 (FF)
+  Destination:       mem_addr<18> (PAD)
+  Source Clock:      clk_i rising
+
+  Data Path: ICAP_CONTR/EEPROM_INT/temp_addr_18 to mem_addr<18>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.471   0.347  temp_addr_18 (temp_addr_18)
+     end scope: 'EEPROM_INT'
+     end scope: 'ICAP_CONTR'
+     OBUF:I->O                 2.452          mem_addr_18_OBUF (mem_addr<18>)
+    ----------------------------------------
+    Total                      3.270ns (2.923ns logic, 0.347ns route)
+                                       (89.4% logic, 10.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CONFIG_STATE/src_sel_not0001'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.524ns (Levels of Logic = 2)
+  Source:            CONFIG_STATE/src_sel_1 (LATCH)
+  Destination:       eeprom_sel<1> (PAD)
+  Source Clock:      CONFIG_STATE/src_sel_not0001 falling
+
+  Data Path: CONFIG_STATE/src_sel_1 to eeprom_sel<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.736   0.336  src_sel_1 (src_sel_1)
+     end scope: 'CONFIG_STATE'
+     OBUF:I->O                 2.452          eeprom_sel_1_OBUF (eeprom_sel<1>)
+    ----------------------------------------
+    Total                      3.524ns (3.188ns logic, 0.336ns route)
+                                       (90.5% logic, 9.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 32 / 25
+-------------------------------------------------------------------------
+Delay:               3.380ns (Levels of Logic = 6)
+  Source:            mem_dat<1> (PAD)
+  Destination:       ICAP_CONTR/ICAP_VIRTEX5_inst:CE (PAD)
+
+  Data Path: mem_dat<1> to ICAP_CONTR/ICAP_VIRTEX5_inst:CE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.818   1.074  mem_dat_1_IBUF (mem_dat_1_IBUF)
+     begin scope: 'ICAP_CONTR'
+     begin scope: 'EEPROM_INT'
+     LUT6:I0->O            1   0.094   0.480  eof_SW0 (N2)
+     LUT6:I5->O            4   0.094   0.726  eof (done)
+     LUT5:I2->O            0   0.094   0.000  valid75 (valid)
+     end scope: 'EEPROM_INT'
+    ICAP_VIRTEX5:CE            0.000          ICAP_VIRTEX5_inst
+    ----------------------------------------
+    Total                      3.380ns (1.100ns logic, 2.280ns route)
+                                       (32.5% logic, 67.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.06 secs
+ 
+--> 
+
+Total memory usage is 385804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   57 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
