@@ -1,0 +1,5 @@
+
+# Timing Specification Constraints
+
+NET "clk" TNM_NET = "TN_clk";
+TIMESPEC "TS_clk" = PERIOD "TN_clk" 5.000000e-01 MHz;

@@ -1,0 +1,849 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+-n 3 -fastpaths -xml controller.twx controller.ncd -o controller.twr
+controller.pcf -ucf clock_constraint.ucf
+
+Design file:              controller.ncd
+Physical constraint file: controller.pcf
+Device,package,speed:     xc5vlx50,ff676,-1 (PRODUCTION 1.73 2013-10-13, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "TN_clk" 0.5 MHz HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 10499521745 paths analyzed, 2295 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  14.270ns.
+--------------------------------------------------------------------------------
+
+Paths for end point phasecmultiplier_out1_1_82 (SLICE_X1Y28.CIN), 153807262 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1985.730ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reduced_reg_1_6 (FF)
+  Destination:          phasecmultiplier_out1_1_82 (FF)
+  Requirement:          2000.000ns
+  Data Path Delay:      14.235ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: reduced_reg_1_6 to phasecmultiplier_out1_1_82
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y2.CQ       Tcko                  0.450   reduced_reg_1_7
+                                                       reduced_reg_1_6
+    DSP48_X0Y5.B6        net (fanout=9)        1.159   reduced_reg_1_6
+    DSP48_X0Y5.PCOUT0    Tdspdo_BPCOUT_M       3.832   Mmult_phasecmultiplier_out1_submult_0
+                                                       Mmult_phasecmultiplier_out1_submult_0
+    DSP48_X0Y6.PCIN0     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_0_PCOUT_to_Mmult_phasecmultiplier_out1_submult_01_PCIN_0
+    DSP48_X0Y6.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_01
+                                                       Mmult_phasecmultiplier_out1_submult_01
+    DSP48_X0Y7.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_01_PCOUT_to_Mmult_phasecmultiplier_out1_submult_02_PCIN_9
+    DSP48_X0Y7.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_02
+                                                       Mmult_phasecmultiplier_out1_submult_02
+    DSP48_X0Y8.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_02_PCOUT_to_Mmult_phasecmultiplier_out1_submult_03_PCIN_9
+    DSP48_X0Y8.P8        Tdspdo_PCINP          1.816   Mmult_phasecmultiplier_out1_submult_03
+                                                       Mmult_phasecmultiplier_out1_submult_03
+    SLICE_X1Y18.B1       net (fanout=1)        1.395   Mmult_phasecmultiplier_out1_submult_0_42
+    SLICE_X1Y18.COUT     Topcyb                0.501   phasecmultiplier_out1_1<44>
+                                                       Mmult_phasecmultiplier_out10_Madd_lut<42>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<48>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<52>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<56>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<60>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<64>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<68>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<72>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<76>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<80>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CLK      Tcinck                0.120   phasecmultiplier_out1_1<82>
+                                                       Mmult_phasecmultiplier_out10_Madd_xor<82>
+                                                       phasecmultiplier_out1_1_82
+    -------------------------------------------------  ---------------------------
+    Total                                     14.235ns (11.681ns logic, 2.554ns route)
+                                                       (82.1% logic, 17.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1985.730ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reduced_reg_1_6 (FF)
+  Destination:          phasecmultiplier_out1_1_82 (FF)
+  Requirement:          2000.000ns
+  Data Path Delay:      14.235ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: reduced_reg_1_6 to phasecmultiplier_out1_1_82
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y2.CQ       Tcko                  0.450   reduced_reg_1_7
+                                                       reduced_reg_1_6
+    DSP48_X0Y5.B6        net (fanout=9)        1.159   reduced_reg_1_6
+    DSP48_X0Y5.PCOUT9    Tdspdo_BPCOUT_M       3.832   Mmult_phasecmultiplier_out1_submult_0
+                                                       Mmult_phasecmultiplier_out1_submult_0
+    DSP48_X0Y6.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_0_PCOUT_to_Mmult_phasecmultiplier_out1_submult_01_PCIN_9
+    DSP48_X0Y6.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_01
+                                                       Mmult_phasecmultiplier_out1_submult_01
+    DSP48_X0Y7.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_01_PCOUT_to_Mmult_phasecmultiplier_out1_submult_02_PCIN_9
+    DSP48_X0Y7.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_02
+                                                       Mmult_phasecmultiplier_out1_submult_02
+    DSP48_X0Y8.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_02_PCOUT_to_Mmult_phasecmultiplier_out1_submult_03_PCIN_9
+    DSP48_X0Y8.P8        Tdspdo_PCINP          1.816   Mmult_phasecmultiplier_out1_submult_03
+                                                       Mmult_phasecmultiplier_out1_submult_03
+    SLICE_X1Y18.B1       net (fanout=1)        1.395   Mmult_phasecmultiplier_out1_submult_0_42
+    SLICE_X1Y18.COUT     Topcyb                0.501   phasecmultiplier_out1_1<44>
+                                                       Mmult_phasecmultiplier_out10_Madd_lut<42>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<48>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<52>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<56>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<60>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<64>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<68>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<72>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<76>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<80>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CLK      Tcinck                0.120   phasecmultiplier_out1_1<82>
+                                                       Mmult_phasecmultiplier_out10_Madd_xor<82>
+                                                       phasecmultiplier_out1_1_82
+    -------------------------------------------------  ---------------------------
+    Total                                     14.235ns (11.681ns logic, 2.554ns route)
+                                                       (82.1% logic, 17.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1985.730ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reduced_reg_1_6 (FF)
+  Destination:          phasecmultiplier_out1_1_82 (FF)
+  Requirement:          2000.000ns
+  Data Path Delay:      14.235ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: reduced_reg_1_6 to phasecmultiplier_out1_1_82
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y2.CQ       Tcko                  0.450   reduced_reg_1_7
+                                                       reduced_reg_1_6
+    DSP48_X0Y5.B6        net (fanout=9)        1.159   reduced_reg_1_6
+    DSP48_X0Y5.PCOUT1    Tdspdo_BPCOUT_M       3.832   Mmult_phasecmultiplier_out1_submult_0
+                                                       Mmult_phasecmultiplier_out1_submult_0
+    DSP48_X0Y6.PCIN1     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_0_PCOUT_to_Mmult_phasecmultiplier_out1_submult_01_PCIN_1
+    DSP48_X0Y6.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_01
+                                                       Mmult_phasecmultiplier_out1_submult_01
+    DSP48_X0Y7.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_01_PCOUT_to_Mmult_phasecmultiplier_out1_submult_02_PCIN_9
+    DSP48_X0Y7.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_02
+                                                       Mmult_phasecmultiplier_out1_submult_02
+    DSP48_X0Y8.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_02_PCOUT_to_Mmult_phasecmultiplier_out1_submult_03_PCIN_9
+    DSP48_X0Y8.P8        Tdspdo_PCINP          1.816   Mmult_phasecmultiplier_out1_submult_03
+                                                       Mmult_phasecmultiplier_out1_submult_03
+    SLICE_X1Y18.B1       net (fanout=1)        1.395   Mmult_phasecmultiplier_out1_submult_0_42
+    SLICE_X1Y18.COUT     Topcyb                0.501   phasecmultiplier_out1_1<44>
+                                                       Mmult_phasecmultiplier_out10_Madd_lut<42>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<48>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<52>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<56>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<60>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<64>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<68>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<72>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<76>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<80>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CLK      Tcinck                0.120   phasecmultiplier_out1_1<82>
+                                                       Mmult_phasecmultiplier_out10_Madd_xor<82>
+                                                       phasecmultiplier_out1_1_82
+    -------------------------------------------------  ---------------------------
+    Total                                     14.235ns (11.681ns logic, 2.554ns route)
+                                                       (82.1% logic, 17.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point phasecmultiplier_out1_1_80 (SLICE_X1Y27.CIN), 138419678 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1985.775ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reduced_reg_1_6 (FF)
+  Destination:          phasecmultiplier_out1_1_80 (FF)
+  Requirement:          2000.000ns
+  Data Path Delay:      14.190ns (Levels of Logic = 14)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: reduced_reg_1_6 to phasecmultiplier_out1_1_80
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y2.CQ       Tcko                  0.450   reduced_reg_1_7
+                                                       reduced_reg_1_6
+    DSP48_X0Y5.B6        net (fanout=9)        1.159   reduced_reg_1_6
+    DSP48_X0Y5.PCOUT0    Tdspdo_BPCOUT_M       3.832   Mmult_phasecmultiplier_out1_submult_0
+                                                       Mmult_phasecmultiplier_out1_submult_0
+    DSP48_X0Y6.PCIN0     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_0_PCOUT_to_Mmult_phasecmultiplier_out1_submult_01_PCIN_0
+    DSP48_X0Y6.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_01
+                                                       Mmult_phasecmultiplier_out1_submult_01
+    DSP48_X0Y7.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_01_PCOUT_to_Mmult_phasecmultiplier_out1_submult_02_PCIN_9
+    DSP48_X0Y7.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_02
+                                                       Mmult_phasecmultiplier_out1_submult_02
+    DSP48_X0Y8.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_02_PCOUT_to_Mmult_phasecmultiplier_out1_submult_03_PCIN_9
+    DSP48_X0Y8.P8        Tdspdo_PCINP          1.816   Mmult_phasecmultiplier_out1_submult_03
+                                                       Mmult_phasecmultiplier_out1_submult_03
+    SLICE_X1Y18.B1       net (fanout=1)        1.395   Mmult_phasecmultiplier_out1_submult_0_42
+    SLICE_X1Y18.COUT     Topcyb                0.501   phasecmultiplier_out1_1<44>
+                                                       Mmult_phasecmultiplier_out10_Madd_lut<42>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<48>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<52>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<56>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<60>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<64>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<68>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<72>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<76>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CLK      Tcinck                0.179   phasecmultiplier_out1_1<80>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<80>
+                                                       phasecmultiplier_out1_1_80
+    -------------------------------------------------  ---------------------------
+    Total                                     14.190ns (11.636ns logic, 2.554ns route)
+                                                       (82.0% logic, 18.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1985.775ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reduced_reg_1_6 (FF)
+  Destination:          phasecmultiplier_out1_1_80 (FF)
+  Requirement:          2000.000ns
+  Data Path Delay:      14.190ns (Levels of Logic = 14)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: reduced_reg_1_6 to phasecmultiplier_out1_1_80
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y2.CQ       Tcko                  0.450   reduced_reg_1_7
+                                                       reduced_reg_1_6
+    DSP48_X0Y5.B6        net (fanout=9)        1.159   reduced_reg_1_6
+    DSP48_X0Y5.PCOUT9    Tdspdo_BPCOUT_M       3.832   Mmult_phasecmultiplier_out1_submult_0
+                                                       Mmult_phasecmultiplier_out1_submult_0
+    DSP48_X0Y6.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_0_PCOUT_to_Mmult_phasecmultiplier_out1_submult_01_PCIN_9
+    DSP48_X0Y6.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_01
+                                                       Mmult_phasecmultiplier_out1_submult_01
+    DSP48_X0Y7.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_01_PCOUT_to_Mmult_phasecmultiplier_out1_submult_02_PCIN_9
+    DSP48_X0Y7.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_02
+                                                       Mmult_phasecmultiplier_out1_submult_02
+    DSP48_X0Y8.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_02_PCOUT_to_Mmult_phasecmultiplier_out1_submult_03_PCIN_9
+    DSP48_X0Y8.P8        Tdspdo_PCINP          1.816   Mmult_phasecmultiplier_out1_submult_03
+                                                       Mmult_phasecmultiplier_out1_submult_03
+    SLICE_X1Y18.B1       net (fanout=1)        1.395   Mmult_phasecmultiplier_out1_submult_0_42
+    SLICE_X1Y18.COUT     Topcyb                0.501   phasecmultiplier_out1_1<44>
+                                                       Mmult_phasecmultiplier_out10_Madd_lut<42>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<48>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<52>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<56>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<60>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<64>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<68>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<72>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<76>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CLK      Tcinck                0.179   phasecmultiplier_out1_1<80>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<80>
+                                                       phasecmultiplier_out1_1_80
+    -------------------------------------------------  ---------------------------
+    Total                                     14.190ns (11.636ns logic, 2.554ns route)
+                                                       (82.0% logic, 18.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1985.775ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reduced_reg_1_6 (FF)
+  Destination:          phasecmultiplier_out1_1_80 (FF)
+  Requirement:          2000.000ns
+  Data Path Delay:      14.190ns (Levels of Logic = 14)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: reduced_reg_1_6 to phasecmultiplier_out1_1_80
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y2.CQ       Tcko                  0.450   reduced_reg_1_7
+                                                       reduced_reg_1_6
+    DSP48_X0Y5.B6        net (fanout=9)        1.159   reduced_reg_1_6
+    DSP48_X0Y5.PCOUT1    Tdspdo_BPCOUT_M       3.832   Mmult_phasecmultiplier_out1_submult_0
+                                                       Mmult_phasecmultiplier_out1_submult_0
+    DSP48_X0Y6.PCIN1     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_0_PCOUT_to_Mmult_phasecmultiplier_out1_submult_01_PCIN_1
+    DSP48_X0Y6.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_01
+                                                       Mmult_phasecmultiplier_out1_submult_01
+    DSP48_X0Y7.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_01_PCOUT_to_Mmult_phasecmultiplier_out1_submult_02_PCIN_9
+    DSP48_X0Y7.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_02
+                                                       Mmult_phasecmultiplier_out1_submult_02
+    DSP48_X0Y8.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_02_PCOUT_to_Mmult_phasecmultiplier_out1_submult_03_PCIN_9
+    DSP48_X0Y8.P8        Tdspdo_PCINP          1.816   Mmult_phasecmultiplier_out1_submult_03
+                                                       Mmult_phasecmultiplier_out1_submult_03
+    SLICE_X1Y18.B1       net (fanout=1)        1.395   Mmult_phasecmultiplier_out1_submult_0_42
+    SLICE_X1Y18.COUT     Topcyb                0.501   phasecmultiplier_out1_1<44>
+                                                       Mmult_phasecmultiplier_out10_Madd_lut<42>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<48>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<52>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<56>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<60>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<64>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<68>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<72>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<76>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CLK      Tcinck                0.179   phasecmultiplier_out1_1<80>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<80>
+                                                       phasecmultiplier_out1_1_80
+    -------------------------------------------------  ---------------------------
+    Total                                     14.190ns (11.636ns logic, 2.554ns route)
+                                                       (82.0% logic, 18.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point phasecmultiplier_out1_1_81 (SLICE_X1Y28.CIN), 153807262 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1985.799ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reduced_reg_1_6 (FF)
+  Destination:          phasecmultiplier_out1_1_81 (FF)
+  Requirement:          2000.000ns
+  Data Path Delay:      14.166ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: reduced_reg_1_6 to phasecmultiplier_out1_1_81
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y2.CQ       Tcko                  0.450   reduced_reg_1_7
+                                                       reduced_reg_1_6
+    DSP48_X0Y5.B6        net (fanout=9)        1.159   reduced_reg_1_6
+    DSP48_X0Y5.PCOUT0    Tdspdo_BPCOUT_M       3.832   Mmult_phasecmultiplier_out1_submult_0
+                                                       Mmult_phasecmultiplier_out1_submult_0
+    DSP48_X0Y6.PCIN0     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_0_PCOUT_to_Mmult_phasecmultiplier_out1_submult_01_PCIN_0
+    DSP48_X0Y6.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_01
+                                                       Mmult_phasecmultiplier_out1_submult_01
+    DSP48_X0Y7.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_01_PCOUT_to_Mmult_phasecmultiplier_out1_submult_02_PCIN_9
+    DSP48_X0Y7.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_02
+                                                       Mmult_phasecmultiplier_out1_submult_02
+    DSP48_X0Y8.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_02_PCOUT_to_Mmult_phasecmultiplier_out1_submult_03_PCIN_9
+    DSP48_X0Y8.P8        Tdspdo_PCINP          1.816   Mmult_phasecmultiplier_out1_submult_03
+                                                       Mmult_phasecmultiplier_out1_submult_03
+    SLICE_X1Y18.B1       net (fanout=1)        1.395   Mmult_phasecmultiplier_out1_submult_0_42
+    SLICE_X1Y18.COUT     Topcyb                0.501   phasecmultiplier_out1_1<44>
+                                                       Mmult_phasecmultiplier_out10_Madd_lut<42>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<48>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<52>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<56>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<60>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<64>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<68>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<72>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<76>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<80>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CLK      Tcinck                0.051   phasecmultiplier_out1_1<82>
+                                                       Mmult_phasecmultiplier_out10_Madd_xor<82>
+                                                       phasecmultiplier_out1_1_81
+    -------------------------------------------------  ---------------------------
+    Total                                     14.166ns (11.612ns logic, 2.554ns route)
+                                                       (82.0% logic, 18.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1985.799ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reduced_reg_1_6 (FF)
+  Destination:          phasecmultiplier_out1_1_81 (FF)
+  Requirement:          2000.000ns
+  Data Path Delay:      14.166ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: reduced_reg_1_6 to phasecmultiplier_out1_1_81
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y2.CQ       Tcko                  0.450   reduced_reg_1_7
+                                                       reduced_reg_1_6
+    DSP48_X0Y5.B6        net (fanout=9)        1.159   reduced_reg_1_6
+    DSP48_X0Y5.PCOUT9    Tdspdo_BPCOUT_M       3.832   Mmult_phasecmultiplier_out1_submult_0
+                                                       Mmult_phasecmultiplier_out1_submult_0
+    DSP48_X0Y6.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_0_PCOUT_to_Mmult_phasecmultiplier_out1_submult_01_PCIN_9
+    DSP48_X0Y6.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_01
+                                                       Mmult_phasecmultiplier_out1_submult_01
+    DSP48_X0Y7.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_01_PCOUT_to_Mmult_phasecmultiplier_out1_submult_02_PCIN_9
+    DSP48_X0Y7.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_02
+                                                       Mmult_phasecmultiplier_out1_submult_02
+    DSP48_X0Y8.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_02_PCOUT_to_Mmult_phasecmultiplier_out1_submult_03_PCIN_9
+    DSP48_X0Y8.P8        Tdspdo_PCINP          1.816   Mmult_phasecmultiplier_out1_submult_03
+                                                       Mmult_phasecmultiplier_out1_submult_03
+    SLICE_X1Y18.B1       net (fanout=1)        1.395   Mmult_phasecmultiplier_out1_submult_0_42
+    SLICE_X1Y18.COUT     Topcyb                0.501   phasecmultiplier_out1_1<44>
+                                                       Mmult_phasecmultiplier_out10_Madd_lut<42>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<48>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<52>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<56>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<60>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<64>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<68>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<72>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<76>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<80>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CLK      Tcinck                0.051   phasecmultiplier_out1_1<82>
+                                                       Mmult_phasecmultiplier_out10_Madd_xor<82>
+                                                       phasecmultiplier_out1_1_81
+    -------------------------------------------------  ---------------------------
+    Total                                     14.166ns (11.612ns logic, 2.554ns route)
+                                                       (82.0% logic, 18.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1985.799ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reduced_reg_1_6 (FF)
+  Destination:          phasecmultiplier_out1_1_81 (FF)
+  Requirement:          2000.000ns
+  Data Path Delay:      14.166ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: reduced_reg_1_6 to phasecmultiplier_out1_1_81
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y2.CQ       Tcko                  0.450   reduced_reg_1_7
+                                                       reduced_reg_1_6
+    DSP48_X0Y5.B6        net (fanout=9)        1.159   reduced_reg_1_6
+    DSP48_X0Y5.PCOUT1    Tdspdo_BPCOUT_M       3.832   Mmult_phasecmultiplier_out1_submult_0
+                                                       Mmult_phasecmultiplier_out1_submult_0
+    DSP48_X0Y6.PCIN1     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_0_PCOUT_to_Mmult_phasecmultiplier_out1_submult_01_PCIN_1
+    DSP48_X0Y6.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_01
+                                                       Mmult_phasecmultiplier_out1_submult_01
+    DSP48_X0Y7.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_01_PCOUT_to_Mmult_phasecmultiplier_out1_submult_02_PCIN_9
+    DSP48_X0Y7.PCOUT9    Tdspdo_PCINPCOUT      2.013   Mmult_phasecmultiplier_out1_submult_02
+                                                       Mmult_phasecmultiplier_out1_submult_02
+    DSP48_X0Y8.PCIN9     net (fanout=1)        0.000   Mmult_phasecmultiplier_out1_submult_02_PCOUT_to_Mmult_phasecmultiplier_out1_submult_03_PCIN_9
+    DSP48_X0Y8.P8        Tdspdo_PCINP          1.816   Mmult_phasecmultiplier_out1_submult_03
+                                                       Mmult_phasecmultiplier_out1_submult_03
+    SLICE_X1Y18.B1       net (fanout=1)        1.395   Mmult_phasecmultiplier_out1_submult_0_42
+    SLICE_X1Y18.COUT     Topcyb                0.501   phasecmultiplier_out1_1<44>
+                                                       Mmult_phasecmultiplier_out10_Madd_lut<42>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<44>
+    SLICE_X1Y19.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<48>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<48>
+    SLICE_X1Y20.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<52>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<52>
+    SLICE_X1Y21.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<56>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<56>
+    SLICE_X1Y22.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<60>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<60>
+    SLICE_X1Y23.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<64>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<64>
+    SLICE_X1Y24.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<68>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<68>
+    SLICE_X1Y25.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<72>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<72>
+    SLICE_X1Y26.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<76>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<76>
+    SLICE_X1Y27.COUT     Tbyp                  0.104   phasecmultiplier_out1_1<80>
+                                                       Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CIN      net (fanout=1)        0.000   Mmult_phasecmultiplier_out10_Madd_cy<80>
+    SLICE_X1Y28.CLK      Tcinck                0.051   phasecmultiplier_out1_1<82>
+                                                       Mmult_phasecmultiplier_out10_Madd_xor<82>
+                                                       phasecmultiplier_out1_1_81
+    -------------------------------------------------  ---------------------------
+    Total                                     14.166ns (11.612ns logic, 2.554ns route)
+                                                       (82.0% logic, 18.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "TN_clk" 0.5 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point reduced_reg_0_1 (SLICE_X15Y5.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.462ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               gain_out1_1_1 (FF)
+  Destination:          reduced_reg_0_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.462ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 2000.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: gain_out1_1_1 to reduced_reg_0_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y5.BQ       Tcko                  0.414   gain_out1_1<3>
+                                                       gain_out1_1_1
+    SLICE_X15Y5.BX       net (fanout=1)        0.279   gain_out1_1<1>
+    SLICE_X15Y5.CLK      Tckdi       (-Th)     0.231   reduced_reg_0_3
+                                                       reduced_reg_0_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.462ns (0.183ns logic, 0.279ns route)
+                                                       (39.6% logic, 60.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point reduced_reg_0_2 (SLICE_X15Y5.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.476ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               gain_out1_1_2 (FF)
+  Destination:          reduced_reg_0_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.476ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 2000.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: gain_out1_1_2 to reduced_reg_0_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y5.CQ       Tcko                  0.414   gain_out1_1<3>
+                                                       gain_out1_1_2
+    SLICE_X15Y5.CX       net (fanout=1)        0.280   gain_out1_1<2>
+    SLICE_X15Y5.CLK      Tckdi       (-Th)     0.218   reduced_reg_0_3
+                                                       reduced_reg_0_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.476ns (0.196ns logic, 0.280ns route)
+                                                       (41.2% logic, 58.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Discrete_Time_Integrator_x_reg_3 (SLICE_X2Y2.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.524ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Discrete_Time_Integrator_x_reg_2 (FF)
+  Destination:          Discrete_Time_Integrator_x_reg_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.524ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 2000.000ns
+  Destination Clock:    clk rising at 2000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Discrete_Time_Integrator_x_reg_2 to Discrete_Time_Integrator_x_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y2.CQ        Tcko                  0.414   Discrete_Time_Integrator_x_reg<3>
+                                                       Discrete_Time_Integrator_x_reg_2
+    SLICE_X2Y2.CX        net (fanout=2)        0.155   Discrete_Time_Integrator_x_reg<2>
+    SLICE_X2Y2.CLK       Tckdi       (-Th)     0.045   Discrete_Time_Integrator_x_reg<3>
+                                                       Maccum_Discrete_Time_Integrator_x_reg_cy<3>
+                                                       Discrete_Time_Integrator_x_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.524ns (0.369ns logic, 0.155ns route)
+                                                       (70.4% logic, 29.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "TN_clk" 0.5 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 1997.778ns (period - min period limit)
+  Period: 2000.000ns
+  Min period limit: 2.222ns (450.045MHz) (Trper_CLKA)
+  Physical resource: u_cosinec/Mrom_Look_Up_Table_out1_rom00001/CLKAL
+  Logical resource: u_cosinec/Mrom_Look_Up_Table_out1_rom00001/CLKAL
+  Location pin: RAMB36_X0Y1.CLKARDCLKL
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 1997.778ns (period - min period limit)
+  Period: 2000.000ns
+  Min period limit: 2.222ns (450.045MHz) (Trper_CLKA)
+  Physical resource: u_cosinec/Mrom_Look_Up_Table_out1_rom00001/CLKAU
+  Logical resource: u_cosinec/Mrom_Look_Up_Table_out1_rom00001/CLKAU
+  Location pin: RAMB36_X0Y1.CLKARDCLKU
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 1997.778ns (period - min period limit)
+  Period: 2000.000ns
+  Min period limit: 2.222ns (450.045MHz) (Trper_CLKA)
+  Physical resource: u_cosineb/Mrom_Look_Up_Table_out1_rom00001/CLKAL
+  Logical resource: u_cosineb/Mrom_Look_Up_Table_out1_rom00001/CLKAL
+  Location pin: RAMB36_X1Y2.CLKARDCLKL
+  Clock network: clk
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+No constraints were found to generate data for the Data Sheet Report section.
+Use the Advanced Analysis (-a) option or generate global constraints for each
+clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 10499521745 paths, 0 nets, and 3784 connections
+
+Design statistics:
+   Minimum period:  14.270ns{1}   (Maximum frequency:  70.077MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Oct 10 12:44:20 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 382 MB
+
+
+

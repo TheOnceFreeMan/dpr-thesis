@@ -1,0 +1,391 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+ECE207196434::  Tue Oct 10 12:43:51 2017
+
+par -w -intstyle ise -ol high -mt off controller_map.ncd controller.ncd
+controller.pcf 
+
+
+Constraints file: controller.pcf.
+Loading device for application Rf_Device from file '5vlx50.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "controller" is an NCD, version 3.2, device xc5vlx50, package ff676, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.73 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+   Number of DSP48Es                        20 out of 48     41%
+   Number of RAMB36_EXPs                    18 out of 48     37%
+   Number of Slices                        261 out of 7200    3%
+   Number of Slice Registers               559 out of 28800   1%
+      Number used as Flip Flops            559
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                    709 out of 28800   2%
+   Number of Slice LUT-Flip Flop pairs     951 out of 28800   3%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 7 secs 
+Finished initial Timing Analysis.  REAL time: 8 secs 
+
+WARNING:Par:289 - The signal clk has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal reset has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal ce_out has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<83> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<82> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<81> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<80> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<79> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<78> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<77> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<76> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<75> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<74> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<73> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<72> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<71> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<70> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<69> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<68> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<67> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Va<66> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<65> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<64> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<63> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<62> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<61> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<60> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<59> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<58> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<57> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<56> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<55> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<54> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<53> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<52> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<51> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<50> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<49> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<48> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<47> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<46> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<45> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<44> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<43> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<42> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<41> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<40> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<39> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<38> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<37> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<36> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<35> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<34> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<33> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<32> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<31> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<30> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<29> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<28> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<27> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<26> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<25> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<24> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<23> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<22> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<21> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<20> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<19> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<18> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<17> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<16> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<15> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<14> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<13> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<12> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<11> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<10> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<9> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<8> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<7> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<6> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<5> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<4> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<3> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<2> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<1> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phaseamultiplier_out1_1<0> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<83> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<82> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<81> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<80> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<79> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<78> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<77> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<76> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<75> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<74> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<73> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<72> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<71> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<70> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<69> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<68> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<67> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vb<66> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<65> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<64> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<63> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<62> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<61> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<60> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<59> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<58> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<57> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<56> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<55> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<54> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<53> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<52> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<51> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<50> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<49> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<48> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<47> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<46> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<45> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<44> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<43> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<42> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<41> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<40> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<39> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<38> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<37> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<36> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<35> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<34> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<33> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<32> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<31> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<30> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<29> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<28> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<27> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<26> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<25> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<24> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<23> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<22> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<21> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<20> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<19> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<18> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<17> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<16> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<15> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<14> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<13> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<12> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<11> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<10> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<9> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<8> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<7> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<6> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<5> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<4> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<3> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<2> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<1> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasebmultiplier_out1_1<0> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<83> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<82> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<81> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<80> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<79> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<78> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<77> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<76> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<75> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<74> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<73> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<72> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<71> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<70> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<69> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<68> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<67> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Vc<66> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<65> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<64> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<63> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<62> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<61> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<60> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<59> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<58> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<57> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<56> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<55> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<54> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<53> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<52> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<51> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<50> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<49> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<48> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<47> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<46> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<45> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<44> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<43> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<42> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<41> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<40> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<39> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<38> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<37> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<36> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<35> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<34> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<33> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<32> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<31> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<30> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<29> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<28> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<27> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<26> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<25> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<24> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<23> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<22> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<21> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<20> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<19> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<18> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<17> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<16> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<15> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<14> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<13> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<12> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<11> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<10> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<9> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<8> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<7> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<6> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<5> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<4> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<3> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<2> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<1> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phasecmultiplier_out1_1<0> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<15> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<14> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<13> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<12> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<11> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<10> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<9> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<8> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<7> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<6> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<5> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<4> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<3> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<2> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<1> has no driver.  PAR will not attempt to route this signal.
+WARNING:Par:289 - The signal freq<0> has no driver.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 6438 unrouted;      REAL time: 9 secs 
+
+Phase  2  : 3186 unrouted;      REAL time: 9 secs 
+
+Phase  3  : 909 unrouted;      REAL time: 10 secs 
+
+Phase  4  : 909 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
+
+Updating file: controller.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+Total REAL time to Router completion: 15 secs 
+Total CPU time to Router completion: 14 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clk = PERIOD TIMEGRP "TN_clk" 0.5 MHz  | SETUP       |  1985.730ns|    14.270ns|       0|           0
+  HIGH 50%                                  | HOLD        |     0.462ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 252 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+WARNING:Par:284 - There are 19 sourceless signals in this design. This design will not pass the DRC check run by Bitgen.
+
+Total REAL time to PAR completion: 17 secs 
+Total CPU time to PAR completion: 15 secs 
+
+Peak Memory Usage:  484 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 275
+Number of info messages: 0
+
+Writing design to file controller.ncd
+
+
+
+PAR done!

@@ -1,0 +1,734 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "controller.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "controller"
+Output Format                      : NGC
+Target Device                      : xc5vlx50-1-ff676
+
+---- Source Options
+Top Module Name                    : controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Off
+Reduce Control Sets                : Off
+Add IO Buffers                     : NO
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/VF_2_pkg.vhd" in Library work.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/cosinea.vhd" in Library work.
+Architecture rtl of Entity cosinea is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/cosineb.vhd" in Library work.
+Architecture rtl of Entity cosineb is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/cosinec.vhd" in Library work.
+Architecture rtl of Entity cosinec is up to date.
+Compiling vhdl file "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/controller.vhd" in Library work.
+Architecture rtl of Entity controller is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <controller> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <cosinea> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <cosineb> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <cosinec> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <controller> in library <work> (Architecture <rtl>).
+Entity <controller> analyzed. Unit <controller> generated.
+
+Analyzing Entity <cosinea> in library <work> (Architecture <rtl>).
+Entity <cosinea> analyzed. Unit <cosinea> generated.
+
+Analyzing Entity <cosineb> in library <work> (Architecture <rtl>).
+Entity <cosineb> analyzed. Unit <cosineb> generated.
+
+Analyzing Entity <cosinec> in library <work> (Architecture <rtl>).
+Entity <cosinec> analyzed. Unit <cosinec> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <cosinea>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/cosinea.vhd".
+WARNING:Xst:646 - Signal <u_signed<63:35>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <u_signed<22:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <QuadHandle1b_out1<38:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <QuadHandle1a_out1<38:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Negate_cast_1<51>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CastU16En3_out1<12:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4096x51-bit ROM for signal <Look_Up_Table_out1$rom0000> created at line 4305.
+    Found 8-bit register for signal <alpha1st_or_4th_Quad_out1_1>.
+    Found 52-bit subtractor for signal <Amp25_out1>.
+    Found 52-bit subtractor for signal <Amp75_out1>.
+    Found 51-bit comparator greatequal for signal <GTEp75_relop1$cmp_ge0000> created at line 4202.
+    Found 51-bit register for signal <Look_Up_Table_out1_1>.
+    Found 51-bit comparator lessequal for signal <LTEp25_relop1$cmp_le0000> created at line 4193.
+    Found 51-bit comparator lessequal for signal <LTEp50_relop1$cmp_le0000> created at line 4251.
+    Found 52-bit adder for signal <Negate_cast_1>.
+    Found 52-bit adder for signal <p25mA_out1>.
+    Found 52-bit adder for signal <p75mA_out1>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <cosinea> synthesized.
+
+
+Synthesizing Unit <cosineb>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/cosineb.vhd".
+WARNING:Xst:646 - Signal <u_signed<64:35>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <u_signed<22:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <QuadHandle1b_out1<38:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <QuadHandle1a_out1<38:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Negate_cast_1<51>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CastU16En3_out1<12:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4096x51-bit ROM for signal <Look_Up_Table_out1$rom0000> created at line 4305.
+    Found 8-bit register for signal <alpha1st_or_4th_Quad_out1_1>.
+    Found 52-bit subtractor for signal <Amp25_out1>.
+    Found 52-bit subtractor for signal <Amp75_out1>.
+    Found 51-bit comparator greatequal for signal <GTEp75_relop1$cmp_ge0000> created at line 4202.
+    Found 51-bit register for signal <Look_Up_Table_out1_1>.
+    Found 51-bit comparator lessequal for signal <LTEp25_relop1$cmp_le0000> created at line 4193.
+    Found 51-bit comparator lessequal for signal <LTEp50_relop1$cmp_le0000> created at line 4251.
+    Found 52-bit adder for signal <Negate_cast_1>.
+    Found 52-bit adder for signal <p25mA_out1>.
+    Found 52-bit adder for signal <p75mA_out1>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <cosineb> synthesized.
+
+
+Synthesizing Unit <cosinec>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/cosinec.vhd".
+WARNING:Xst:646 - Signal <u_signed<64:35>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <u_signed<22:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <QuadHandle1b_out1<38:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <QuadHandle1a_out1<38:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Negate_cast_1<51>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CastU16En3_out1<12:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4096x51-bit ROM for signal <Look_Up_Table_out1$rom0000> created at line 4305.
+    Found 8-bit register for signal <alpha1st_or_4th_Quad_out1_1>.
+    Found 52-bit subtractor for signal <Amp25_out1>.
+    Found 52-bit subtractor for signal <Amp75_out1>.
+    Found 51-bit comparator greatequal for signal <GTEp75_relop1$cmp_ge0000> created at line 4202.
+    Found 51-bit register for signal <Look_Up_Table_out1_1>.
+    Found 51-bit comparator lessequal for signal <LTEp25_relop1$cmp_le0000> created at line 4193.
+    Found 51-bit comparator lessequal for signal <LTEp50_relop1$cmp_le0000> created at line 4251.
+    Found 52-bit adder for signal <Negate_cast_1>.
+    Found 52-bit adder for signal <p25mA_out1>.
+    Found 52-bit adder for signal <p75mA_out1>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <cosinec> synthesized.
+
+
+Synthesizing Unit <controller>.
+    Related source file is "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/controller.vhd".
+WARNING:Xst:647 - Input <i_a> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <i_b> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Electrical_Position> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Current_Command> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <gain_mul_temp<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <freq_1> equivalent to <Discrete_Time_Integrator_indtc_1> has been removed
+    Found 51-bit register for signal <Cosine_1>.
+    Found 51-bit register for signal <Cosine_3>.
+    Found 51-bit register for signal <Cosine_5>.
+    Found 16-bit register for signal <Discrete_Time_Integrator_indtc_1>.
+    Found 64-bit register for signal <Discrete_Time_Integrator_u_gain_1>.
+    Found 64-bit up accumulator for signal <Discrete_Time_Integrator_x_reg>.
+    Found 16x16-bit multiplier for signal <gain_mul_temp>.
+    Found 16x16-bit multiplier for signal <gain_out1>.
+    Found 32-bit register for signal <gain_out1_1>.
+    Found 84-bit adder for signal <phaseadc_out1>.
+    Found 51x32-bit multiplier for signal <phaseamultiplier_out1>.
+    Found 83-bit register for signal <phaseamultiplier_out1_1>.
+    Found 84-bit adder for signal <phasebdc_out1>.
+    Found 51x32-bit multiplier for signal <phasebmultiplier_out1>.
+    Found 83-bit register for signal <phasebmultiplier_out1_1>.
+    Found 84-bit adder for signal <phasecdc_out1>.
+    Found 51x32-bit multiplier for signal <phasecmultiplier_out1>.
+    Found 83-bit register for signal <phasecmultiplier_out1_1>.
+    Found 64-bit register for signal <reduced_reg>.
+    Found 65-bit subtractor for signal <subtractb_out1>.
+    Found 65-bit subtractor for signal <subtractc_out1>.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred 578 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   5 Multiplier(s).
+Unit <controller> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 4096x51-bit ROM                                       : 3
+# Multipliers                                          : 5
+ 16x16-bit multiplier                                  : 2
+ 51x32-bit multiplier                                  : 3
+# Adders/Subtractors                                   : 20
+ 52-bit adder                                          : 9
+ 52-bit subtractor                                     : 6
+ 65-bit subtractor                                     : 2
+ 84-bit adder                                          : 3
+# Accumulators                                         : 1
+ 64-bit up accumulator                                 : 1
+# Registers                                            : 17
+ 16-bit register                                       : 1
+ 32-bit register                                       : 3
+ 51-bit register                                       : 6
+ 64-bit register                                       : 1
+ 8-bit register                                        : 3
+ 83-bit register                                       : 3
+# Comparators                                          : 9
+ 51-bit comparator greatequal                          : 3
+ 51-bit comparator lessequal                           : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <alpha1st_or_4th_Quad_out1_1_1> in Unit <u_cosinea> is equivalent to the following 6 FFs/Latches, which will be removed : <alpha1st_or_4th_Quad_out1_1_2> <alpha1st_or_4th_Quad_out1_1_3> <alpha1st_or_4th_Quad_out1_1_4> <alpha1st_or_4th_Quad_out1_1_5> <alpha1st_or_4th_Quad_out1_1_6> <alpha1st_or_4th_Quad_out1_1_7> 
+INFO:Xst:2261 - The FF/Latch <alpha1st_or_4th_Quad_out1_1_1> in Unit <u_cosineb> is equivalent to the following 6 FFs/Latches, which will be removed : <alpha1st_or_4th_Quad_out1_1_2> <alpha1st_or_4th_Quad_out1_1_3> <alpha1st_or_4th_Quad_out1_1_4> <alpha1st_or_4th_Quad_out1_1_5> <alpha1st_or_4th_Quad_out1_1_6> <alpha1st_or_4th_Quad_out1_1_7> 
+INFO:Xst:2261 - The FF/Latch <alpha1st_or_4th_Quad_out1_1_1> in Unit <u_cosinec> is equivalent to the following 6 FFs/Latches, which will be removed : <alpha1st_or_4th_Quad_out1_1_2> <alpha1st_or_4th_Quad_out1_1_3> <alpha1st_or_4th_Quad_out1_1_4> <alpha1st_or_4th_Quad_out1_1_5> <alpha1st_or_4th_Quad_out1_1_6> <alpha1st_or_4th_Quad_out1_1_7> 
+WARNING:Xst:1710 - FF/Latch <alpha1st_or_4th_Quad_out1_1_1> (without init value) has a constant value of 0 in block <u_cosinea>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <alpha1st_or_4th_Quad_out1_1_1> (without init value) has a constant value of 0 in block <u_cosineb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <alpha1st_or_4th_Quad_out1_1_1> (without init value) has a constant value of 0 in block <u_cosinec>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <alpha1st_or_4th_Quad_out1_1<7:1>> (without init value) have a constant value of 0 in block <cosinea>.
+WARNING:Xst:2404 -  FFs/Latches <alpha1st_or_4th_Quad_out1_1<7:1>> (without init value) have a constant value of 0 in block <cosineb>.
+WARNING:Xst:2404 -  FFs/Latches <alpha1st_or_4th_Quad_out1_1<7:1>> (without init value) have a constant value of 0 in block <cosinec>.
+
+Synthesizing (advanced) Unit <cosinea>.
+INFO:Xst:3044 - The ROM <Mrom_Look_Up_Table_out1_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <Look_Up_Table_out1_1>.
+INFO:Xst:3225 - The RAM <Mrom_Look_Up_Table_out1_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 51-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to signal <enb>           | high     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Look_Up_Table_k> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Look_Up_Table_out1_1> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <cosinea> synthesized (advanced).
+
+Synthesizing (advanced) Unit <cosineb>.
+INFO:Xst:3044 - The ROM <Mrom_Look_Up_Table_out1_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <Look_Up_Table_out1_1>.
+INFO:Xst:3225 - The RAM <Mrom_Look_Up_Table_out1_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 51-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to signal <enb>           | high     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Look_Up_Table_k> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Look_Up_Table_out1_1> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <cosineb> synthesized (advanced).
+
+Synthesizing (advanced) Unit <cosinec>.
+INFO:Xst:3044 - The ROM <Mrom_Look_Up_Table_out1_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <Look_Up_Table_out1_1>.
+INFO:Xst:3225 - The RAM <Mrom_Look_Up_Table_out1_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 51-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to signal <enb>           | high     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Look_Up_Table_k> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Look_Up_Table_out1_1> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <cosinec> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 4096x51-bit single-port block RAM                     : 3
+# Multipliers                                          : 5
+ 16x16-bit multiplier                                  : 2
+ 51x32-bit multiplier                                  : 3
+# Adders/Subtractors                                   : 20
+ 51-bit adder                                          : 3
+ 52-bit adder                                          : 6
+ 52-bit subtractor                                     : 6
+ 65-bit subtractor                                     : 2
+ 84-bit adder                                          : 3
+# Accumulators                                         : 1
+ 64-bit up accumulator                                 : 1
+# Registers                                            : 581
+ Flip-Flops                                            : 581
+# Comparators                                          : 9
+ 51-bit comparator greatequal                          : 3
+ 51-bit comparator lessequal                           : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <Discrete_Time_Integrator_u_gain_1_23> in Unit <controller> is equivalent to the following 40 FFs/Latches, which will be removed : <Discrete_Time_Integrator_u_gain_1_24> <Discrete_Time_Integrator_u_gain_1_25> <Discrete_Time_Integrator_u_gain_1_26> <Discrete_Time_Integrator_u_gain_1_27> <Discrete_Time_Integrator_u_gain_1_28> <Discrete_Time_Integrator_u_gain_1_29> <Discrete_Time_Integrator_u_gain_1_30> <Discrete_Time_Integrator_u_gain_1_31> <Discrete_Time_Integrator_u_gain_1_32> <Discrete_Time_Integrator_u_gain_1_33> <Discrete_Time_Integrator_u_gain_1_34> <Discrete_Time_Integrator_u_gain_1_35> <Discrete_Time_Integrator_u_gain_1_36> <Discrete_Time_Integrator_u_gain_1_37> <Discrete_Time_Integrator_u_gain_1_38> <Discrete_Time_Integrator_u_gain_1_39> <Discrete_Time_Integrator_u_gain_1_40> <Discrete_Time_Integrator_u_gain_1_41> <Discrete_Time_Integrator_u_gain_1_42> <Discrete_Time_Integrator_u_gain_1_43> <Discrete_Time_Integrator_u_gain_1_44> <Discrete_Time_Integrator_u_gain_1_45>
+   <Discrete_Time_Integrator_u_gain_1_46> <Discrete_Time_Integrator_u_gain_1_47> <Discrete_Time_Integrator_u_gain_1_48> <Discrete_Time_Integrator_u_gain_1_49> <Discrete_Time_Integrator_u_gain_1_50> <Discrete_Time_Integrator_u_gain_1_51> <Discrete_Time_Integrator_u_gain_1_52> <Discrete_Time_Integrator_u_gain_1_53> <Discrete_Time_Integrator_u_gain_1_54> <Discrete_Time_Integrator_u_gain_1_55> <Discrete_Time_Integrator_u_gain_1_56> <Discrete_Time_Integrator_u_gain_1_57> <Discrete_Time_Integrator_u_gain_1_58> <Discrete_Time_Integrator_u_gain_1_59> <Discrete_Time_Integrator_u_gain_1_60> <Discrete_Time_Integrator_u_gain_1_61> <Discrete_Time_Integrator_u_gain_1_62> <Discrete_Time_Integrator_u_gain_1_63> 
+INFO:Xst:2261 - The FF/Latch <Discrete_Time_Integrator_u_gain_1_21> in Unit <controller> is equivalent to the following 2 FFs/Latches, which will be removed : <Discrete_Time_Integrator_u_gain_1_22> <Discrete_Time_Integrator_u_gain_1_23> 
+INFO:Xst:2261 - The FF/Latch <gain_out1_1_26> in Unit <controller> is equivalent to the following 5 FFs/Latches, which will be removed : <gain_out1_1_27> <gain_out1_1_28> <gain_out1_1_29> <gain_out1_1_30> <gain_out1_1_31> 
+INFO:Xst:2261 - The FF/Latch <reduced_reg_0_26> in Unit <controller> is equivalent to the following 5 FFs/Latches, which will be removed : <reduced_reg_0_27> <reduced_reg_0_28> <reduced_reg_0_29> <reduced_reg_0_30> <reduced_reg_0_31> 
+INFO:Xst:2261 - The FF/Latch <reduced_reg_1_26> in Unit <controller> is equivalent to the following 5 FFs/Latches, which will be removed : <reduced_reg_1_27> <reduced_reg_1_28> <reduced_reg_1_29> <reduced_reg_1_30> <reduced_reg_1_31> 
+
+Optimizing unit <controller> ...
+
+Optimizing unit <cosinea> ...
+
+Optimizing unit <cosineb> ...
+
+Optimizing unit <cosinec> ...
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_35> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_36> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_37> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_38> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_39> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_40> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_41> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_42> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_43> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_44> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_45> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_46> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_47> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_48> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_49> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_50> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_51> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_52> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_53> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_54> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_55> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_56> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_57> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_58> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_59> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_60> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_61> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_62> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <Discrete_Time_Integrator_x_reg_63> of sequential type is unconnected in block <controller>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block controller, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 559
+ Flip-Flops                                            : 559
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : controller.ngr
+Top Level Output File Name         : controller
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 336
+
+Cell Usage :
+# BELS                             : 1652
+#      GND                         : 1
+#      INV                         : 234
+#      LUT1                        : 70
+#      LUT2                        : 161
+#      LUT3                        : 156
+#      LUT4                        : 8
+#      LUT5                        : 10
+#      LUT6                        : 64
+#      MUXCY                       : 452
+#      MUXF7                       : 31
+#      VCC                         : 1
+#      XORCY                       : 464
+# FlipFlops/Latches                : 559
+#      FDCE                        : 559
+# RAMS                             : 18
+#      RAMB36_EXP                  : 18
+# DSPs                             : 20
+#      DSP48E                      : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50ff676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             559  out of  28800     1%  
+ Number of Slice LUTs:                  703  out of  28800     2%  
+    Number used as Logic:               703  out of  28800     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    959
+   Number with an unused Flip Flop:     400  out of    959    41%  
+   Number with an unused LUT:           256  out of    959    26%  
+   Number of fully used LUT-FF pairs:   303  out of    959    31%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         336
+ Number of bonded IOBs:                   0  out of    440     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               18  out of     48    37%  
+    Number using Block RAM only:         18
+ Number of DSP48Es:                      20  out of     48    41%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                           | Load  |
+-----------------------------------+-------------------------------------------------+-------+
+clk                                | NONE(Discrete_Time_Integrator_indtc_1_0)        | 577   |
+N0                                 | NONE(u_cosinea/Mrom_Look_Up_Table_out1_rom00005)| 18    |
+-----------------------------------+-------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------+------------------------+-------+
+Control Signal                         | Buffer(FF name)        | Load  |
+---------------------------------------+------------------------+-------+
+reset_inv(u_cosinec/reset_inv1_INV_0:O)| NONE(Cosine_1_0)       | 559   |
+---------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 12.868ns (Maximum Frequency: 77.712MHz)
+   Minimum input arrival time before clock: 0.414ns
+   Maximum output required time after clock: 2.190ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.868ns (frequency: 77.712MHz)
+  Total number of paths / destination ports: 10499519450 / 975
+-------------------------------------------------------------------------
+Delay:               12.868ns (Levels of Logic = 47)
+  Source:            reduced_reg_1_16 (FF)
+  Destination:       phaseamultiplier_out1_1_82 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: reduced_reg_1_16 to phaseamultiplier_out1_1_82
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.471   0.380  reduced_reg_1_16 (reduced_reg_1_16)
+     DSP48E:B16->PCOUT47    1   3.832   0.000  Mmult_phasebmultiplier_out1_submult_0 (Mmult_phasebmultiplier_out1_submult_0_PCOUT_to_Mmult_phasebmultiplier_out1_submult_01_PCIN_47)
+     DSP48E:PCIN47->PCOUT47    1   2.013   0.000  Mmult_phasebmultiplier_out1_submult_01 (Mmult_phasebmultiplier_out1_submult_01_PCOUT_to_Mmult_phasebmultiplier_out1_submult_02_PCIN_47)
+     DSP48E:PCIN47->PCOUT47    1   2.013   0.000  Mmult_phasebmultiplier_out1_submult_02 (Mmult_phasebmultiplier_out1_submult_02_PCOUT_to_Mmult_phasebmultiplier_out1_submult_03_PCIN_47)
+     DSP48E:PCIN47->P7     1   1.816   0.480  Mmult_phasebmultiplier_out1_submult_03 (Mmult_phasebmultiplier_out1_submult_0_41)
+     LUT2:I1->O            1   0.094   0.000  Mmult_phasebmultiplier_out10_Madd_lut<41> (Mmult_phasebmultiplier_out10_Madd_lut<41>)
+     MUXCY:S->O            1   0.372   0.000  Mmult_phasebmultiplier_out10_Madd_cy<41> (Mmult_phasebmultiplier_out10_Madd_cy<41>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<42> (Mmult_phasebmultiplier_out10_Madd_cy<42>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<43> (Mmult_phasebmultiplier_out10_Madd_cy<43>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<44> (Mmult_phasebmultiplier_out10_Madd_cy<44>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<45> (Mmult_phasebmultiplier_out10_Madd_cy<45>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<46> (Mmult_phasebmultiplier_out10_Madd_cy<46>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<47> (Mmult_phasebmultiplier_out10_Madd_cy<47>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<48> (Mmult_phasebmultiplier_out10_Madd_cy<48>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<49> (Mmult_phasebmultiplier_out10_Madd_cy<49>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<50> (Mmult_phasebmultiplier_out10_Madd_cy<50>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<51> (Mmult_phasebmultiplier_out10_Madd_cy<51>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<52> (Mmult_phasebmultiplier_out10_Madd_cy<52>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<53> (Mmult_phasebmultiplier_out10_Madd_cy<53>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<54> (Mmult_phasebmultiplier_out10_Madd_cy<54>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<55> (Mmult_phasebmultiplier_out10_Madd_cy<55>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<56> (Mmult_phasebmultiplier_out10_Madd_cy<56>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<57> (Mmult_phasebmultiplier_out10_Madd_cy<57>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<58> (Mmult_phasebmultiplier_out10_Madd_cy<58>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<59> (Mmult_phasebmultiplier_out10_Madd_cy<59>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<60> (Mmult_phasebmultiplier_out10_Madd_cy<60>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<61> (Mmult_phasebmultiplier_out10_Madd_cy<61>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<62> (Mmult_phasebmultiplier_out10_Madd_cy<62>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<63> (Mmult_phasebmultiplier_out10_Madd_cy<63>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<64> (Mmult_phasebmultiplier_out10_Madd_cy<64>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<65> (Mmult_phasebmultiplier_out10_Madd_cy<65>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<66> (Mmult_phasebmultiplier_out10_Madd_cy<66>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<67> (Mmult_phasebmultiplier_out10_Madd_cy<67>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<68> (Mmult_phasebmultiplier_out10_Madd_cy<68>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<69> (Mmult_phasebmultiplier_out10_Madd_cy<69>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<70> (Mmult_phasebmultiplier_out10_Madd_cy<70>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<71> (Mmult_phasebmultiplier_out10_Madd_cy<71>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<72> (Mmult_phasebmultiplier_out10_Madd_cy<72>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<73> (Mmult_phasebmultiplier_out10_Madd_cy<73>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<74> (Mmult_phasebmultiplier_out10_Madd_cy<74>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<75> (Mmult_phasebmultiplier_out10_Madd_cy<75>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<76> (Mmult_phasebmultiplier_out10_Madd_cy<76>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<77> (Mmult_phasebmultiplier_out10_Madd_cy<77>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<78> (Mmult_phasebmultiplier_out10_Madd_cy<78>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<79> (Mmult_phasebmultiplier_out10_Madd_cy<79>)
+     MUXCY:CI->O           1   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<80> (Mmult_phasebmultiplier_out10_Madd_cy<80>)
+     MUXCY:CI->O           0   0.026   0.000  Mmult_phasebmultiplier_out10_Madd_cy<81> (Mmult_phasebmultiplier_out10_Madd_cy<81>)
+     XORCY:CI->O           1   0.357   0.000  Mmult_phasebmultiplier_out10_Madd_xor<82> (phasebmultiplier_out1<82>)
+     FDCE:D                   -0.018          phasebmultiplier_out1_1_82
+    ----------------------------------------
+    Total                     12.868ns (12.008ns logic, 0.860ns route)
+                                       (93.3% logic, 6.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 611 / 611
+-------------------------------------------------------------------------
+Offset:              0.414ns (Levels of Logic = 0)
+  Source:            clk_enable (PAD)
+  Destination:       u_cosinea/Mrom_Look_Up_Table_out1_rom00005 (RAM)
+  Destination Clock: clk rising
+
+  Data Path: clk_enable to u_cosinea/Mrom_Look_Up_Table_out1_rom00005
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB36_EXP:ENAU           0.414          u_cosinea/Mrom_Look_Up_Table_out1_rom00005
+    ----------------------------------------
+    Total                      0.414ns (0.414ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 711 / 252
+-------------------------------------------------------------------------
+Offset:              2.190ns (Levels of Logic = 19)
+  Source:            phaseamultiplier_out1_1_66 (FF)
+  Destination:       Va<83> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: phaseamultiplier_out1_1_66 to Va<83>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.471   0.336  phaseamultiplier_out1_1_66 (phaseamultiplier_out1_1_66)
+     INV:I->O              1   0.238   0.000  Madd_phaseadc_out1_lut<66>_INV_0 (Madd_phaseadc_out1_lut<66>)
+     MUXCY:S->O            1   0.372   0.000  Madd_phaseadc_out1_cy<66> (Madd_phaseadc_out1_cy<66>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<67> (Madd_phaseadc_out1_cy<67>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<68> (Madd_phaseadc_out1_cy<68>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<69> (Madd_phaseadc_out1_cy<69>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<70> (Madd_phaseadc_out1_cy<70>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<71> (Madd_phaseadc_out1_cy<71>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<72> (Madd_phaseadc_out1_cy<72>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<73> (Madd_phaseadc_out1_cy<73>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<74> (Madd_phaseadc_out1_cy<74>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<75> (Madd_phaseadc_out1_cy<75>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<76> (Madd_phaseadc_out1_cy<76>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<77> (Madd_phaseadc_out1_cy<77>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<78> (Madd_phaseadc_out1_cy<78>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<79> (Madd_phaseadc_out1_cy<79>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<80> (Madd_phaseadc_out1_cy<80>)
+     MUXCY:CI->O           1   0.026   0.000  Madd_phaseadc_out1_cy<81> (Madd_phaseadc_out1_cy<81>)
+     MUXCY:CI->O           0   0.026   0.000  Madd_phaseadc_out1_cy<82> (Madd_phaseadc_out1_cy<82>)
+     XORCY:CI->O           0   0.357   0.000  Madd_phaseadc_out1_xor<83> (Va<83>)
+    ----------------------------------------
+    Total                      2.190ns (1.854ns logic, 0.336ns route)
+                                       (84.7% logic, 15.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            clk_enable (PAD)
+  Destination:       ce_out (PAD)
+
+  Data Path: clk_enable to ce_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.35 secs
+ 
+--> 
+
+Total memory usage is 442948 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   58 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+

@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/controller.xst" -ofn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc clock_constraint.ucf -p xc5vlx50-ff676-1 controller.ngc controller.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -u -lc off -power off -o controller_map.ncd controller.ngd controller.pcf 
+par -w -intstyle ise -ol high -mt off controller_map.ncd controller.ncd controller.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml controller.twx controller.ncd -o controller.twr controller.pcf -ucf clock_constraint.ucf 
+netgen -intstyle ise -ar Structure -tm controller -w -dir netgen/synthesis -ofmt vhdl -sim controller.ngc controller_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/controller.xst" -ofn "C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller/controller.syr" 

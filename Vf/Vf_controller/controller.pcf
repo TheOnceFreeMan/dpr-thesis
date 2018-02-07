@@ -1,0 +1,421 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Oct 10 12:43:49 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00001_pins<26> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00001" PINNAME CLKAL;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00001_pins<27> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00001" PINNAME CLKAU;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00002_pins<26> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00002" PINNAME CLKAL;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00002_pins<27> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00002" PINNAME CLKAU;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00003_pins<26> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00003" PINNAME CLKAL;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00003_pins<27> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00003" PINNAME CLKAU;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00004_pins<26> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00004" PINNAME CLKAL;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00004_pins<27> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00004" PINNAME CLKAU;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00005_pins<26> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00005" PINNAME CLKAL;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00005_pins<27> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00005" PINNAME CLKAU;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00006_pins<26> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00006" PINNAME CLKAL;
+PIN u_cosinea/Mrom_Look_Up_Table_out1_rom00006_pins<27> = BEL
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00006" PINNAME CLKAU;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00001_pins<26> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00001" PINNAME CLKAL;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00001_pins<27> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00001" PINNAME CLKAU;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00002_pins<26> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00002" PINNAME CLKAL;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00002_pins<27> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00002" PINNAME CLKAU;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00003_pins<26> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00003" PINNAME CLKAL;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00003_pins<27> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00003" PINNAME CLKAU;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00004_pins<26> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00004" PINNAME CLKAL;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00004_pins<27> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00004" PINNAME CLKAU;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00005_pins<26> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00005" PINNAME CLKAL;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00005_pins<27> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00005" PINNAME CLKAU;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00006_pins<26> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00006" PINNAME CLKAL;
+PIN u_cosineb/Mrom_Look_Up_Table_out1_rom00006_pins<27> = BEL
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00006" PINNAME CLKAU;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00001_pins<26> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00001" PINNAME CLKAL;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00001_pins<27> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00001" PINNAME CLKAU;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00002_pins<26> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00002" PINNAME CLKAL;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00002_pins<27> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00002" PINNAME CLKAU;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00003_pins<26> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00003" PINNAME CLKAL;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00003_pins<27> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00003" PINNAME CLKAU;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00004_pins<26> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00004" PINNAME CLKAL;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00004_pins<27> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00004" PINNAME CLKAU;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00005_pins<26> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00005" PINNAME CLKAL;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00005_pins<27> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00005" PINNAME CLKAU;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00006_pins<26> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00006" PINNAME CLKAL;
+PIN u_cosinec/Mrom_Look_Up_Table_out1_rom00006_pins<27> = BEL
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00006" PINNAME CLKAU;
+TIMEGRP TN_clk = BEL "Discrete_Time_Integrator_indtc_1_0" BEL
+        "Discrete_Time_Integrator_indtc_1_1" BEL
+        "Discrete_Time_Integrator_indtc_1_2" BEL
+        "Discrete_Time_Integrator_indtc_1_3" BEL
+        "Discrete_Time_Integrator_indtc_1_4" BEL
+        "Discrete_Time_Integrator_indtc_1_5" BEL
+        "Discrete_Time_Integrator_indtc_1_6" BEL
+        "Discrete_Time_Integrator_indtc_1_7" BEL
+        "Discrete_Time_Integrator_indtc_1_8" BEL
+        "Discrete_Time_Integrator_indtc_1_9" BEL
+        "Discrete_Time_Integrator_indtc_1_10" BEL
+        "Discrete_Time_Integrator_indtc_1_11" BEL
+        "Discrete_Time_Integrator_indtc_1_12" BEL
+        "Discrete_Time_Integrator_indtc_1_13" BEL
+        "Discrete_Time_Integrator_indtc_1_14" BEL
+        "Discrete_Time_Integrator_indtc_1_15" BEL "gain_out1_1_0" BEL
+        "gain_out1_1_1" BEL "gain_out1_1_2" BEL "gain_out1_1_3" BEL
+        "gain_out1_1_4" BEL "gain_out1_1_5" BEL "gain_out1_1_6" BEL
+        "gain_out1_1_7" BEL "gain_out1_1_8" BEL "gain_out1_1_9" BEL
+        "gain_out1_1_10" BEL "gain_out1_1_11" BEL "gain_out1_1_12" BEL
+        "gain_out1_1_13" BEL "gain_out1_1_14" BEL "gain_out1_1_15" BEL
+        "gain_out1_1_16" BEL "gain_out1_1_17" BEL "gain_out1_1_18" BEL
+        "gain_out1_1_19" BEL "gain_out1_1_20" BEL "gain_out1_1_21" BEL
+        "gain_out1_1_22" BEL "gain_out1_1_23" BEL "gain_out1_1_24" BEL
+        "gain_out1_1_25" BEL "gain_out1_1_26" BEL
+        "Discrete_Time_Integrator_u_gain_1_0" BEL
+        "Discrete_Time_Integrator_u_gain_1_1" BEL
+        "Discrete_Time_Integrator_u_gain_1_2" BEL
+        "Discrete_Time_Integrator_u_gain_1_3" BEL
+        "Discrete_Time_Integrator_u_gain_1_4" BEL
+        "Discrete_Time_Integrator_u_gain_1_5" BEL
+        "Discrete_Time_Integrator_u_gain_1_6" BEL
+        "Discrete_Time_Integrator_u_gain_1_7" BEL
+        "Discrete_Time_Integrator_u_gain_1_8" BEL
+        "Discrete_Time_Integrator_u_gain_1_9" BEL
+        "Discrete_Time_Integrator_u_gain_1_10" BEL
+        "Discrete_Time_Integrator_u_gain_1_11" BEL
+        "Discrete_Time_Integrator_u_gain_1_12" BEL
+        "Discrete_Time_Integrator_u_gain_1_13" BEL
+        "Discrete_Time_Integrator_u_gain_1_14" BEL
+        "Discrete_Time_Integrator_u_gain_1_15" BEL
+        "Discrete_Time_Integrator_u_gain_1_16" BEL
+        "Discrete_Time_Integrator_u_gain_1_17" BEL
+        "Discrete_Time_Integrator_u_gain_1_18" BEL
+        "Discrete_Time_Integrator_u_gain_1_19" BEL
+        "Discrete_Time_Integrator_u_gain_1_20" BEL
+        "Discrete_Time_Integrator_u_gain_1_21" BEL "reduced_reg_0_0" BEL
+        "reduced_reg_0_1" BEL "reduced_reg_0_2" BEL "reduced_reg_0_3" BEL
+        "reduced_reg_0_4" BEL "reduced_reg_0_5" BEL "reduced_reg_0_6" BEL
+        "reduced_reg_0_7" BEL "reduced_reg_0_8" BEL "reduced_reg_0_9" BEL
+        "reduced_reg_0_10" BEL "reduced_reg_0_11" BEL "reduced_reg_0_12" BEL
+        "reduced_reg_0_13" BEL "reduced_reg_0_14" BEL "reduced_reg_0_15" BEL
+        "reduced_reg_0_16" BEL "reduced_reg_0_17" BEL "reduced_reg_0_18" BEL
+        "reduced_reg_0_19" BEL "reduced_reg_0_20" BEL "reduced_reg_0_21" BEL
+        "reduced_reg_0_22" BEL "reduced_reg_0_23" BEL "reduced_reg_0_24" BEL
+        "reduced_reg_0_25" BEL "reduced_reg_0_26" BEL "reduced_reg_1_0" BEL
+        "reduced_reg_1_1" BEL "reduced_reg_1_2" BEL "reduced_reg_1_3" BEL
+        "reduced_reg_1_4" BEL "reduced_reg_1_5" BEL "reduced_reg_1_6" BEL
+        "reduced_reg_1_7" BEL "reduced_reg_1_8" BEL "reduced_reg_1_9" BEL
+        "reduced_reg_1_10" BEL "reduced_reg_1_11" BEL "reduced_reg_1_12" BEL
+        "reduced_reg_1_13" BEL "reduced_reg_1_14" BEL "reduced_reg_1_15" BEL
+        "reduced_reg_1_16" BEL "reduced_reg_1_17" BEL "reduced_reg_1_18" BEL
+        "reduced_reg_1_19" BEL "reduced_reg_1_20" BEL "reduced_reg_1_21" BEL
+        "reduced_reg_1_22" BEL "reduced_reg_1_23" BEL "reduced_reg_1_24" BEL
+        "reduced_reg_1_25" BEL "reduced_reg_1_26" BEL "Cosine_1_0" BEL
+        "Cosine_1_1" BEL "Cosine_1_2" BEL "Cosine_1_3" BEL "Cosine_1_4" BEL
+        "Cosine_1_5" BEL "Cosine_1_6" BEL "Cosine_1_7" BEL "Cosine_1_8" BEL
+        "Cosine_1_9" BEL "Cosine_1_10" BEL "Cosine_1_11" BEL "Cosine_1_12" BEL
+        "Cosine_1_13" BEL "Cosine_1_14" BEL "Cosine_1_15" BEL "Cosine_1_16"
+        BEL "Cosine_1_17" BEL "Cosine_1_18" BEL "Cosine_1_19" BEL
+        "Cosine_1_20" BEL "Cosine_1_21" BEL "Cosine_1_22" BEL "Cosine_1_23"
+        BEL "Cosine_1_24" BEL "Cosine_1_25" BEL "Cosine_1_26" BEL
+        "Cosine_1_27" BEL "Cosine_1_28" BEL "Cosine_1_29" BEL "Cosine_1_30"
+        BEL "Cosine_1_31" BEL "Cosine_1_32" BEL "Cosine_1_33" BEL
+        "Cosine_1_34" BEL "Cosine_1_35" BEL "Cosine_1_36" BEL "Cosine_1_37"
+        BEL "Cosine_1_38" BEL "Cosine_1_39" BEL "Cosine_1_40" BEL
+        "Cosine_1_41" BEL "Cosine_1_42" BEL "Cosine_1_43" BEL "Cosine_1_44"
+        BEL "Cosine_1_45" BEL "Cosine_1_46" BEL "Cosine_1_47" BEL
+        "Cosine_1_48" BEL "Cosine_1_49" BEL "Cosine_1_50" BEL "Cosine_3_0" BEL
+        "Cosine_3_1" BEL "Cosine_3_2" BEL "Cosine_3_3" BEL "Cosine_3_4" BEL
+        "Cosine_3_5" BEL "Cosine_3_6" BEL "Cosine_3_7" BEL "Cosine_3_8" BEL
+        "Cosine_3_9" BEL "Cosine_3_10" BEL "Cosine_3_11" BEL "Cosine_3_12" BEL
+        "Cosine_3_13" BEL "Cosine_3_14" BEL "Cosine_3_15" BEL "Cosine_3_16"
+        BEL "Cosine_3_17" BEL "Cosine_3_18" BEL "Cosine_3_19" BEL
+        "Cosine_3_20" BEL "Cosine_3_21" BEL "Cosine_3_22" BEL "Cosine_3_23"
+        BEL "Cosine_3_24" BEL "Cosine_3_25" BEL "Cosine_3_26" BEL
+        "Cosine_3_27" BEL "Cosine_3_28" BEL "Cosine_3_29" BEL "Cosine_3_30"
+        BEL "Cosine_3_31" BEL "Cosine_3_32" BEL "Cosine_3_33" BEL
+        "Cosine_3_34" BEL "Cosine_3_35" BEL "Cosine_3_36" BEL "Cosine_3_37"
+        BEL "Cosine_3_38" BEL "Cosine_3_39" BEL "Cosine_3_40" BEL
+        "Cosine_3_41" BEL "Cosine_3_42" BEL "Cosine_3_43" BEL "Cosine_3_44"
+        BEL "Cosine_3_45" BEL "Cosine_3_46" BEL "Cosine_3_47" BEL
+        "Cosine_3_48" BEL "Cosine_3_49" BEL "Cosine_3_50" BEL "Cosine_5_0" BEL
+        "Cosine_5_1" BEL "Cosine_5_2" BEL "Cosine_5_3" BEL "Cosine_5_4" BEL
+        "Cosine_5_5" BEL "Cosine_5_6" BEL "Cosine_5_7" BEL "Cosine_5_8" BEL
+        "Cosine_5_9" BEL "Cosine_5_10" BEL "Cosine_5_11" BEL "Cosine_5_12" BEL
+        "Cosine_5_13" BEL "Cosine_5_14" BEL "Cosine_5_15" BEL "Cosine_5_16"
+        BEL "Cosine_5_17" BEL "Cosine_5_18" BEL "Cosine_5_19" BEL
+        "Cosine_5_20" BEL "Cosine_5_21" BEL "Cosine_5_22" BEL "Cosine_5_23"
+        BEL "Cosine_5_24" BEL "Cosine_5_25" BEL "Cosine_5_26" BEL
+        "Cosine_5_27" BEL "Cosine_5_28" BEL "Cosine_5_29" BEL "Cosine_5_30"
+        BEL "Cosine_5_31" BEL "Cosine_5_32" BEL "Cosine_5_33" BEL
+        "Cosine_5_34" BEL "Cosine_5_35" BEL "Cosine_5_36" BEL "Cosine_5_37"
+        BEL "Cosine_5_38" BEL "Cosine_5_39" BEL "Cosine_5_40" BEL
+        "Cosine_5_41" BEL "Cosine_5_42" BEL "Cosine_5_43" BEL "Cosine_5_44"
+        BEL "Cosine_5_45" BEL "Cosine_5_46" BEL "Cosine_5_47" BEL
+        "Cosine_5_48" BEL "Cosine_5_49" BEL "Cosine_5_50" BEL
+        "phaseamultiplier_out1_1_0" BEL "phaseamultiplier_out1_1_1" BEL
+        "phaseamultiplier_out1_1_2" BEL "phaseamultiplier_out1_1_3" BEL
+        "phaseamultiplier_out1_1_4" BEL "phaseamultiplier_out1_1_5" BEL
+        "phaseamultiplier_out1_1_6" BEL "phaseamultiplier_out1_1_7" BEL
+        "phaseamultiplier_out1_1_8" BEL "phaseamultiplier_out1_1_9" BEL
+        "phaseamultiplier_out1_1_10" BEL "phaseamultiplier_out1_1_11" BEL
+        "phaseamultiplier_out1_1_12" BEL "phaseamultiplier_out1_1_13" BEL
+        "phaseamultiplier_out1_1_14" BEL "phaseamultiplier_out1_1_15" BEL
+        "phaseamultiplier_out1_1_16" BEL "phaseamultiplier_out1_1_17" BEL
+        "phaseamultiplier_out1_1_18" BEL "phaseamultiplier_out1_1_19" BEL
+        "phaseamultiplier_out1_1_20" BEL "phaseamultiplier_out1_1_21" BEL
+        "phaseamultiplier_out1_1_22" BEL "phaseamultiplier_out1_1_23" BEL
+        "phaseamultiplier_out1_1_24" BEL "phaseamultiplier_out1_1_25" BEL
+        "phaseamultiplier_out1_1_26" BEL "phaseamultiplier_out1_1_27" BEL
+        "phaseamultiplier_out1_1_28" BEL "phaseamultiplier_out1_1_29" BEL
+        "phaseamultiplier_out1_1_30" BEL "phaseamultiplier_out1_1_31" BEL
+        "phaseamultiplier_out1_1_32" BEL "phaseamultiplier_out1_1_33" BEL
+        "phaseamultiplier_out1_1_34" BEL "phaseamultiplier_out1_1_35" BEL
+        "phaseamultiplier_out1_1_36" BEL "phaseamultiplier_out1_1_37" BEL
+        "phaseamultiplier_out1_1_38" BEL "phaseamultiplier_out1_1_39" BEL
+        "phaseamultiplier_out1_1_40" BEL "phaseamultiplier_out1_1_41" BEL
+        "phaseamultiplier_out1_1_42" BEL "phaseamultiplier_out1_1_43" BEL
+        "phaseamultiplier_out1_1_44" BEL "phaseamultiplier_out1_1_45" BEL
+        "phaseamultiplier_out1_1_46" BEL "phaseamultiplier_out1_1_47" BEL
+        "phaseamultiplier_out1_1_48" BEL "phaseamultiplier_out1_1_49" BEL
+        "phaseamultiplier_out1_1_50" BEL "phaseamultiplier_out1_1_51" BEL
+        "phaseamultiplier_out1_1_52" BEL "phaseamultiplier_out1_1_53" BEL
+        "phaseamultiplier_out1_1_54" BEL "phaseamultiplier_out1_1_55" BEL
+        "phaseamultiplier_out1_1_56" BEL "phaseamultiplier_out1_1_57" BEL
+        "phaseamultiplier_out1_1_58" BEL "phaseamultiplier_out1_1_59" BEL
+        "phaseamultiplier_out1_1_60" BEL "phaseamultiplier_out1_1_61" BEL
+        "phaseamultiplier_out1_1_62" BEL "phaseamultiplier_out1_1_63" BEL
+        "phaseamultiplier_out1_1_64" BEL "phaseamultiplier_out1_1_65" BEL
+        "phaseamultiplier_out1_1_66" BEL "phaseamultiplier_out1_1_67" BEL
+        "phaseamultiplier_out1_1_68" BEL "phaseamultiplier_out1_1_69" BEL
+        "phaseamultiplier_out1_1_70" BEL "phaseamultiplier_out1_1_71" BEL
+        "phaseamultiplier_out1_1_72" BEL "phaseamultiplier_out1_1_73" BEL
+        "phaseamultiplier_out1_1_74" BEL "phaseamultiplier_out1_1_75" BEL
+        "phaseamultiplier_out1_1_76" BEL "phaseamultiplier_out1_1_77" BEL
+        "phaseamultiplier_out1_1_78" BEL "phaseamultiplier_out1_1_79" BEL
+        "phaseamultiplier_out1_1_80" BEL "phaseamultiplier_out1_1_81" BEL
+        "phaseamultiplier_out1_1_82" BEL "phasebmultiplier_out1_1_0" BEL
+        "phasebmultiplier_out1_1_1" BEL "phasebmultiplier_out1_1_2" BEL
+        "phasebmultiplier_out1_1_3" BEL "phasebmultiplier_out1_1_4" BEL
+        "phasebmultiplier_out1_1_5" BEL "phasebmultiplier_out1_1_6" BEL
+        "phasebmultiplier_out1_1_7" BEL "phasebmultiplier_out1_1_8" BEL
+        "phasebmultiplier_out1_1_9" BEL "phasebmultiplier_out1_1_10" BEL
+        "phasebmultiplier_out1_1_11" BEL "phasebmultiplier_out1_1_12" BEL
+        "phasebmultiplier_out1_1_13" BEL "phasebmultiplier_out1_1_14" BEL
+        "phasebmultiplier_out1_1_15" BEL "phasebmultiplier_out1_1_16" BEL
+        "phasebmultiplier_out1_1_17" BEL "phasebmultiplier_out1_1_18" BEL
+        "phasebmultiplier_out1_1_19" BEL "phasebmultiplier_out1_1_20" BEL
+        "phasebmultiplier_out1_1_21" BEL "phasebmultiplier_out1_1_22" BEL
+        "phasebmultiplier_out1_1_23" BEL "phasebmultiplier_out1_1_24" BEL
+        "phasebmultiplier_out1_1_25" BEL "phasebmultiplier_out1_1_26" BEL
+        "phasebmultiplier_out1_1_27" BEL "phasebmultiplier_out1_1_28" BEL
+        "phasebmultiplier_out1_1_29" BEL "phasebmultiplier_out1_1_30" BEL
+        "phasebmultiplier_out1_1_31" BEL "phasebmultiplier_out1_1_32" BEL
+        "phasebmultiplier_out1_1_33" BEL "phasebmultiplier_out1_1_34" BEL
+        "phasebmultiplier_out1_1_35" BEL "phasebmultiplier_out1_1_36" BEL
+        "phasebmultiplier_out1_1_37" BEL "phasebmultiplier_out1_1_38" BEL
+        "phasebmultiplier_out1_1_39" BEL "phasebmultiplier_out1_1_40" BEL
+        "phasebmultiplier_out1_1_41" BEL "phasebmultiplier_out1_1_42" BEL
+        "phasebmultiplier_out1_1_43" BEL "phasebmultiplier_out1_1_44" BEL
+        "phasebmultiplier_out1_1_45" BEL "phasebmultiplier_out1_1_46" BEL
+        "phasebmultiplier_out1_1_47" BEL "phasebmultiplier_out1_1_48" BEL
+        "phasebmultiplier_out1_1_49" BEL "phasebmultiplier_out1_1_50" BEL
+        "phasebmultiplier_out1_1_51" BEL "phasebmultiplier_out1_1_52" BEL
+        "phasebmultiplier_out1_1_53" BEL "phasebmultiplier_out1_1_54" BEL
+        "phasebmultiplier_out1_1_55" BEL "phasebmultiplier_out1_1_56" BEL
+        "phasebmultiplier_out1_1_57" BEL "phasebmultiplier_out1_1_58" BEL
+        "phasebmultiplier_out1_1_59" BEL "phasebmultiplier_out1_1_60" BEL
+        "phasebmultiplier_out1_1_61" BEL "phasebmultiplier_out1_1_62" BEL
+        "phasebmultiplier_out1_1_63" BEL "phasebmultiplier_out1_1_64" BEL
+        "phasebmultiplier_out1_1_65" BEL "phasebmultiplier_out1_1_66" BEL
+        "phasebmultiplier_out1_1_67" BEL "phasebmultiplier_out1_1_68" BEL
+        "phasebmultiplier_out1_1_69" BEL "phasebmultiplier_out1_1_70" BEL
+        "phasebmultiplier_out1_1_71" BEL "phasebmultiplier_out1_1_72" BEL
+        "phasebmultiplier_out1_1_73" BEL "phasebmultiplier_out1_1_74" BEL
+        "phasebmultiplier_out1_1_75" BEL "phasebmultiplier_out1_1_76" BEL
+        "phasebmultiplier_out1_1_77" BEL "phasebmultiplier_out1_1_78" BEL
+        "phasebmultiplier_out1_1_79" BEL "phasebmultiplier_out1_1_80" BEL
+        "phasebmultiplier_out1_1_81" BEL "phasebmultiplier_out1_1_82" BEL
+        "phasecmultiplier_out1_1_0" BEL "phasecmultiplier_out1_1_1" BEL
+        "phasecmultiplier_out1_1_2" BEL "phasecmultiplier_out1_1_3" BEL
+        "phasecmultiplier_out1_1_4" BEL "phasecmultiplier_out1_1_5" BEL
+        "phasecmultiplier_out1_1_6" BEL "phasecmultiplier_out1_1_7" BEL
+        "phasecmultiplier_out1_1_8" BEL "phasecmultiplier_out1_1_9" BEL
+        "phasecmultiplier_out1_1_10" BEL "phasecmultiplier_out1_1_11" BEL
+        "phasecmultiplier_out1_1_12" BEL "phasecmultiplier_out1_1_13" BEL
+        "phasecmultiplier_out1_1_14" BEL "phasecmultiplier_out1_1_15" BEL
+        "phasecmultiplier_out1_1_16" BEL "phasecmultiplier_out1_1_17" BEL
+        "phasecmultiplier_out1_1_18" BEL "phasecmultiplier_out1_1_19" BEL
+        "phasecmultiplier_out1_1_20" BEL "phasecmultiplier_out1_1_21" BEL
+        "phasecmultiplier_out1_1_22" BEL "phasecmultiplier_out1_1_23" BEL
+        "phasecmultiplier_out1_1_24" BEL "phasecmultiplier_out1_1_25" BEL
+        "phasecmultiplier_out1_1_26" BEL "phasecmultiplier_out1_1_27" BEL
+        "phasecmultiplier_out1_1_28" BEL "phasecmultiplier_out1_1_29" BEL
+        "phasecmultiplier_out1_1_30" BEL "phasecmultiplier_out1_1_31" BEL
+        "phasecmultiplier_out1_1_32" BEL "phasecmultiplier_out1_1_33" BEL
+        "phasecmultiplier_out1_1_34" BEL "phasecmultiplier_out1_1_35" BEL
+        "phasecmultiplier_out1_1_36" BEL "phasecmultiplier_out1_1_37" BEL
+        "phasecmultiplier_out1_1_38" BEL "phasecmultiplier_out1_1_39" BEL
+        "phasecmultiplier_out1_1_40" BEL "phasecmultiplier_out1_1_41" BEL
+        "phasecmultiplier_out1_1_42" BEL "phasecmultiplier_out1_1_43" BEL
+        "phasecmultiplier_out1_1_44" BEL "phasecmultiplier_out1_1_45" BEL
+        "phasecmultiplier_out1_1_46" BEL "phasecmultiplier_out1_1_47" BEL
+        "phasecmultiplier_out1_1_48" BEL "phasecmultiplier_out1_1_49" BEL
+        "phasecmultiplier_out1_1_50" BEL "phasecmultiplier_out1_1_51" BEL
+        "phasecmultiplier_out1_1_52" BEL "phasecmultiplier_out1_1_53" BEL
+        "phasecmultiplier_out1_1_54" BEL "phasecmultiplier_out1_1_55" BEL
+        "phasecmultiplier_out1_1_56" BEL "phasecmultiplier_out1_1_57" BEL
+        "phasecmultiplier_out1_1_58" BEL "phasecmultiplier_out1_1_59" BEL
+        "phasecmultiplier_out1_1_60" BEL "phasecmultiplier_out1_1_61" BEL
+        "phasecmultiplier_out1_1_62" BEL "phasecmultiplier_out1_1_63" BEL
+        "phasecmultiplier_out1_1_64" BEL "phasecmultiplier_out1_1_65" BEL
+        "phasecmultiplier_out1_1_66" BEL "phasecmultiplier_out1_1_67" BEL
+        "phasecmultiplier_out1_1_68" BEL "phasecmultiplier_out1_1_69" BEL
+        "phasecmultiplier_out1_1_70" BEL "phasecmultiplier_out1_1_71" BEL
+        "phasecmultiplier_out1_1_72" BEL "phasecmultiplier_out1_1_73" BEL
+        "phasecmultiplier_out1_1_74" BEL "phasecmultiplier_out1_1_75" BEL
+        "phasecmultiplier_out1_1_76" BEL "phasecmultiplier_out1_1_77" BEL
+        "phasecmultiplier_out1_1_78" BEL "phasecmultiplier_out1_1_79" BEL
+        "phasecmultiplier_out1_1_80" BEL "phasecmultiplier_out1_1_81" BEL
+        "phasecmultiplier_out1_1_82" BEL "Discrete_Time_Integrator_x_reg_0"
+        BEL "Discrete_Time_Integrator_x_reg_1" BEL
+        "Discrete_Time_Integrator_x_reg_2" BEL
+        "Discrete_Time_Integrator_x_reg_3" BEL
+        "Discrete_Time_Integrator_x_reg_4" BEL
+        "Discrete_Time_Integrator_x_reg_5" BEL
+        "Discrete_Time_Integrator_x_reg_6" BEL
+        "Discrete_Time_Integrator_x_reg_7" BEL
+        "Discrete_Time_Integrator_x_reg_8" BEL
+        "Discrete_Time_Integrator_x_reg_9" BEL
+        "Discrete_Time_Integrator_x_reg_10" BEL
+        "Discrete_Time_Integrator_x_reg_11" BEL
+        "Discrete_Time_Integrator_x_reg_12" BEL
+        "Discrete_Time_Integrator_x_reg_13" BEL
+        "Discrete_Time_Integrator_x_reg_14" BEL
+        "Discrete_Time_Integrator_x_reg_15" BEL
+        "Discrete_Time_Integrator_x_reg_16" BEL
+        "Discrete_Time_Integrator_x_reg_17" BEL
+        "Discrete_Time_Integrator_x_reg_18" BEL
+        "Discrete_Time_Integrator_x_reg_19" BEL
+        "Discrete_Time_Integrator_x_reg_20" BEL
+        "Discrete_Time_Integrator_x_reg_21" BEL
+        "Discrete_Time_Integrator_x_reg_22" BEL
+        "Discrete_Time_Integrator_x_reg_23" BEL
+        "Discrete_Time_Integrator_x_reg_24" BEL
+        "Discrete_Time_Integrator_x_reg_25" BEL
+        "Discrete_Time_Integrator_x_reg_26" BEL
+        "Discrete_Time_Integrator_x_reg_27" BEL
+        "Discrete_Time_Integrator_x_reg_28" BEL
+        "Discrete_Time_Integrator_x_reg_29" BEL
+        "Discrete_Time_Integrator_x_reg_30" BEL
+        "Discrete_Time_Integrator_x_reg_31" BEL
+        "Discrete_Time_Integrator_x_reg_32" BEL
+        "Discrete_Time_Integrator_x_reg_33" BEL
+        "Discrete_Time_Integrator_x_reg_34" BEL
+        "u_cosinea/alpha1st_or_4th_Quad_out1_1" BEL
+        "u_cosineb/alpha1st_or_4th_Quad_out1_1" BEL
+        "u_cosinec/alpha1st_or_4th_Quad_out1_1" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00001_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00001_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00001_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00001_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00002_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00002_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00002_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00002_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00003_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00003_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00003_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00003_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00004_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00004_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00004_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00004_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00005_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00005_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00005_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00005_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00006_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00006_pins<27>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00006_pins<26>" PIN
+        "u_cosinea/Mrom_Look_Up_Table_out1_rom00006_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00001_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00001_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00001_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00001_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00002_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00002_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00002_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00002_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00003_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00003_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00003_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00003_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00004_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00004_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00004_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00004_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00005_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00005_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00005_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00005_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00006_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00006_pins<27>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00006_pins<26>" PIN
+        "u_cosineb/Mrom_Look_Up_Table_out1_rom00006_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00001_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00001_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00001_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00001_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00002_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00002_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00002_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00002_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00003_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00003_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00003_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00003_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00004_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00004_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00004_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00004_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00005_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00005_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00005_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00005_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00006_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00006_pins<27>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00006_pins<26>" PIN
+        "u_cosinec/Mrom_Look_Up_Table_out1_rom00006_pins<27>";
+TS_clk = PERIOD TIMEGRP "TN_clk" 0.5 MHz HIGH 50%;
+SCHEMATIC END;
+

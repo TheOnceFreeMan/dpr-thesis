@@ -1,0 +1,5 @@
+vhdl work "VF_2_pkg.vhd"
+vhdl work "cosinec.vhd"
+vhdl work "cosineb.vhd"
+vhdl work "cosinea.vhd"
+vhdl work "controller.vhd"

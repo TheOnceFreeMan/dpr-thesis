@@ -1,0 +1,79 @@
+Release 14.7 - pr_verify P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Tue Nov 28 20:03:48 2017
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\pr_verify.exe -o
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/Source/Vf/Vf_controller
+/pr_verify.log -verbose
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_1/config_1_routed.ncd
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_2/config_2_routed.ncd
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_3/config_3_routed.ncd
+
+Loading
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_1/config_1_routed.ncd:  Tue Nov 28 19:58:07 2017
+Loading
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_2/config_2_routed.ncd:  Tue Nov 28 20:00:36 2017
+Loading
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_3/config_3_routed.ncd:  Tue Nov 28 20:00:35 2017
+
+----------------------------------------
+Analyzing Designs:
+ 
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_1/config_1_routed.ncd
+ 
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_2/config_2_routed.ncd
+
+  Number of matched proxy logic bels          = 335
+  Number of matched external nets             = 320
+  Number of matched global clock nets         = 5
+  Number of matched Reconfigurable Partitions = 0
+
+Verification completed successfully!
+
+----------------------------------------
+Analyzing Designs:
+ 
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_2/config_2_routed.ncd
+ 
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_3/config_3_routed.ncd
+
+  Number of matched proxy logic bels          = 335
+  Number of matched external nets             = 320
+  Number of matched global clock nets         = 5
+  Number of matched Reconfigurable Partitions = 0
+
+Verification completed successfully!
+
+----------------------------------------
+Analyzing Designs:
+ 
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_3/config_3_routed.ncd
+ 
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_1/config_1_routed.ncd
+
+  Number of matched proxy logic bels          = 335
+  Number of matched external nets             = 320
+  Number of matched global clock nets         = 5
+  Number of matched Reconfigurable Partitions = 0
+
+Verification completed successfully!
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\pr_verify.exe
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_1/config_1_routed.ncd
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_2/config_2_routed.ncd
+C:/Users/paul.rogers/OldStuff/GradSchool/Xilinx/ReConFig/PlanAhead/research_v11/
+research_v11.runs/config_3/config_3_routed.ncd => PASS

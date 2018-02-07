@@ -1,0 +1,315 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'controller'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -u -lc off -power off -o controller_map.ncd controller.ngd controller.pcf 
+Target Device  : xc5vlx50
+Target Package : ff676
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Tue Oct 10 12:43:30 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   36
+Slice Logic Utilization:
+  Number of Slice Registers:                   559 out of  28,800    1%
+    Number used as Flip Flops:                 559
+  Number of Slice LUTs:                        709 out of  28,800    2%
+    Number used as logic:                      705 out of  28,800    2%
+      Number using O6 output only:             410
+      Number using O5 output only:              66
+      Number using O5 and O6:                  229
+    Number used as exclusive route-thru:         4
+  Number of route-thrus:                        70
+    Number using O6 output only:                70
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   261 out of   7,200    3%
+  Number of LUT Flip Flop pairs used:          951
+    Number with an unused Flip Flop:           392 out of     951   41%
+    Number with an unused LUT:                 242 out of     951   25%
+    Number of fully used LUT-FF pairs:         317 out of     951   33%
+    Number of unique control sets:               1
+    Number of slice register sites lost
+      to control set restrictions:               1 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      18 out of      48   37%
+    Number using BlockRAM only:                 18
+    Total primitives used:
+      Number of 36k BlockRAM used:              18
+    Total Memory used (KB):                    648 out of   1,728   37%
+  Number of DSP48Es:                            20 out of      48   41%
+
+Average Fanout of Non-Clock Nets:                1.85
+
+Peak Memory Usage:  532 MB
+Total REAL time to MAP completion:  19 secs 
+Total CPU time to MAP completion:   18 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00001
+   of frag REGCLKAU connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00001_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00001
+   of frag REGCLKAL connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00001_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00002
+   of frag REGCLKAU connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00002_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00002
+   of frag REGCLKAL connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00002_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00003
+   of frag REGCLKAU connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00003_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00003
+   of frag REGCLKAL connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00003_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00004
+   of frag REGCLKAU connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00004_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00004
+   of frag REGCLKAL connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00004_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00005
+   of frag REGCLKAU connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00005_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00005
+   of frag REGCLKAL connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00005_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00006
+   of frag REGCLKAU connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00006_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00006
+   of frag REGCLKAL connected to power/ground net
+   u_cosinea/Mrom_Look_Up_Table_out1_rom00006_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00001
+   of frag REGCLKAU connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00001_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00001
+   of frag REGCLKAL connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00001_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00002
+   of frag REGCLKAU connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00002_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00002
+   of frag REGCLKAL connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00002_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00003
+   of frag REGCLKAU connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00003_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00003
+   of frag REGCLKAL connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00003_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00004
+   of frag REGCLKAU connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00004_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00004
+   of frag REGCLKAL connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00004_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00005
+   of frag REGCLKAU connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00005_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00005
+   of frag REGCLKAL connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00005_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00006
+   of frag REGCLKAU connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00006_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00006
+   of frag REGCLKAL connected to power/ground net
+   u_cosineb/Mrom_Look_Up_Table_out1_rom00006_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00001
+   of frag REGCLKAU connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00001_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00001
+   of frag REGCLKAL connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00001_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00002
+   of frag REGCLKAU connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00002_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00002
+   of frag REGCLKAL connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00002_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00003
+   of frag REGCLKAU connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00003_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00003
+   of frag REGCLKAL connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00003_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00004
+   of frag REGCLKAU connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00004_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00004
+   of frag REGCLKAL connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00004_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00005
+   of frag REGCLKAU connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00005_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00005
+   of frag REGCLKAL connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00005_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00006
+   of frag REGCLKAU connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00006_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00006
+   of frag REGCLKAL connected to power/ground net
+   u_cosinec/Mrom_Look_Up_Table_out1_rom00006_REGCLKAL_tiesig
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network Va<66> has no load.
+INFO:LIT:395 - The above info message is repeated 363 more times for the
+   following (max. 5 shown):
+   Va<67>,
+   Va<68>,
+   Va<69>,
+   Va<70>,
+   Va<71>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
